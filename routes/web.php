@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('main.welcome');
 });
+Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
+    Route::auth();
+    Route::get('/', 'HomeController@index');
+});
 
 Auth::routes();
 
