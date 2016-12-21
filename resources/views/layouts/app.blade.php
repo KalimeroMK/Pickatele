@@ -3,7 +3,7 @@
 <!-- Head -->
 <head>
     <meta charset="utf-8"/>
-    <title>Olimpik CMS</title>
+    <title>Pickatale CMS</title>
     <meta name="description" content="Dashboard"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -52,7 +52,7 @@
             <div class="navbar-header pull-left">
                 <a href="#" class="navbar-brand">
                     <small>
-                        <a href="{{ url('/admin') }}" class="logo-cms">Контролен панел</a>
+                        <a href="{{ url('/admin') }}" class="logo-cms">Pickatale</a>
                     </small>
                 </a>
             </div>
@@ -166,6 +166,7 @@
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
                 <!--Dashboard-->
+                <!--
                 <li class="active">
                     <a href="/admin">
                         <i class="menu-icon glyphicon glyphicon-home"></i>
@@ -218,10 +219,11 @@
 
                     </a>
                 </li>
+                -->
                 <li>
                     <a href="/admin/users" class="menu">
                         <i class="menu-icon fa fa-users"></i>
-                        <span class="menu-text"> Корисници </span>
+                        <span class="menu-text"> Users </span>
 
                     </a>
                 </li>
@@ -240,7 +242,7 @@
                 <ul class="breadcrumb">
                     <li>
                         <i class="fa fa-home"></i>
-                        <a href="/admin">Контролен панел</a>
+                        <a href="/admin">CMS</a>
                     </li>
 
                 </ul>
