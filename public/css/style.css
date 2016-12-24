@@ -1,0 +1,131 @@
+.uppercase li {
+    text-transform: uppercase;
+}
+
+.uppercase li a {
+    font-size: 12px !important;
+}
+
+.become-partner {
+    padding: 2em 0;
+    text-align: center;
+    background-color: #fa2557;
+}
+
+.newsletter {
+    padding: 2em 0;
+    text-align: center;
+    background-color: #79c6e5;
+}
+
+.newsletter ::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+.newsletter :-moz-placeholder { /* Firefox 18- */
+    color: #FFF;
+}
+
+.newsletter ::-moz-placeholder { /* Firefox 19+ */
+    color: #FFF;
+}
+
+.newsletter :-ms-input-placeholder {
+    color: #FFF;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+}
+.text-center {
+    text-align: center;
+    padding: 20px;
+}
+.section-header {
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.section-header-dark {
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #666;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.section-subheader {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.custom-btn {
+    background-color: #fa2557;
+    color: #FFF;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 10px 40px;
+}
+
+.pink-btn {
+    background-color: #fa2557;
+    color: #FFF;
+}
+
+.white-btn {
+    background-color: #FFF;
+    color: #fa2557;
+}
+
+.pink-button:hover, .pink-button:focus, .pink-button:active, .pink-button.active, .open > .dropdown-toggle.pink-button {
+    background: #33a6cc;
+}
+
+.pink-button:active, .pink-button.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+footer {
+    color: #f6f6f6;
+}
+
+footer .top {
+    background-color: #494A4D;
+}
+
+footer [class*="col-"] {
+    margin: 20px 0;
+}
+
+footer .bottom {
+    background-color: #3b3d40;
+}
+
+footer .section-header {
+    text-align: center;
+    color: #d4d4d4;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fa2557;
+    text-decoration: none;
+}
+
+footer p.qa {
+    font-style: italic;
+}

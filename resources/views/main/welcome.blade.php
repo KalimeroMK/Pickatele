@@ -1,91 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
+@section('slider')
 
-    <title>Laravel</title>
+    <!-- banner start -->
+    <!-- ================ -->
+    <div class="banner clearfix">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- slideshow start -->
+        <!-- ================ -->
+        <div class="slideshow">
 
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
+            <!-- slider revolution start -->
+            <!-- ================ -->
+            <div class="slider-banner-container">
+                <div class="slider-banner-fullwidth-big-height">
+                    <ul class="slides">
+                        <!-- slide 1 start -->
+                        <!-- ================ -->
 
-        .full-height {
-            height: 100vh;
-        }
+                        <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500"
+                            data-saveperformance="on" data-title="ChangeThis">
 
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
+                            <!-- main image -->
+                            <img src="/assets/img/slider-bg.png" alt="Title"
+                                 data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
 
-        .position-ref {
-            position: relative;
-        }
 
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption sfb fadeout text-left large_white"
+                                 data-x="center"
+                                 data-y="50"
+                                 data-speed="500"
+                                 data-start="1000"
+                                 data-easing="easeOutQuad"><img src="/assets/img/slide-2.png" alt=""/>
+                            </div>
 
-        .content {
-            text-align: center;
-        }
+                        </li>
 
-        .title {
-            font-size: 84px;
-        }
 
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+                        <!-- slide 1 end -->
 
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
-</head>
-<body>
-<div class="flex-center position-ref full-height">
-    @if (Route::has('login'))
-        <div class="top-right links">
-            <a href="{{ url('/login') }}">Login</a>
-            <a href="{{ url('/register') }}">Register</a>
+                    </ul>
+                    <div class="tp-bannertimer"></div>
+                </div>
+            </div>
+            <!-- slider revolution end -->
+
         </div>
-    @endif
+        <!-- slideshow end -->
 
-    <div class="content">
-        <div class="title m-b-md">
-            Laravel
-        </div>
-
-        <div class="links">
-            <a href="https://laravel.com/docs">Documentation</a>
-            <a href="https://laracasts.com">Laracasts</a>
-            <a href="https://laravel-news.com">News</a>
-            <a href="https://forge.laravel.com">Forge</a>
-            <a href="https://github.com/laravel/laravel">GitHub</a>
-        </div>
     </div>
-</div>
-</body>
-</html>
+    <!-- banner end -->
+@endsection
+
+@section('partners')
+    <!-- section start -->
+    <!-- ================ -->
+    <section class="light-gray-bg pv-40">
+        <div class="container">
+            <h1 class="section-header-dark">Our Partners</h1>
+
+            <!-- clients start -->
+            <!-- ================ -->
+            <div class="clients-container">
+                <div class="clients">
+                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+                        <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
+                    </div>
+                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
+                        <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- clients end -->
+        </div>
+    </section>
+    <!-- section end -->
+@endsection
