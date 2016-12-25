@@ -38,8 +38,11 @@
     top: 25px;
 }
 .text-center {
+    display:block;
     text-align: center;
-    padding: 20px;
+}
+.text-center img {
+    padding-top: 40px;
 }
 
 .section-header {

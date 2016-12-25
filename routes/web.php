@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('main.welcome');
+    return view('main.home');
 });
 
 Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {

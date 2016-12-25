@@ -23,7 +23,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,400italic,800bold" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -155,55 +155,173 @@
         <!-- header end -->
     </div>
     <!-- header-container end -->
+</div>
+<!-- banner start -->
+<!-- ================ -->
+<div class="banner clearfix">
 
-    @yield('slider')
+    <!-- slideshow start -->
+    <!-- ================ -->
+    <div class="slideshow">
 
-    <div id="page-start"></div>
+        <!-- slider revolution start -->
+        <!-- ================ -->
+        <div class="slider-banner-container">
+            <div class="slider-banner-fullwidth-big-height">
+                <ul class="slides">
+                    <!-- slide 1 start -->
+                    <!-- ================ -->
+
+                    <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500"
+                        data-saveperformance="on" data-title="ChangeThis">
+
+                        <!-- main image -->
+                        <img src="/assets/img/slider-bg.png" alt="Title"
+                             data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
 
 
-    @yield('content')
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption sfb fadeout text-left large_white"
+                             data-x="center"
+                             data-y="50"
+                             data-speed="500"
+                             data-start="1000"
+                             data-easing="easeOutQuad"><img src="/assets/img/slide-2.png" alt=""/>
+                        </div>
+
+                    </li>
 
 
-    <div class="row">
-        <div class="become-partner col-md-12 col-xs-12 col-sm-12">
-            <h1 class="section-header">Great offers from Pickatale</h1>
+                    <!-- slide 1 end -->
+                    <!-- slide 2 start -->
+                    <!-- ================ -->
+
+                    <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500"
+                        data-saveperformance="on" data-title="ChangeThis">
+
+                        <!-- main image -->
+                        <img src="/assets/img/slider-bg.png" alt="Title"
+                             data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
+
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption sfb fadeout text-left large_white"
+                             data-x="center"
+                             data-y="50"
+                             data-speed="500"
+                             data-start="1000"
+                             data-easing="easeOutQuad"><img src="/assets/img/slide-2.png" alt=""/>
+                        </div>
+
+                    </li>
+
+
+                    <!-- slide 2 end -->
+
+
+                </ul>
+                <div class="tp-bannertimer"></div>
+            </div>
         </div>
-    </div>
+        <!-- slider revolution end -->
 
+    </div>
+    <!-- slideshow end -->
+
+</div>
+<!-- banner end -->
+<div class="clearfix"></div>
 
 
 <!-- section start -->
-    <!-- ================ -->
-    <section class="light-gray-bg">
+<!-- ================ -->
+<section>
 
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img src="/assets/images/bundle1.png" class="img-responsive" alt="Bundle 1"/>
-                    <div class="subscribe">
-                        <div class="clearfix"></div>
-                        <button class="btn custom-btn pink-btn">Subscribe</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img src="/assets/images/bundle2.png" class="img-responsive" alt="Bundle 2"/>
-                    <div class="clearfix"></div>
-                    <div class="subscribe">
-                        <button class="btn custom-btn pink-btn">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=”row”>
-            <div class="become-partner col-xs-12">
-                <h1 class="section-header">Become our partner</h1>
-                <button class="btn custom-btn white-btn">Read More</button>
-            </div>
+        <div class="become-partner col-xs-12 col-md-12">
+            <h1 class="section-header">Great offers from Pickatale</h1>
         </div>
 
-    @yield('partners')
 
+</section>
+
+
+<section>
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <div class="text-center">
+                <img src="/assets/images/bundle1.png" class="img-responsive center-block" alt="Bundle 1"/>
+                <div class="clearfix"></div>
+                <button class="btn custom-btn pink-btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="text-center">
+                <img src="/assets/images/bundle2.png" class="img-responsive center-block" alt="Bundle 2"/>
+                <div class="clearfix"></div>
+
+                <button class="btn custom-btn pink-btn">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class=”row”>
+        <div class="become-partner col-xs-12">
+            <h1 class="section-header">Become our partner</h1>
+            <button class="btn custom-btn white-btn">Read More</button>
+        </div>
+    </div>
+</section>
+<!-- section start -->
+<!-- ================ -->
+<section class="light-gray-bg pv-40">
+    <div class="container">
+        <h1 class="section-header-dark">Our Partners</h1>
+
+        <!-- clients start -->
+        <!-- ================ -->
+        <div class="clients-container">
+            <div class="clients">
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+                    <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
+                    <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+                    <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
+                    <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+                    <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
+                    <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+                    <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
+                    <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+                    <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
+                </div>
+                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
+                    <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- clients end -->
+    </div>
+</section>
+<!-- section end -->
+
+<section>
     <div class=”row”>
         <div class="newsletter col-xs-12">
             <h1 class="section-header">Join Our Program</h1>
@@ -224,95 +342,80 @@
         </div>
     </div>
 
-    </section>
-    <!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
-    <!-- ================ -->
-    <footer id="footer" class="clearfix dark">
+</section>
+<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
+<!-- ================ -->
+<footer class="clearfix dark">
 
-        <!-- .footer start -->
-        <!-- ================ -->
-        <div class="footer">
-            <div class="top">
+    <!-- .footer start -->
+    <!-- ================ -->
+    <div class="footer">
+        <div class="top">
+            <div class="container">
+                <div class=”row”>
+                    <div class="col-sm-4">
+                        <h6 class="section-header">Helpful Links</h6>
+                        <ul class="pull-left">
+                            <li><a href="http://abale.com">Book Library</a></li>
+                            <li><a href="http://abale.com">Parents</a></li>
+                            <li><a href="http://abale.com">Educators</a></li>
+                            <li><a href="http://abale.com">Partner</a></li>
+                        </ul>
+                        <ul class="pull-right" style="margin-right:20px">
+                            <li><a href="http://abale.com">Career</a></li>
+                            <li><a href="http://abale.com">Company and Team</a></li>
+                            <li><a href="http://abale.com">Blog</a></li>
+                            <li><a href="http://abale.com">Help Center</a></li>
+                            <li><a href="http://abale.com">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6 class="section-header">Help Center</h6>
+                        <p class="qa">Q: Lorem ipsum dolor sit amet, adipiscing elit. <br>Lorem ipsum dolor<br>
+                            A: Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+
+                        <p class="qa">Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                            A: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6 class="section-header">Follow us</h6>
+                        <p>Social Icons and app store links...</p>
+                    </div>
+
+                    <div class="col-xs-12 text-center">
+                        <a class="btn custom-btn pink-btn">Help Center</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
                 <div class="container">
                     <div class=”row”>
                         <div class="col-sm-4">
-                            <h6 class="section-header">Helpful Links</h6>
-                            <ul class="pull-left">
-                                <li><a href="http://abale.com">Book Library</a></li>
-                                <li><a href="http://abale.com">Parents</a></li>
-                                <li><a href="http://abale.com">Educators</a></li>
-                                <li><a href="http://abale.com">Partner</a></li>
-                            </ul>
-                            <ul class="pull-right" style="margin-right:20px">
-                                <li><a href="http://abale.com">Career</a></li>
-                                <li><a href="http://abale.com">Company and Team</a></li>
-                                <li><a href="http://abale.com">Blog</a></li>
-                                <li><a href="http://abale.com">Help Center</a></li>
-                                <li><a href="http://abale.com">Contact Us</a></li>
-                            </ul>
+                            <div><a href="/"><img id="logo_img" src="/assets/images/logo.png"
+                                                  alt="Pickatale"/></a></div>
                         </div>
+
                         <div class="col-sm-4">
-                            <h6 class="section-header">Help Center</h6>
-                            <p class="qa">Q: Lorem ipsum dolor sit amet, adipiscing elit. <br>Lorem ipsum dolor<br>
-                                A: Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                            <p>City Mall Tower<br>
+                                Skopje, Macedonia</p>
 
-                            <p class="qa">Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                                A: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>contact@pickatale.com</p>
                         </div>
+
                         <div class="col-sm-4">
-                            <h6 class="section-header">Follow us</h6>
-                            <p>Social Icons and app store links...</p>
-                        </div>
-
-                        <div class="col-xs-12 text-center">
-                            <a class="btn custom-btn pink-btn">Help Center</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <div class="container">
-                        <div class=”row”>
-                            <div class="col-sm-4">
-                                <div><a href="/"><img id="logo_img" src="/assets/images/logo.png"
-                                                      alt="Pickatale"/></span></a></div>
-                            </div>
-
-                            <div class="col-sm-4">
-                                <p>City Mall Tower<br>
-                                    Skopje, Macedonia</p>
-
-                                <p>contact@pickatale.com</p>
-                            </div>
-
-                            <div class="col-sm-4">
-                                <p>&copy; 2016 Pickatale. All rights reserved</p>
-                            </div>
+                            <p>&copy; 2016 Pickatale. All rights reserved</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- .footer end -->
+        </div>
+        <!-- .footer end -->
 
-            <!-- .subfooter start -->
-            <!-- ================ -->
-            <div class="subfooter">
-                <div class="container">
-                    <div class="subfooter-inner">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="text-center">Copyright © 2016 <a target="_blank"
-                                                                           href="http://changethis">Pickatale</a>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- .subfooter end -->
+    </div>
 
-    </footer>
-    <!-- footer end -->
+</footer>
+<!-- footer end -->
 
 
 </div>
