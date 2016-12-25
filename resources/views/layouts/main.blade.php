@@ -163,35 +163,44 @@
 
     @yield('content')
 
+
     <div class="row">
-        <div class="become-partner col-xs-12">
+        <div class="become-partner col-md-12 col-xs-12 col-sm-12">
             <h1 class="section-header">Great offers from Pickatale</h1>
         </div>
+    </div>
+
+
+
+<!-- section start -->
+    <!-- ================ -->
+    <section class="light-gray-bg">
+
         <div class="container text-center">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <img src="/assets/images/bundle1.png" class="img-responsive" alt="Bundle 1"/>
-                <div class="subscribe">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img src="/assets/images/bundle1.png" class="img-responsive" alt="Bundle 1"/>
+                    <div class="subscribe">
+                        <div class="clearfix"></div>
+                        <button class="btn custom-btn pink-btn">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img src="/assets/images/bundle2.png" class="img-responsive" alt="Bundle 2"/>
                     <div class="clearfix"></div>
-                    <button class="btn custom-btn pink-btn">Subscribe</button>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <img src="/assets/images/bundle2.png" class="img-responsive" alt="Bundle 2"/>
-                <div class="clearfix"></div>
-                     <div class="subscribe">
-                    <button class="btn custom-btn pink-btn">Subscribe</button>
+                    <div class="subscribe">
+                        <button class="btn custom-btn pink-btn">Subscribe</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class=”row”>
-        <div class="become-partner col-xs-12">
-            <h1 class="section-header">Become our partner</h1>
-            <button class="btn custom-btn white-btn">Read More</button>
+        <div class=”row”>
+            <div class="become-partner col-xs-12">
+                <h1 class="section-header">Become our partner</h1>
+                <button class="btn custom-btn white-btn">Read More</button>
+            </div>
         </div>
-    </div>
 
     @yield('partners')
 
@@ -215,7 +224,7 @@
         </div>
     </div>
 
-
+    </section>
     <!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
     <!-- ================ -->
     <footer id="footer" class="clearfix dark">

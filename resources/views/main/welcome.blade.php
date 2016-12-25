@@ -38,6 +38,31 @@
 
 
                         <!-- slide 1 end -->
+                        <!-- slide 2 start -->
+                        <!-- ================ -->
+
+                        <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500"
+                            data-saveperformance="on" data-title="ChangeThis">
+
+                            <!-- main image -->
+                            <img src="/assets/img/slider-bg.png" alt="Title"
+                                 data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
+
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption sfb fadeout text-left large_white"
+                                 data-x="center"
+                                 data-y="50"
+                                 data-speed="500"
+                                 data-start="1000"
+                                 data-easing="easeOutQuad"><img src="/assets/img/slide-2.png" alt=""/>
+                            </div>
+
+                        </li>
+
+
+                        <!-- slide 2 end -->
+
 
                     </ul>
                     <div class="tp-bannertimer"></div>
@@ -50,6 +75,7 @@
 
     </div>
     <!-- banner end -->
+    <div class="clearfix"></div>
 @endsection
 
 @section('partners')
