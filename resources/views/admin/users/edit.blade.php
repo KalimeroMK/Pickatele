@@ -37,8 +37,8 @@
                          </span>
                         </span>
                                 <input type="text" class="form-control" readonly="">
-                            @if ($errors->has('image')) <p
-                                    class="alert alert-danger">{{ $errors->first('image') }}</p> @endif
+                                @if ($errors->has('image')) <p
+                                        class="alert alert-danger">{{ $errors->first('image') }}</p> @endif
                             </div>
                             <br/>
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -66,7 +66,7 @@
                             <div class="form-group{{ $errors->has('role') ? ' has-error' : '' }}">
                 <span class="input-icon icon-right">
                     <div class="form-group">
-                        {{ Form::select('role', ['admin' => 'Admin', 'manager' => 'Manager', 'editor' => 'Editor','correspondent' => 'Correspondent','contributor' => 'Contributor'], $user->role, ['class' => 'form-control']) }}
+                        {{ Form::select('role', ['admin' => 'Admin', 'manager' => 'Manager', 'editor' => 'Editor'], $user->role, ['class' => 'form-control']) }}
                         @if ($errors->has('role')) <p class="alert alert-danger">{{ $errors->first('role') }}</p> @endif
                     </div>
                 </span>

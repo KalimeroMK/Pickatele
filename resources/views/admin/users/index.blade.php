@@ -5,7 +5,8 @@
         <div class="row">
 
             <div class="col-lg-12">
-                <p>  <a class="btn btn-labeled shiny btn-warning btn-large" href="/admin/users/create"> <i class="btn-label fa fa-plus"></i>Add user </a></p>
+                <p><a class="btn btn-labeled shiny btn-warning btn-large" href="/admin/users/create"> <i
+                                class="btn-label fa fa-plus"></i>Add user </a></p>
             </div>
             <div class="col-lg-12">
                 <div class="widget">
@@ -22,7 +23,8 @@
                                             <a href="/admin/users/{{ $user->id }}" class="info">
                                                 <div class="ticket-user col-lg-6 col-sm-12">
                                                     @if($user->image)
-                                                        <img src="/assets/img/avatars/thumbnails/{{ $user->image }}" class="user-avatar">
+                                                        <img src="/assets/img/avatars/thumbnails/{{ $user->image }}"
+                                                             class="user-avatar">
                                                     @endif
                                                     <span class="user-name">{{ $user->name }}</span>
                                                 </div>

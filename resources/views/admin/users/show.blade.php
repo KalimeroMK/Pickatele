@@ -41,8 +41,8 @@
                                                 class="btn-label fa fa-edit"></i> Edit</a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
-                                    <form action="/admin/users/{{ $user->id }}/delete" method="POST" id="deleteuser">
-                                        {!! csrf_field() !!}
+                                    {{ Form::model('users', array('route' => ['users.destroy', $user->id], 'method' =>
+                                                              'DELETE', 'files' => true)) }}
                                         <button type="submit" class="btn btn-labeled shiny btn-danger delete"><i
                                                     class="btn-label fa fa-trash"></i> Delete
                                         </button>

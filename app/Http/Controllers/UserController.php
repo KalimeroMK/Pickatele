@@ -46,7 +46,7 @@ class UserController extends Controller
     {
         $users = User::orderBy('created_at', 'asc')->paginate(10);
         $data = ['status' => 'all', 'users' => $users];
-        return view('admin.users')->with($data);
+        return view('admin.users.create')->with($data);
     }
 
     /**
@@ -69,12 +69,43 @@ class UserController extends Controller
                 ->withErrors($errors)
                 ->withInput();
         }
-        User::create([
-            'name' => $request['name'],
-            'email' => $request['email'],
-            'role' => $request['role'],
-            'password' => bcrypt($request['password']),
-        ]);
+
+        $input = $request->all();
+
+        if ($request->hasFile('image')) {
+
+            $image = $request->file('image');
+            $path = public_path() . '/assets/img/avatars';
+            $pathThumb = public_path() . '/assets/img/avatars/thumbnails/';
+            $ext = $image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $ext;
+
+
+            $image->move($path, $imageName);
+
+            $findimage = public_path() . '/assets/img/avatars/' . $imageName;
+            $imagethumb = Image::make($findimage)->resize(200, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+
+            $imagethumb->save($pathThumb . $imageName);
+
+
+            $image = $request->image = $imageName;
+            $imagethumb = $request->imagethumb = $imageName;
+
+            $input['image'] = $image;
+            $input['imagethumb'] = $imagethumb;
+
+        }
+
+
+        $input['password'] = Hash::make($input['password']);
+        User::create($input);
+
+        Session::flash('flash_message', 'Referral successfully created!');
+
+
         return redirect('/admin/users');
     }
 
@@ -117,6 +148,7 @@ class UserController extends Controller
     {
         $user = User::findOrFail($id);
 
+
         $errors = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|',
@@ -142,6 +174,7 @@ class UserController extends Controller
         $user->fill($request)->save();
 
         if (Input::hasFile('image')) {
+
             $image = Input::file('image');
             $path = public_path() . '/assets/img/avatars';
             $pathThumb = public_path() . '/assets/img/avatars/thumbnails/';
@@ -179,8 +212,16 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::find($id);
+        $user = User::FindOrFail($id);
+        if ($user->image) {
+            // Delete user images
+            $image = public_path() . '/assets/img/avatars/' . $user->image;
+            $imagethumb = public_path() . '/assets/img/avatars/thumbnails/' . $user->imagethumb;
+            unlink($image);
+            unlink($imagethumb);
+        }
         $user->delete();
         return redirect('/admin/users');
+
     }
 }
