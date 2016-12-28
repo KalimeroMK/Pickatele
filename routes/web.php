@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main.home');
-});
+
 
 Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Route::auth();
@@ -24,8 +22,10 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     });
     Route::resource('/users', 'UserController');
     Route::resource('/staticpage', 'StaticpageController');
+    Route::resource('/slider', 'SliderController');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/', 'HomeController@index');
+Route::get('/{slug}', 'HomeController@staticpages');

@@ -4,24 +4,18 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStaticPageTable extends Migration
+class CreateSliderTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
-        Schema::create('staticpage', function (Blueprint $table) {
+        Schema::create('slider', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('slug');
-            $table->string('image')->nullable();
-            $table->string('imagemedium')->nullable();
-            $table->string('imagethumb')->nullable();
+            $table->string('image');
+            $table->string('imagemedium');
+            $table->string('imagethumb');
+            $table->string('link');
             $table->text('description');
-            $table->text('metadescription');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('workflow_id');
@@ -29,9 +23,8 @@ class CreateStaticPageTable extends Migration
         });
     }
 
-
     public function down()
     {
-        Schema::drop('staticpage');
+        Schema::drop('slider');
     }
 }

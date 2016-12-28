@@ -179,12 +179,7 @@
                         <span class="menu-text"> Категории </span>
                     </a>
                 </li>
-                <li>
-                    <a href="/admin/slider" class="menu">
-                        <i class="menu-icon fa fa-image"></i>
-                        <span class="menu-text"> Слајдер </span>
-                    </a>
-                </li>
+
                 <li>
                     <a href="/admin/scripts" class="menu">
                         <i class="menu-icon fa fa-code"></i>
@@ -213,6 +208,12 @@
                     </a>
                 </li>
                 -->
+                <li>
+                    <a href="/admin/slider" class="menu">
+                        <i class="menu-icon fa fa-image"></i>
+                        <span class="menu-text"> Slider </span>
+                    </a>
+                </li>
                 <li>
                     <a href="/admin/staticpage" class="menu">
                         <i class="menu-icon fa fa-file"></i>

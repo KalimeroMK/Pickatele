@@ -13,15 +13,14 @@
 
                 <div class="widget">
                     <div class="widget-header bordered-bottom bordered-warning">
-                        <span class="widget-caption">Edit static page: {{ strip_tags($staticpage->title) }}</span>
+                        <span class="widget-caption">Промена на слајдер: {{ strip_tags($slider->title) }}</span>
                     </div>
                     <div class="widget-body">
 
-                        <div class="img-blog">
-                            @if(!!$staticpage->image)
-                                <img class="img-responsive"
-                                     src="/assets/img/staticpage/medium/{{ $staticpage->imagemedium }}"
-                                     alt="{{ $staticpage->title }}"/>
+                        <div class="img-slider">
+                            @if(!!$slider->image)
+                                <img class="img-responsive" src="/assets/img/slider/medium/{{ $slider->imagemedium }}"
+                                     alt="{{ $slider->title }}"/>
                             @endif
                         </div>
                         <br/>
@@ -29,7 +28,8 @@
 
                         <div id="horizontal-form">
 
-                            {{ Form::model('staticpage', array('route' => array('staticpage.update', $staticpage->id), 'method' => 'PUT','files' => true)) }}
+                            {{ Form::model('slider', array('route' => array('slider.update', $slider->id), 'method' => 'PUT','files' => true)) }}
+                            {!! csrf_field() !!}
 
 
                             <div class="input-group{{ $errors->has('image') ? ' has-error' : '' }}">
@@ -45,28 +45,37 @@
                                     class="alert alert-danger">{{ $errors->first('image') }}</p> @endif
 
                             <div class="form-group">
-                                <label for="title">Title</label>
-                                <textarea class="ckeditor" id="title" name="title">{{ $staticpage->title }}</textarea>
+                                <label for="title">Наслов</label>
+                                <input type="text" name="title" class="form-control" value="{{ $slider->title }}" />
                             </div>
                             @if ($errors->has('title')) <p
                                     class="alert alert-danger">{{ $errors->first('title') }}</p> @endif
 
 
                             <div class="form-group">
-                                <label for="description">Product description</label>
+                                <label for="link">Линк: </label>
+                                <input type="text" class="form-control" id="link" name="link"
+                                       value="{{ $slider->link }}"/>
+                            </div>
+                            @if ($errors->has('link')) <p
+                                    class="alert alert-danger">{{ $errors->first('link') }}</p> @endif
+
+
+                            <div class="form-group">
+                                <label for="description">Опис</label>
                                 <textarea class="ckeditor" id="elm3"
-                                          name="description">{{ $staticpage->description }}</textarea>
+                                          name="description">{{ $slider->description }}</textarea>
                             </div>
                             @if ($errors->has('description')) <p
                                     class="alert alert-danger">{{ $errors->first('description') }}</p> @endif
 
 
                             <div class="form-group">
-                                <label for="user">Translator</label>
+                                <label for="user">Уредник</label>
                                 <select name="user_id" id="user" class="form-control">
                                     @foreach ($users as $user)
                                         <option value="{{ $user->id }}"
-                                                @if($staticpage->user_id == $user->id) selected @endif >{{ $user->name }}</option>
+                                                @if($slider->user_id == $user->id) selected @endif >{{ $user->name }}</option>
                                     @endforeach
 
                                 </select>
@@ -79,7 +88,7 @@
                                     <label>
                                         <input name="workflow_id" type="radio"
                                                class="form-control {{ $workflow->color }}" value="{{ $workflow->id }}"
-                                               @if($workflow->id  == $staticpage->workflow_id) checked @endif>
+                                               @if($workflow->id  == $slider->workflow_id) checked @endif>
                                         <span class="text"> {{ $workflow->name }}</span>
                                     </label>
                                 @endforeach
@@ -87,16 +96,21 @@
 
                             </div>
 
-                            <button type="submit" class="btn btn-labeled shiny btn-info btn-large"><i
+
+                            <!-- Hidden inputs -->
+
+                            <input type="hidden" name="creator" value="{{ $slider->creator }}">
+
+
+                            <button type="submit" class="btn btn-labeled shiny btn-warning btn-large"><i
                                         class="btn-label fa fa-plus"></i> Update
                             </button>
                             {!! Form::close() !!}
 
-                            <hr/>
 
-
-                            {{ Form::model('staticpage', array('route' => array('staticpage.destroy', $staticpage->id), 'method' => 'DELETE', 'id' => 'staticpage'))}}
-
+                            {{ Form::model('slider', array('route' => array('slider.destroy', $slider->id), 'method' => 'DELETE', 'id' => 'slider'))}}
+                            {!! csrf_field() !!}
+                            <br />
                             <button type="submit" class="btn btn-labeled shiny btn-danger delete"><i
                                         class="btn-label fa fa-trash"></i> Delete
                             </button>
