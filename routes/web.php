@@ -23,6 +23,7 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
         return redirect('/admin');
     });
     Route::resource('/users', 'UserController');
+    Route::resource('/staticpage', 'StaticpageController');
 });
 
 Auth::routes();
