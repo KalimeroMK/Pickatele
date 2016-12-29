@@ -50,6 +50,8 @@
 
     <!-- Custom css -->
     <link href="/css/style.css" rel="stylesheet">
+
+    @include('admin.scripts.block')
 </head>
 
 <body class="no-trans front-page transparent-header gradient-background-header page-loader-3">
@@ -233,10 +235,6 @@
 <script type="text/javascript" src="/assets/js/template.js"></script>
 <!-- Custom Scripts -->
 <script type="text/javascript" src="/assets/js/custom.js"></script>
-
-
-@yield('scripts')
-
 
 </body>
 </html>

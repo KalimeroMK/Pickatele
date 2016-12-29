@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Staticpage as StaticPage;
 use App\Slider as Slider;
+use App\Script as Script;
 
 class HomeController extends Controller
 {
@@ -19,7 +20,8 @@ class HomeController extends Controller
     {
         $sliders = Slider::all();
         $staticpages = StaticPage::all();
-        $data = ["staticpages" => $staticpages, "sliders" => $sliders];
+        $scripts = Script::where("status", "=", 1)->get();
+        $data = ["staticpages" => $staticpages, "sliders" => $sliders, "scripts" => $scripts];
         return view('main.home')->with($data);
     }
 

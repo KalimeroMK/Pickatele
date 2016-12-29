@@ -233,7 +233,12 @@
 
                     </a>
                 </li>
-
+                <li>
+                    <a href="/admin/scripts" class="menu">
+                        <i class="menu-icon fa fa-code"></i>
+                        <span class="menu-text"> Scripts </span>
+                    </a>
+                </li>
 
             </ul>
             <!-- /Sidebar Menu -->
