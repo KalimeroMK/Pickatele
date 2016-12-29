@@ -5,33 +5,3 @@
 Homestead.json
 Homestead.yaml
 .env
-app/Staticpage.php
-	app/Workflow.php
-	database/migrations/2016_12_27_181755_users_table_update.php
-	database/migrations/2016_12_28_080153_create_static_page_table.php
-	database/migrations/2016_12_28_082106_create_workflow_table.php
-	database/migrations/2016_12_28_214932_create_slider_table.php
-	database/seeds/workflow_table_seeder.php
-	public/assets/images/bundle1.png
-	public/assets/images/bundle2.png
-	public/assets/images/fav.png
-	public/assets/images/logo.png
-	public/assets/img/slide-2.png
-	public/assets/img/slider-1.png
-	public/assets/img/slider-bg.png
-	public/assets/img/sourcepartners/babyfirst.png
-	public/assets/img/sourcepartners/disney.png
-	public/css/style.css
-	resources/views/admin/slider/create.blade.php
-	resources/views/admin/slider/edit.blade.php
-	resources/views/admin/slider/index.blade.php
-	resources/views/admin/slider/show.blade.php
-	resources/views/admin/staticpage/create.blade.php
-	resources/views/admin/staticpage/edit.blade.php
-	resources/views/admin/staticpage/index.blade.php
-	resources/views/admin/staticpage/show.blade.php
-	resources/views/admin/users/create.blade.php
-	resources/views/layouts/main.blade.php
-	resources/views/layouts/mainmenu.blade.php
-	resources/views/main/staticpage.blade.php
-
