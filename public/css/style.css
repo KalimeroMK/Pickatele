@@ -98,10 +98,6 @@ footer {
     color: #f6f6f6;
 }
 
-footer {
-    padding: 0 !important;
-}
-
 footer .top {
     background-color: #494A4D;
 }
@@ -198,4 +194,12 @@ footer p.qa {
     .logo {
         top: 40px;
     }
+}
+
+.fixed.header .main-navigation.animated .active-menu {
+    display: none;
+}
+
+.fixed.header .main-navigation.animated .navbar-nav > li > a {
+    padding: 10px 20px !important;
 }
