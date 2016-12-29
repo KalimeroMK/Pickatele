@@ -23,8 +23,8 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,400italic,800bold" rel="stylesheet">
-
+    {{--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,400italic,800bold" rel="stylesheet">--}}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -90,6 +90,18 @@
                                 </a>
                             </div>
 
+                            <!-- buttonki -->
+                            <ul class="nav top-nav navbar-right visible-md visible-lg">
+                                <li>
+                                    <a class="top-nav-link" href="http://abale.com">Sign in</a>
+                                </li>
+                                <li>
+                                    <a class="top-nav-link" href="http://abale.com">Get Started</a>
+                                </li>
+                                <li>
+                                    <a class="top-nav-link" href="http://abale.com">EN <i style="color: #a8a8a8" class="fa fa-chevron-down"></i></a>
+                                </li>
+                            </ul>
 
                         </div>
                         <!-- header-left end -->

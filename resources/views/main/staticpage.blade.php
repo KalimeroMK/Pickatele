@@ -84,7 +84,6 @@
 
 
                             </ul>
-                            <div class="tp-bannertimer"></div>
                         </div>
                     </div>
                     <!-- slider revolution end -->
