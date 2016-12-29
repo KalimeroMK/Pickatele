@@ -44,7 +44,6 @@
 
 
                     </ul>
-                    <div class="tp-bannertimer"></div>
                 </div>
             </div>
             <!-- slider revolution end -->
@@ -56,18 +55,22 @@
     <!-- banner end -->
     <div class="clearfix"></div>
 
+    <section>
+        <div class=”row”>
+            <div class="become-partner col-xs-12">
+                <h1 class="section-header">Become our partner</h1>
+                <button class="btn custom-btn white-btn">Read More</button>
+            </div>
+        </div>
+    </section>
 
     <!-- section start -->
     <!-- ================ -->
-    <section>
-
-        <div class="become-partner col-xs-12 col-md-12">
-            <h1 class="section-header">Great offers from Pickatale</h1>
-        </div>
-
-
-    </section>
-
+    {{--<section>--}}
+        {{--<div class="become-partner col-xs-12 col-md-12">--}}
+            {{--<h1 class="section-header">Great offers from Pickatale</h1>--}}
+        {{--</div>--}}
+    {{--</section>--}}
 
     <section>
         <div class="row">
@@ -89,14 +92,6 @@
         </div>
     </section>
 
-    <section>
-        <div class=”row”>
-            <div class="become-partner col-xs-12">
-                <h1 class="section-header">Become our partner</h1>
-                <button class="btn custom-btn white-btn">Read More</button>
-            </div>
-        </div>
-    </section>
     <!-- section start -->
     <!-- ================ -->
     <section class="light-gray-bg pv-40">
