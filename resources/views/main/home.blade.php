@@ -74,14 +74,14 @@
 
     <section>
         <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-5 col-xs-11 pull-left">
                 <div class="text-center">
                     <img src="/assets/images/bundle1.png" class="img-responsive center-block" alt="Bundle 1"/>
                     <div class="clearfix"></div>
                     <button class="btn custom-btn pink-btn">Subscribe</button>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-5 col-xs-11 pull-right">
                 <div class="text-center">
                     <img src="/assets/images/bundle2.png" class="img-responsive center-block" alt="Bundle 2"/>
                     <div class="clearfix"></div>
