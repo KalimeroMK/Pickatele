@@ -199,3 +199,11 @@ footer p.qa {
         top: 40px;
     }
 }
+
+.fixed.header .main-navigation.animated .active-menu {
+    display: none;
+}
+
+.fixed.header .main-navigation.animated .navbar-nav > li > a {
+    padding: 10px 20px !important;
+}
