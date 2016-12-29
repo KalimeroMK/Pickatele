@@ -98,6 +98,10 @@ footer {
     color: #f6f6f6;
 }
 
+footer {
+    padding: 0 !important;
+}
+
 footer .top {
     background-color: #494A4D;
 }
