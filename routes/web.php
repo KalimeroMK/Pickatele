@@ -13,19 +13,17 @@
 
 
 
+
 Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
-    Route::auth();
+    Auth::routes();
+    Route::get('logout', 'Auth\LoginController@logout');
     Route::get('/', 'UserController@index');
-    Route::get('/logout', function() {
-        Auth::logout();
-        return redirect('/admin');
-    });
     Route::resource('/users', 'UserController');
     Route::resource('/staticpage', 'StaticpageController');
     Route::resource('/slider', 'SliderController');
 });
 
-Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/{slug}', 'HomeController@staticpages');
+
