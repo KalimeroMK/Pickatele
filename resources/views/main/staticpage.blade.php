@@ -2,6 +2,14 @@
 @include('layouts.mainmenu')
 @section('content')
 
+    @if($staticpage->slug == 'partners')
+        <style>
+            .header.dark {
+                background-image: url('/assets/img/slider-bg.png');
+            }
+        </style>
+    @endif
+
 
     @if($staticpage->image)
         <!-- banner start -->
@@ -14,7 +22,6 @@
             <!-- slideshow start -->
             <!-- ================ -->
             <div class="slideshow">
-
 
 
                 <!-- slideshow start -->
