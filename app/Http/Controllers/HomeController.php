@@ -29,7 +29,8 @@ class HomeController extends Controller
     {
         $staticpage = StaticPage::where("slug", "=", $slug)->first();
         $staticpages = StaticPage::all();
-        $data = ["staticpage" => $staticpage, "staticpages" => $staticpages];
+        $scripts = Script::where("status", "=", 1)->get();
+        $data = ["staticpage" => $staticpage, "staticpages" => $staticpages, "scripts" => $scripts];
         return view('main.staticpage')->with($data);
 
     }
