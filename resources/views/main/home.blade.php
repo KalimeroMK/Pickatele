@@ -73,6 +73,7 @@
     {{--</section>--}}
 
     <section>
+        <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12">
                 <div class="text-center">
@@ -88,6 +89,7 @@
 
                     <button class="btn custom-btn pink-btn">Subscribe</button>
                 </div>
+            </div>
             </div>
         </div>
     </section>

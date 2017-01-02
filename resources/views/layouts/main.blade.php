@@ -90,7 +90,7 @@
                                 </a>
                             </div>
 
-                            <!-- buttonki -->
+                            <!-- top navigation -->
                             <ul class="nav top-nav navbar-right visible-md visible-lg">
                                 <li>
                                     <a class="top-nav-link" href="http://abale.com">Sign in</a>
