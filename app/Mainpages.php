@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mainpages extends Model
 {
-    protected $table = 'educators';
+    protected $table = 'mainpages';
     protected $fillable = [
         'title',
+        'slug',
         'image',
         'imagemedium',
         'imagethumb',
@@ -19,7 +20,7 @@ class Mainpages extends Model
         'seconddescription',
         'secondheadertitle',
         'video',
-        'sectiondescription',
+        'thirddescription',
         'sectiontitle',
         'itemimage',
         'itemtitle',
@@ -40,6 +41,7 @@ class Mainpages extends Model
         'item6title',
         'item6description',
         'workflow_id',
+        'user_id',
         'created_at',
         'updated_at'
     ];

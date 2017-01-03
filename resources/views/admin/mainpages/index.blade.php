@@ -17,7 +17,7 @@
                 <div class="widget">
                     <div class="widget-header bordered-bottom bordered-themesecondary">
                         <i class="widget-icon fa fa-tags themesecondary"></i>
-                        <span class="widget-caption themesecondary">Scripts</span>
+                        <span class="widget-caption themesecondary">Main pages</span>
                     </div><!--Widget Header-->
                     <div class="widget-body  no-padding">
                         <div class="tickets-container">
@@ -29,13 +29,15 @@
                                 @foreach($mainpages as $mainpage)
                                     <li class="ticket-item">
                                         <div class="row">
-                                            <a href="/admin/scripts/{{ $mainpage->id }}" class="info">
+                                            <a href="/admin/mainpages/{{ $mainpage->id }}/edit" class="info">
                                                 <div class="ticket-time  col-lg-4 col-sm-6 col-xs-12">
                                                     <div class="divider hidden-md hidden-sm hidden-xs"></div>
-                                                    <span class="time">{{$mainpage->name}} @if ($mainpage->status == 1) <i class="fa fa-check"></i> @else <i class="fa fa-times"></i> @endif</span>
+                                                   {{$mainpage->title}}
                                                 </div>
                                                 <div class="ticket-type  col-lg-8 col-sm-6 col-xs-12">
+
                                                     <span class="divider hidden-xs"></span>
+                                                    {{$mainpage->created_at->diffforhumans() }}
                                                     <span class="">{{ substr($mainpage->code, 0, 100) }}</span>
                                                 </div>
                                                 <div class="ticket-state bg-palegreen">

@@ -8,9 +8,10 @@ class CreateTableEducators extends Migration
 {
     public function up()
     {
-        Schema::create('educators', function (Blueprint $table) {
+        Schema::create('mainpages', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->string('slug');
             $table->string('image');
             $table->string('imagemedium');
             $table->string('imagethumb');

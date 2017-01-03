@@ -51,9 +51,9 @@ class MainpagesController extends Controller
      */
     public function store(Request $request)
     {
+
         $errors = Validator::make($request->all(), [
             'title' => 'required|max:255',
-            'description' => 'required',
         ]);
 
         if ($errors->fails()) {
@@ -66,7 +66,7 @@ class MainpagesController extends Controller
         $request['title'] = strip_tags($request['title']);
         $request['slug'] = str_slug($request['title']);
 
-        $slug = mainpage::where('title', $request['title'])->get();
+        $slug = Mainpages::where('title', $request['title'])->get();
 
         (int)$count = count($slug);
 
@@ -74,8 +74,7 @@ class MainpagesController extends Controller
 
 
         $input = $request->all();
-        if(empty($request->metadesctiption))
-        {
+        if (empty($request->metadesctiption)) {
 
             $input['metadescription'] = $request->description;
         }
@@ -98,7 +97,7 @@ class MainpagesController extends Controller
 
             $image->move($path, $imageName);
 
-            $findimage = public_path() . '/assets/img/mainpage/' . $imageName;
+            $findimage = public_path() . '/assets/img/mainpages/' . $imageName;
             $imagethumb = Image::make($findimage)->resize(200, null, function ($constraint) {
                 $constraint->aspectRatio();
             });
@@ -116,6 +115,51 @@ class MainpagesController extends Controller
             $input['image'] = $image;
             $input['imagemedium'] = $imagemedium;
             $input['imagethumb'] = $imagethumb;
+
+
+            $itemimage = $request->file('itemimage');
+            $item2image = $request->file('item2image');
+            $item3image = $request->file('item3image');
+            $item4image = $request->file('item4image');
+            $item5image = $request->file('item5image');
+            $item6image = $request->file('item6image');
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $itemimage->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $itemimage->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item2image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item2image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item3image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item3image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item4image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item4image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item5image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item5image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item6image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item6image->move($itempath, $imageName);
+
+            $input['itemimage'] = $itemimage;
+            $input['item2image'] = $item2image;
+            $input['item3image'] = $item3image;
+            $input['item4image'] = $item4image;
+            $input['item5image'] = $item5image;
+            $input['item6image'] = $item6image;
         }
 
 
@@ -151,7 +195,7 @@ class MainpagesController extends Controller
         $users = User::get();
         $workflows = Workflow::orderBy('id', 'desc')->get();
         $data = ['mainpage' => $mainpage, 'users' => $users, 'workflows' => $workflows];
-        return view('admin.mainpage.edit')->with($data);
+        return view('admin.mainpages.edit')->with($data);
     }
 
     /**
@@ -165,7 +209,6 @@ class MainpagesController extends Controller
     {
         $errors = Validator::make($request->all(), [
             'title' => 'required|max:255',
-            'description' => 'required',
         ]);
 
         if ($errors->fails()) {
@@ -177,7 +220,7 @@ class MainpagesController extends Controller
 
         $request['title'] = strip_tags($request['title']);
 
-        $slug = DB::table('mainpage')->select('slug')->where('id', '=', $id)->get();
+        $slug = DB::table('mainpages')->select('slug')->where('id', '=', $id)->get();
 
         $slugname = $slug[0]->slug;
 
@@ -185,14 +228,15 @@ class MainpagesController extends Controller
         $input = $request->all();
         $mainpage = Mainpages::FindOrFail($id);
 
+
         $mainpage->fill($input)->save();
 
         if ($request->hasFile('image')) {
 
             $image = $request->file('image');
-            $path = public_path() . '/assets/img/mainpage';
-            $pathThumb = public_path() . '/assets/img/mainpage/thumbnails/';
-            $pathMedium = public_path() . '/assets/img/mainpage/medium/';
+            $path = public_path() . '/assets/img/mainpages';
+            $pathThumb = public_path() . '/assets/img/mainpages/thumbnails/';
+            $pathMedium = public_path() . '/assets/img/mainpages/medium/';
             $ext = $image->getClientOriginalExtension();
 
             $imageName = $slugname . '.' . $ext;
@@ -200,7 +244,7 @@ class MainpagesController extends Controller
 
             $image->move($path, $imageName);
 
-            $findimage = public_path() . '/assets/img/mainpage/' . $imageName;
+            $findimage = public_path() . '/assets/img/mainpages/' . $imageName;
             $imagethumb = Image::make($findimage)->resize(200, null, function ($constraint) {
                 $constraint->aspectRatio();
             });
@@ -221,6 +265,50 @@ class MainpagesController extends Controller
             $input['image'] = $image;
             $input['imagemedium'] = $imagemedium;
             $input['imagethumb'] = $imagethumb;
+
+            $itemimage = $request->file('itemimage');
+            $item2image = $request->file('item2image');
+            $item3image = $request->file('item3image');
+            $item4image = $request->file('item4image');
+            $item5image = $request->file('item5image');
+            $item6image = $request->file('item6image');
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $itemimage->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $itemimage->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item2image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item2image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item3image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item3image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item4image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item4image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item5image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item5image->move($itempath, $imageName);
+
+            $itempath = public_path() . '/assets/img/mainpages/items';
+            $itemext = $item6image->getClientOriginalExtension();
+            $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
+            $item6image->move($itempath, $imageName);
+
+            $input['itemimage'] = $itemimage;
+            $input['item2image'] = $item2image;
+            $input['item3image'] = $item3image;
+            $input['item4image'] = $item4image;
+            $input['item5image'] = $item5image;
+            $input['item6image'] = $item6image;
 
         }
 
@@ -245,9 +333,9 @@ class MainpagesController extends Controller
 
         if ($mainpage->image) {
             // Delete mainpage images
-            $image = public_path() . '/assets/img/mainpage/' . $mainpage->image;
-            $imagemedium = public_path() . '/assets/img/mainpage/medium/' . $mainpage->image;
-            $imagethumb = public_path() . '/assets/img/mainpage/thumbnails/' . $mainpage->image;
+            $image = public_path() . '/assets/img/mainpages/' . $mainpage->image;
+            $imagemedium = public_path() . '/assets/img/mainpages/medium/' . $mainpage->image;
+            $imagethumb = public_path() . '/assets/img/mainpages/thumbnails/' . $mainpage->image;
 
             unlink($image);
             unlink($imagemedium);
@@ -256,6 +344,6 @@ class MainpagesController extends Controller
 
 
         $mainpage->delete();
-        return redirect('/admin/mainpage');
+        return redirect('/admin/mainpages');
     }
 }

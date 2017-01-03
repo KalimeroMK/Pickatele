@@ -107,6 +107,13 @@
                             </div>
 
 
+                            <div class="form-group">
+                                <label for="sectiontitle">Section title</label>
+                                <input type="text" class="form-control" name="sectiontitle"/>
+                            </div>
+                            @if ($errors->has('sectiontitle')) <p
+                                    class="alert alert-danger">{{ $errors->first('sectiontitle') }}</p> @endif
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="input-group{{ $errors->has('itemimage') ? ' has-error' : '' }}">
@@ -258,7 +265,7 @@
 
                                     <div class="form-group">
                                         <label for="item5title">Item 5 title</label>
-                                        <input type="text" class="form-control" name="item3title"/>
+                                        <input type="text" class="form-control" name="item5title"/>
                                     </div>
                                     @if ($errors->has('item5title')) <p
                                             class="alert alert-danger">{{ $errors->first('item5title') }}</p> @endif
