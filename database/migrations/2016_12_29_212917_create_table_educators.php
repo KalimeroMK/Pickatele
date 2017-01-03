@@ -21,7 +21,7 @@ class CreateTableEducators extends Migration
             $table->text('seconddescription');
             $table->string('secondheadertitle');
             $table->string('video');
-            $table->text('sectiondescription');
+            $table->text('thirddescription');
             $table->string('sectiontitle');
             $table->string('itemimage');
             $table->string('itemtitle');

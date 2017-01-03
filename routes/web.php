@@ -22,6 +22,7 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Route::resource('/staticpage', 'StaticpageController');
     Route::resource('/slider', 'SliderController');
     Route::resource('/scripts', 'ScriptsController');
+    Route::resource('/mainpages', 'MainpagesController');
 });
 
 

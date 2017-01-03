@@ -39,6 +39,18 @@ $(document).ready(function() {
 			countHTML: false
 		});
 	}
+    if ( $( "#elm4" ).length ) {
+        CKEDITOR.replace( 'elm4', {
+            scayt_autoStartup: true,
+            scayt_maxSuggestions: 3,
+            showWordCount: true,
+            showCharCount: true,
+            magicline: false,
+            basicEntities: false,
+            fillEmptyBlocks: false,
+            countHTML: false
+        });
+    }
 
 	if ( $( "#subtitle" ).length ) {
 		CKEDITOR.replace( 'subtitle', {
