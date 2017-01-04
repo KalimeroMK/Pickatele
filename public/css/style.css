@@ -333,9 +333,39 @@ div.tparrows {
 .mainpages-slider {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    margin-top: 280px;
-    font-size: 40px;
-    max-width: 800px;
+    font-size: 2em;
+    max-width: 600px;
     white-space: pre-line;
     text-align: left;
+    position: relative;
+    color: #fff;
+    bottom: 30%;
+    left: 15%;
+}
+
+
+.slidertitle {
+    position: absolute;
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    bottom: 33%;
+    left: 1%;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+
 }

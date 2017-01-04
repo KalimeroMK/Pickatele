@@ -50,9 +50,10 @@
                                          data-speed="500"
                                          data-start="1300"
                                          data-easing="easeOutQuad"
-                                         data-endspeed="600"><div class="mainpages-slider">{!! strip_tags($mainpage->sliderdescription) !!}</div>
+                                         data-endspeed="600">
                                     </div>
-
+                                    <div class="slidertitle hidden-md hidden-sm hidden-xs">{!! $mainpage->title !!}</div>
+                                    <div class="mainpages-slider">{!! strip_tags($mainpage->sliderdescription) !!}</div>
                                 </li>
                                 <!-- slide 1 end -->
 
