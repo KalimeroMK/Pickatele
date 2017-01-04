@@ -24,7 +24,7 @@
                         data-saveperformance="on" data-title="ChangeThis">
 
                         <!-- main image -->
-                        <img src="/assets/img/slider-bg.png" alt="Title"
+                        <img src="/assets/img/bg-slider.png" alt="Title"
                              data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
 
 
