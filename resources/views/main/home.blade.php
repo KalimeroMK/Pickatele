@@ -55,14 +55,14 @@
     <!-- banner end -->
     <div class="clearfix"></div>
 
-    <section>
-        <div class=”row”>
-            <div class="become-partner col-xs-12">
-                <h1 class="section-header">Become our partner</h1>
-                <button class="btn custom-btn white-btn">Read More</button>
-            </div>
+<section>
+    <div class="row">
+        <div class="become-partner col-xs-12">
+            <h1 class="section-header">Become our partner</h1>
+            <button class="btn custom-btn white-btn">Read More</button>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- section start -->
     <!-- ================ -->
@@ -72,96 +72,54 @@
         {{--</div>--}}
     {{--</section>--}}
 
-    <section>
-        <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <div class="text-center">
-                    <img src="/assets/images/bundle1.png" class="img-responsive center-block" alt="Bundle 1"/>
-                    <div class="clearfix"></div>
-                    <button class="btn custom-btn pink-btn">Subscribe</button>
-                </div>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <div class="text-center">
-                    <img src="/assets/images/bundle2.png" class="img-responsive center-block" alt="Bundle 2"/>
-                    <div class="clearfix"></div>
-
-                    <button class="btn custom-btn pink-btn">Subscribe</button>
-                </div>
-            </div>
-            </div>
+<section>
+    <div class="row">
+        <div class="bundles col-xs-12">
+            <img class="slider" src="assets/images/bundles.png">
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- section start -->
     <!-- ================ -->
-    <section class="light-gray-bg pv-40">
-        <div class="container">
-            <h1 class="section-header-dark">Our Partners</h1>
-
+<section class="light-gray-bg partners">
+    <div class="container">
+        <h1 class="section-header-dark">They love to work with us</h1>
             <!-- clients start -->
             <!-- ================ -->
             <div class="clients-container">
                 <div class="clients">
                     <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
-                        <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
                     </div>
                     <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
-                        <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
-                        <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
-                        <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
-                        <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
-                        <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
-                        <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
-                        <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
-                        <a href="#"><img src="/assets/img/sourcepartners/disney.png" alt=""></a>
-                    </div>
-                    <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
-                        <a href="#"><img src="/assets/img/sourcepartners/babyfirst.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
                     </div>
 
                 </div>
             </div>
             <!-- clients end -->
         </div>
-    </section>
-    <!-- section end -->
+</section>
+<!-- section end -->
 
-    <section>
-        <div class=”row”>
-            <div class="newsletter col-xs-12">
-                <h1 class="section-header">Join Our Program</h1>
-                <h6 class="section-subheader">Inform for our latest books and learning programs</h6>
+<section>
+    <div class="row">
+        <div class="newsletter col-xs-12">
+            <h1 class="section-header">Join Our Program</h1>
+            <h6 class="section-subheader">Inform for our latest books and learning programs</h6>
 
 
-                <!--<div style="margin: 0 auto; width:50%">-->
-                <form class="form-inline">
-                    <div class="form-group">
-                        <input class="form-control" placeholder="Email" type="text"
-                               style="min-width: 250px;font-size:12px; background-color: #91d1ec; border-color: #79c6e5; color: #FFF"/>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn custom-btn pink-btn">Subscribe</button>
-                    </div>
-                </form>
-                <!--</div>-->
-            </div>
+            <!--<div style="margin: 0 auto; width:50%">-->
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-control email" placeholder="Email" type="text">
+                </div>
+                <div class="form-group">
+                    <button class="btn custom-btn pink-btn">Subscribe</button>
+                </div>
+            </form>
+            <!--</div>-->
         </div>
-
-    </section>
+    </div>
+</section>
 @endsection

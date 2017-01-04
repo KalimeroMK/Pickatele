@@ -138,7 +138,7 @@
         <div class="top">
             <div class="container">
                 <div class=”row”>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-xs-12 helpful-links">
                         <h6 class="section-header">Helpful Links</h6>
                         <ul class="pull-left">
                             <li><a href="http://abale.com">Book Library</a></li>
@@ -154,41 +154,72 @@
                             <li><a href="http://abale.com">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-xs-12">
                         <h6 class="section-header">Help Center</h6>
                         <p class="qa">Q: Lorem ipsum dolor sit amet, adipiscing elit. <br>Lorem ipsum dolor<br>
                             A: Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 
+
                         <p class="qa">Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                             A: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h6 class="section-header">Follow us</h6>
-                        <p>Social Icons and app store links...</p>
-                    </div>
 
-                    <div class="col-xs-12 text-center">
                         <a class="btn custom-btn pink-btn">Help Center</a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 follow-us">
+                        <h6 class="section-header">Follow us</h6>
+                        <ul>
+                            <li style="padding-left:0px;">
+                                <i class="fa fa-facebook"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-tumblr"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-instagram"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-linkedin"></i>
+                            </li>
+                        </ul>
+
+                        <ul class="store-links">
+                            <li style="padding-left:0px;">
+                                <img src="/assets/images/apple-store.png">
+                            </li>
+                            <li>
+                                <img src="/assets/images/google-store.png">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
+
             <div class="bottom">
                 <div class="container">
                     <div class=”row”>
-                        <div class="col-sm-4">
-                            <div><a href="/"><img id="logo_img" src="/assets/images/logo.png"
-                                                  alt="Pickatale"/></a></div>
+                        <div class="col-sm-4 col-xs-6">
+                            <div>
+                                <a href="/">
+                                    <img id="logo_img" src="/assets/images/logo-footer.png"
+                                                  alt="Pickatale"/>
+                                </a>
+                            </div>
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-xs-6">
                             <p>City Mall Tower<br>
                                 Skopje, Macedonia</p>
+
 
                             <p>contact@pickatale.com</p>
                         </div>
 
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-4 col-xs-6 col-xs-offset-6">
                             <p>&copy; 2016 Pickatale. All rights reserved</p>
                         </div>
                     </div>
