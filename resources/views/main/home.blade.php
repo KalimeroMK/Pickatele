@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <img class="slider" src="assets/images/bundles.png">
+                <img class="slider" src="/assets/images/bundles.png">
             </div>
         </div>
     </div>

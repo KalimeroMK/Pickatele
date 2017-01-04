@@ -27,9 +27,9 @@ com@section('mainmenu')
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul id="fullpage-menu" class="nav navbar-nav navbar-right uppercase">
-                        <li data-menuanchor="firstPage"><a href="/" class="active">Home</a></li>
-                        @foreach($staticpages as $staticpage)
-                            <li><a href="/{{ $staticpage->slug }}">{{ $staticpage->title }}</a></li>
+                        <li><a href="/" class="active">Home</a></li>
+                        @foreach($mainpages as $mainpage)
+                            <li><a href="/{{ $mainpage->slug }}">{{ $mainpage->title }}</a></li>
                         @endforeach
                         <li data-menuanchor="fourthPage">
                             <a href="#fourthPage">
@@ -37,8 +37,8 @@ com@section('mainmenu')
                                 <hr class="active-menu">
                             </a>
                         </li>
-                        <li data-menuanchor="fifthPage"><a href="#fifthPage">About Us</a></li>
-                        <li data-menuanchor="fifthPage"><a href="#fifthPage">Blog</a></li>
+                        <li data-menuanchor="fifthPage"><a href="/">About Us</a></li>
+                        <li data-menuanchor="fifthPage"><a href="/">Blog</a></li>
                     </ul>
                 </div>
 
