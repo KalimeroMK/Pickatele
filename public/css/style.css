@@ -75,15 +75,17 @@
     color: #FFF;
     font-size: 35px;
     font-weight: 800;
+    text-transform: inherit;
 }
 
 .section-header-dark {
-    padding-top: 20px;
+    padding-top: 30px;
     margin-top: 30px;
     color: #cccccc;
     font-size: 32px;
     font-weight: 800;
     text-align: center;
+    text-transform: inherit;
 }
 
 .section-subheader {
@@ -297,14 +299,13 @@ footer p.qa {
 .partners .section-header-dark, .become-partner .section-header {
     padding-top: 0px;
     margin-top: 20px;
-    text-transform: inherit;
 }
 
 .bundles {
     background-image: url('../assets/images/bundle-left.png'), url('../assets/images/bundle-right.png');
     background-repeat: no-repeat;
     background-position: left center, right center;
-    height: 486px;
+    height: 100%;
     width: 100%;
 }
 

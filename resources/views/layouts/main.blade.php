@@ -75,7 +75,7 @@
         <!-- "full-width": mandatory class for the full-width menu layout -->
         <!-- "centered": mandatory class for the centered logo layout -->
         <!-- ================ -->
-        <header class="header fixed   dark clearfix">
+        <header class="header fixed dark clearfix">
 
             <div class="container">
                 <div class="row">
