@@ -128,38 +128,43 @@ class MainpagesController extends Controller
             $itemext = $itemimage->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $itemimage->move($itempath, $imageName);
+            $input['itemimage'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item2image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item2image->move($itempath, $imageName);
+            $input['item2image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item3image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item3image->move($itempath, $imageName);
+            $input['item3image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item4image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item4image->move($itempath, $imageName);
+            $input['item4image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item5image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item5image->move($itempath, $imageName);
+            $input['item5image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item6image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item6image->move($itempath, $imageName);
+            $input['item6image'] = $imageName;
 
-            $input['itemimage'] = $itemimage;
-            $input['item2image'] = $item2image;
-            $input['item3image'] = $item3image;
-            $input['item4image'] = $item4image;
-            $input['item5image'] = $item5image;
-            $input['item6image'] = $item6image;
+
+
+
+
+
         }
 
 
@@ -277,38 +282,37 @@ class MainpagesController extends Controller
             $itemext = $itemimage->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $itemimage->move($itempath, $imageName);
+            $input['itemimage'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item2image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item2image->move($itempath, $imageName);
+            $input['item2image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item3image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item3image->move($itempath, $imageName);
+            $input['item3image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item4image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item4image->move($itempath, $imageName);
+            $input['item4image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item5image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item5image->move($itempath, $imageName);
+            $input['item5image'] = $imageName;
 
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item6image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item6image->move($itempath, $imageName);
-
-            $input['itemimage'] = $itemimage;
-            $input['item2image'] = $item2image;
-            $input['item3image'] = $item3image;
-            $input['item4image'] = $item4image;
-            $input['item5image'] = $item5image;
-            $input['item6image'] = $item6image;
+            $input['item6image'] = $imageName;
 
         }
 
