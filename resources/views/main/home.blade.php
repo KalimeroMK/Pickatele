@@ -20,7 +20,7 @@
                             <!-- slide {{ $index }} start -->
                     <!-- ================ -->
 
-                    <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500"
+                    <li data-transition="fadefromtop" data-slotamount="4" data-masterspeed="500"
                         data-saveperformance="on" data-title="ChangeThis">
 
                         <!-- main image -->
@@ -31,7 +31,7 @@
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption sfb fadeout text-left large_white"
                              data-x="center"
-                             data-y="50"
+                             data-y="0"
                              data-speed="500"
                              data-start="1000"
                              data-easing="easeOutQuad"><img src="/assets/img/slider/{{ $slider->image }}"
