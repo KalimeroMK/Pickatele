@@ -1,4 +1,4 @@
-@section('mainmenu')
+com@section('mainmenu')
     <!-- main-navigation start -->
     <!-- classes: -->
     <!-- "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick" -->
