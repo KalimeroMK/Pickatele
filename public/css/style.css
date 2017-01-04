@@ -313,3 +313,17 @@ footer p.qa {
     margin: 0 auto;
     height: 100%;
 }
+
+
+.slideshow .slider-banner-container .bullet {
+    background: rgba(255,255,255, 0.9) none repeat scroll 0 0 !important;
+    margin-right: 10px !important;
+}
+
+.slideshow .slider-banner-container .bullet.selected, .slideshow .slider-banner-container .bullet:hover {
+    background: rgba(186, 13, 51, 0.9) none repeat scroll 0 0 !important;
+}
+
+div.tparrows {
+    display: none;
+}
