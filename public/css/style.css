@@ -17,7 +17,7 @@
     padding: 2em 0;
     text-align: center;
     background-color: #79c6e5;
-    background-image: url('/assets/images/newsletter-bg.png');
+    background-image: url('../assets/images/newsletter-bg.png');
     background-repeat: no-repeat;
     background-position: center;
 }
