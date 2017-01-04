@@ -24,6 +24,10 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Route::resource('/scripts', 'ScriptsController');
     Route::resource('/mainpages', 'MainpagesController');
 });
+Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
+    Route::auth();
+    Route::get('/', 'HomeController@index');
+});
 
 
 Route::get('/', 'HomeController@index');

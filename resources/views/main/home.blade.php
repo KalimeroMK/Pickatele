@@ -1,6 +1,7 @@
 @extends('layouts.main')
 @include('layouts.mainmenu')
 @section('content')
+<<<<<<< Updated upstream
 
         <!-- banner start -->
 <!-- ================ -->
@@ -128,4 +129,7 @@
         </div>
     </div>
 </section>
+=======
+
+>>>>>>> Stashed changes
 @endsection

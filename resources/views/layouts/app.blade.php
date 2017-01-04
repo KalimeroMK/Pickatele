@@ -227,6 +227,7 @@
 
                     </a>
                 </li>
+                -->
                 <li>
                     <a href="/admin/users" class="menu">
                         <i class="menu-icon fa fa-users"></i>
