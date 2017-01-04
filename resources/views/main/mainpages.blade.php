@@ -35,7 +35,7 @@
                             <ul class="slides">
                                 <!-- slide 1 start -->
                                 <!-- ================ -->
-                                <li data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="500"
+                                <li data-transition="fadefromtop" data-slotamount="1" data-masterspeed="500"
                                     data-saveperformance="on" data-title="Slide 1">
 
                                     <!-- main image -->
