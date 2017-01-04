@@ -23,7 +23,7 @@
                             <div class="img-blog">
                                 @if(!!$mainpage->image)
                                     <img class="img-responsive"
-                                         src="/assets/img/staticpage/medium/{{ $mainpage->imagemedium }}"
+                                         src="/assets/img/mainpages/medium/{{ $mainpage->imagemedium }}"
                                          alt="{{ $mainpage->title }}"/>
                                 @endif
                             </div>
@@ -123,6 +123,13 @@
 
                             <div class="row">
                                 <div class="col-md-6">
+                                    <div class="img-blog">
+                                        @if(!!$mainpage->itemimage)
+                                            <img class="img-responsive"
+                                                 src="/assets/img/mainpages/items/{{ $mainpage->itemimage }}"
+                                                 "/>
+                                        @endif
+                                    </div>
                                     <div class="input-group{{ $errors->has('itemimage') ? ' has-error' : '' }}">
                                         <span class="input-group-btn">
                                             <span class="btn btn-info shiny btn-file">
@@ -153,7 +160,13 @@
 
                                 </div>
                                 <div class="col-md-6">
-
+                                    <div class="img-blog">
+                                        @if(!!$mainpage->item2image)
+                                            <img class="img-responsive"
+                                                 src="/assets/img/mainpages/items/{{ $mainpage->item2image }}"
+                                            "/>
+                                        @endif
+                                    </div>
 
                                     <div class="input-group{{ $errors->has('item2image') ? ' has-error' : '' }}">
                                         <span class="input-group-btn">
@@ -188,7 +201,13 @@
 
                             <div class="row">
                                 <div class="col-md-6">
-
+                                    <div class="img-blog">
+                                        @if(!!$mainpage->item3image)
+                                            <img class="img-responsive"
+                                                 src="/assets/img/mainpages/items/{{ $mainpage->item3image }}"
+                                            "/>
+                                        @endif
+                                    </div>
 
                                     <div class="input-group{{ $errors->has('item3image') ? ' has-error' : '' }}">
                                         <span class="input-group-btn">
@@ -220,7 +239,13 @@
 
                                 </div>
                                 <div class="col-md-6">
-
+                                    <div class="img-blog">
+                                        @if(!!$mainpage->item4image)
+                                            <img class="img-responsive"
+                                                 src="/assets/img/mainpages/items/{{ $mainpage->item4image }}"
+                                            "/>
+                                        @endif
+                                    </div>
 
                                     <div class="input-group{{ $errors->has('item4image') ? ' has-error' : '' }}">
                                         <span class="input-group-btn">
@@ -255,7 +280,13 @@
 
                             <div class="row">
                                 <div class="col-md-6">
-
+                                    <div class="img-blog">
+                                        @if(!!$mainpage->item5image)
+                                            <img class="img-responsive"
+                                                 src="/assets/img/mainpages/items/{{ $mainpage->item5image }}"
+                                            "/>
+                                        @endif
+                                    </div>
 
                                     <div class="input-group{{ $errors->has('item5image') ? ' has-error' : '' }}">
                                         <span class="input-group-btn">
@@ -287,7 +318,13 @@
 
                                 </div>
                                 <div class="col-md-6">
-
+                                    <div class="img-blog">
+                                        @if(!!$mainpage->item6image)
+                                            <img class="img-responsive"
+                                                 src="/assets/img/mainpages/items/{{ $mainpage->item6image }}"
+                                            "/>
+                                        @endif
+                                    </div>
 
                                     <div class="input-group{{ $errors->has('item6image') ? ' has-error' : '' }}">
                                         <span class="input-group-btn">
