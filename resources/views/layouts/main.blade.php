@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-sm-4 col-xs-12 follow-us">
                         <h6 class="section-header">Follow us</h6>
-                        <ul>
+                        <ul class="social-icons">
                             <li style="padding-left:0px;">
                                 <i class="fa fa-facebook"></i>
                             </li>
