@@ -44,13 +44,13 @@
 
 
                                     <!-- LAYER NR. 3 -->
-                                    <div class="tp-caption sfb fadeout medium_white text-center"
-                                         data-x="center"
+                                    <div class="tp-caption sfb fadeout medium_white text-bottom"
+                                         data-x="left"
                                          data-y="190"
                                          data-speed="500"
                                          data-start="1300"
                                          data-easing="easeOutQuad"
-                                         data-endspeed="600">{!! $mainpage->sliderdescription !!}
+                                         data-endspeed="600"><div class="mainpages-slider">{!! strip_tags($mainpage->sliderdescription) !!}</div>
                                     </div>
 
                                 </li>

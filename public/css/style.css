@@ -207,6 +207,7 @@ footer p.qa {
     float: left;
     border-color: #FFF;
     top: 13px;
+
     left: 8px;
     position: absolute;
 }
@@ -327,4 +328,14 @@ footer p.qa {
 
 div.tparrows {
     display: none;
+}
+
+.mainpages-slider {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-top: 280px;
+    font-size: 40px;
+    max-width: 800px;
+    white-space: pre-line;
+    text-align: left;
 }
