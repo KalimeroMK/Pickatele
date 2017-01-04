@@ -43,17 +43,7 @@
                                          data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
 
 
-                                    <!-- LAYER NR. 3 -->
-                                    <div class="tp-caption sfb fadeout medium_white text-bottom"
-                                         data-x="left"
-                                         data-y="190"
-                                         data-speed="500"
-                                         data-start="1300"
-                                         data-easing="easeOutQuad"
-                                         data-endspeed="600">
-                                    </div>
-                                    <div class="slidertitle hidden-md hidden-sm hidden-xs">{!! $mainpage->title !!}</div>
-                                    <div class="mainpages-slider">{!! strip_tags($mainpage->sliderdescription) !!}</div>
+
                                 </li>
                                 <!-- slide 1 end -->
 

@@ -116,57 +116,58 @@ class MainpagesController extends Controller
             $input['imagemedium'] = $imagemedium;
             $input['imagethumb'] = $imagethumb;
 
+        }
 
+        if($request->hasFile('itemimage')) {
             $itemimage = $request->file('itemimage');
-            $item2image = $request->file('item2image');
-            $item3image = $request->file('item3image');
-            $item4image = $request->file('item4image');
-            $item5image = $request->file('item5image');
-            $item6image = $request->file('item6image');
-
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $itemimage->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $itemimage->move($itempath, $imageName);
             $input['itemimage'] = $imageName;
+        }
 
+        if($request->hasFile('item2image')) {
+            $item2image = $request->file('item2image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item2image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item2image->move($itempath, $imageName);
             $input['item2image'] = $imageName;
-
+        }
+        if($request->hasFile('item3image')) {
+            $item3image = $request->file('item3image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item3image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item3image->move($itempath, $imageName);
             $input['item3image'] = $imageName;
+        }
 
+        if($request->hasFile('item4image')) {
+            $item4image = $request->file('item4image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item4image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item4image->move($itempath, $imageName);
             $input['item4image'] = $imageName;
-
+        }
+        if($request->hasFile('item5image')) {
+            $item5image = $request->file('item5image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item5image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item5image->move($itempath, $imageName);
             $input['item5image'] = $imageName;
-
+        }
+        if($request->hasFile('item6image')) {
+            $item6image = $request->file('item6image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item6image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item6image->move($itempath, $imageName);
             $input['item6image'] = $imageName;
-
-
-
-
-
-
         }
-
 
         Mainpages::create($input);
 
@@ -270,52 +271,59 @@ class MainpagesController extends Controller
             $input['image'] = $image;
             $input['imagemedium'] = $imagemedium;
             $input['imagethumb'] = $imagethumb;
+        }
 
+
+        if($request->hasFile('itemimage')) {
             $itemimage = $request->file('itemimage');
-            $item2image = $request->file('item2image');
-            $item3image = $request->file('item3image');
-            $item4image = $request->file('item4image');
-            $item5image = $request->file('item5image');
-            $item6image = $request->file('item6image');
-
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $itemimage->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $itemimage->move($itempath, $imageName);
             $input['itemimage'] = $imageName;
+        }
 
+        if($request->hasFile('item2image')) {
+            $item2image = $request->file('item2image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item2image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item2image->move($itempath, $imageName);
             $input['item2image'] = $imageName;
-
+        }
+        if($request->hasFile('item3image')) {
+            $item3image = $request->file('item3image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item3image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item3image->move($itempath, $imageName);
             $input['item3image'] = $imageName;
+        }
 
+        if($request->hasFile('item4image')) {
+            $item4image = $request->file('item4image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item4image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item4image->move($itempath, $imageName);
             $input['item4image'] = $imageName;
-
+        }
+        if($request->hasFile('item5image')) {
+            $item5image = $request->file('item5image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item5image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item5image->move($itempath, $imageName);
             $input['item5image'] = $imageName;
-
+        }
+        if($request->hasFile('item6image')) {
+            $item6image = $request->file('item6image');
             $itempath = public_path() . '/assets/img/mainpages/items';
             $itemext = $item6image->getClientOriginalExtension();
             $imageName = (rand(11111, 99999) . time()) . '.' . $itemext;
             $item6image->move($itempath, $imageName);
             $input['item6image'] = $imageName;
-
         }
-
 
         $mainpage->fill($input)->save();
 
