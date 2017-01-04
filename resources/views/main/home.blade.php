@@ -55,12 +55,14 @@
     <!-- banner end -->
     <div class="clearfix"></div>
 
-<section>
+<section class="become-partner">
+    <div class="container">
     <div class="row">
-        <div class="become-partner col-xs-12">
+        <div class="col-xs-12">
             <h1 class="section-header">Become our partner</h1>
             <button class="btn custom-btn white-btn">Read More</button>
         </div>
+    </div>
     </div>
 </section>
 
@@ -72,11 +74,13 @@
         {{--</div>--}}
     {{--</section>--}}
 
-<section>
+<section class="bundles">
+    <div class="container">
     <div class="row">
-        <div class="bundles col-xs-12">
+        <div class="col-xs-12">
             <img class="slider" src="assets/images/bundles.png">
         </div>
+    </div>
     </div>
 </section>
     <!-- section start -->
@@ -102,9 +106,10 @@
 </section>
 <!-- section end -->
 
-<section>
+<section class="newsletter">
+    <div class="container">
     <div class="row">
-        <div class="newsletter col-xs-12">
+        <div class="col-xs-12">
             <h1 class="section-header">Join Our Program</h1>
             <h6 class="section-subheader">Inform for our latest books and learning programs</h6>
 
@@ -119,6 +124,7 @@
                 </div>
             </form>
             <!--</div>-->
+        </div>
         </div>
     </div>
 </section>
