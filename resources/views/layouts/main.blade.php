@@ -169,28 +169,42 @@
                         <h6 class="section-header">Follow us</h6>
                         <ul class="social-icons">
                             <li style="padding-left:0px;">
-                                <i class="fa fa-facebook"></i>
+                                <a href="http://facebook.com">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
                             </li>
                             <li>
-                                <i class="fa fa-twitter"></i>
+                                <a href="http://twitter.com">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
                             </li>
                             <li>
-                                <i class="fa fa-tumblr"></i>
+                                <a href="http://tumblr.com">
+                                    <i class="fa fa-tumblr"></i>
+                                </a>
                             </li>
                             <li>
-                                <i class="fa fa-instagram"></i>
+                                <a href="http://instagram.com">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
                             </li>
                             <li>
-                                <i class="fa fa-linkedin"></i>
+                                <a href="http://linkedin.com">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </li>
                         </ul>
 
                         <ul class="store-links">
                             <li style="padding-left:0px;">
-                                <img src="/assets/images/apple-store.png">
+                                <a href="http://apple.com">
+                                    <img src="/assets/images/apple-store.png">
+                                </a>
                             </li>
                             <li>
-                                <img src="/assets/images/google-store.png">
+                                <a href="http://google.com">
+                                    <img src="/assets/images/google-store.png">
+                                </a>
                             </li>
                         </ul>
                     </div>

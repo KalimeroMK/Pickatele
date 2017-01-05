@@ -182,6 +182,10 @@ footer p.qa {
     font-size: 13px;
 }
 
+.top-nav a.top-nav-link {
+    letter-spacing: 1px !important;
+}
+
 .transparent-header .dark.header .navbar-nav > li > a {
     color: #fff;
     text-shadow: none;
@@ -376,4 +380,121 @@ div.tparrows {
 .slider-banner-fullwidth-big-height {
     height: 750px !important;
     max-height: 750px !important;
+}
+
+.bundles .section-header {
+    color: #fa2557;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 20px;
+}
+
+
+.parents .section-header {
+    color: #fa4c72;
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.parents-title > p {
+    color: #fa2557;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.how-it-works {
+    color: #fa2557;
+    font-size: 17;
+    font-weight: 600;
+}
+
+.red {
+    color: #fa2557;
+}
+
+.section-header.blue {
+    color: #74c6e7;
+}
+
+.reasons img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.reasons p {
+    color: #fa2557;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.reasons p.emphased-text {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.red-bg {
+    background-color: #fa2557;
+}
+
+.blue-bg {
+    background-color: #74c6e7;
+}
+
+.white {
+    color: #fff;
+}
+
+ul.store-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.store-links li {
+    display: inline;
+    padding: 10px 20px;
+}
+
+ul.store-links img {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.cta-subtext {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.call-to-action ul.store-links li img {
+    margin-top: 0px;
+}
+
+.jumbotron-row {
+    background-image: url('../assets/images/family-time-bg.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 484px;
+    padding-right: 25px;
+}
+
+.blue-bg.custom-jumbotron {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 55px;
+    padding-left: 65px;
+    padding-right: 140px;
+    padding-bottom: 75px;
+    margin-top: 60px;
+}
+
+.blue-bg.custom-jumbotron p {
+    margin: 0;
+}
+
+.row.why-will-you-love {
+    background-image: url('../assets/images/how-it-works-bg.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-top: -70px;
 }

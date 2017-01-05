@@ -76,6 +76,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
+                <h1 class="section-header">Great offers from Pickatale</h1>
                 <img class="slider" src="/assets/images/bundles.png">
             </div>
         </div>
