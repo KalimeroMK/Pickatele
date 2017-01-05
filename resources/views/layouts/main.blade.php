@@ -42,6 +42,7 @@
     <link href="/assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
     <link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
     <link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
+    <link href="/assets/js/slider-input/dist/css/bootstrap-slider.min.css" rel="stylesheet">
 
 
     <!-- The Project core CSS file -->
@@ -292,6 +293,8 @@
 <script type="text/javascript" src="/assets/js/template.js"></script>
 <!-- Custom Scripts -->
 <script type="text/javascript" src="/assets/js/custom.js"></script>
+<script type="text/javascript" src="/assets/js/slider-input/dist/bootstrap-slider.min.js"></script>
+<script type="text/javascript" src="/assets/js/pickatale.js"></script>
 
 </body>
 </html>

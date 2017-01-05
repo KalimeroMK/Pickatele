@@ -709,7 +709,67 @@ select::-ms-expand {
 }
 
 .book-list .book-title .section-header{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     color: #fa2557;
+}
+
+.book-list .custom-btn {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 45px;
+}
+
+ul.pagination li > a, .pagination > li:first-child > a, .pagination > li:last-child > a, ul.pager li > a {
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+    color: #c0c0c0;
+    font-size: 19px;
+    font-weight: 600;
+    width: 30px;
+}
+
+ul.pagination li > a.active {
+    color: #fa2557;
+}
+
+ul.pagination li > a:hover, ul.pagination li > a:focus {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fa2557;
+}
+
+ul.pagination, ul.pager {
+    margin: 20px 0 0;
+}
+
+.slider-track, .slider-selection {
+    background-color: #fa2557;
+    background-image: none;
+}
+
+.slider.slider-horizontal .slider-track {
+    height: 5px;
+    margin-top: -2px;
+}
+
+.slider-handle {
+    background-color: #fff;
+    background-image: none;
+    width: 25px;
+    height: 25px;
+    top: -2px;
+    color: #fa2557;
+    font-weight: 700;
+}
+
+.age-range span {
+    color: #fff;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.slider.slider-horizontal {
+    width: 115px;
 }
