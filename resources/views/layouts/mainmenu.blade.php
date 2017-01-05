@@ -32,7 +32,7 @@
                             <li><a href="/{{ $mainpage->slug }}">{{ $mainpage->title }}</a></li>
                         @endforeach
                         <li data-menuanchor="fourthPage">
-                            <a href="#fourthPage">
+                            <a href="/books">
                                 Book Library
                                 <hr class="active-menu">
                             </a>

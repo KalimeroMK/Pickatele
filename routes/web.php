@@ -31,5 +31,6 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
 
 
 Route::get('/', 'HomeController@index');
+Route::get('/books', 'BookController@index');
 Route::get('/{slug}', 'HomeController@mainpages');
 
