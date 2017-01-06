@@ -13,27 +13,44 @@
         <div class="row main-content">
             <div class="col-xs-12 col-sm-4 pull-left">
                 <img src="/assets/images/book-details/book-large.png"/>
+
+                <div class="col-xs-12 pull-left inside-images">
+                    <a href="#">
+                        <img src="/assets/images/book-details/book-sm-1.png" />
+                    </a>
+                    <a href="#">
+                        <img src="/assets/images/book-details/book-sm-2.png" />
+                    </a>
+                    <a href="#">
+                        <img src="/assets/images/book-details/book-sm-3.png" />
+                    </a>
+                    <a href="#">
+                        <img src="/assets/images/book-details/book-sm-1.png" />
+                    </a>
+                    <a href="#">
+                        <img src="/assets/images/book-details/book-sm-2.png" />
+                    </a>
+                </div>
             </div>
+
 
             <div class="col-xs-12 col-sm-8">
                 <h1 class="section-header red">Tom and Smudge's Rainy Day</h1>
 
                 <p class="author">By Author Name, 2017</p>
-                <p>&nbsp;</p>
-                <p class="emphased-text">Description</p>
+                <p style="margin-top:40px" class="emphased-text">Description</p>
                 <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially</p>
-                <p>&nbsp;</p>
-                <p>
+                <p style="margin-top:20px">
                     <span class="emphased-text">Genre</span>
                     <span class="genre">Adventure</span>
 
                     <span class="emphased-text" style="margin-left:50px;margin-right:10px">Book Trailer</span>
                     <a href="#"><img style="display: inline-block" src="/assets/images/book-details/trailer.png" /></a>
                 </p>
-                <p>&nbsp;</p>
-                <p class="emphased-text">Enjoy this and 1000+ other interactive stories</p>
 
-                <ul class="store-links">
+                <p style="margin-top:50px;margin-bottom:15px" class="emphased-text">Enjoy this and 1000+ other interactive stories</p>
+
+                <ul style="margin-top:0" class="store-links">
                     <li style="padding-left:0"><a href="#"><img src="/assets/images/book-details/1-apple-store.png" /></a></li>
                     <li><a href="#"><img src="/assets/images/book-details/2-google-store.png" /></a></li>
                     <li><a href="#"><img src="/assets/images/book-details/3-cn-store.png" /></a></li>
@@ -42,23 +59,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 inside-images">
-                <a href="#">
-                <img src="/assets/images/book-details/book-sm-1.png" />
-                </a>
-                <a href="#">
-                <img src="/assets/images/book-details/book-sm-2.png" />
-                </a>
-                <a href="#">
-                <img src="/assets/images/book-details/book-sm-3.png" />
-                </a>
-                <a href="#">
-                <img src="/assets/images/book-details/book-sm-1.png" />
-                </a>
-                <a href="#">
-                <img src="/assets/images/book-details/book-sm-2.png" />
-                </a>
-            </div>
+
         </div>
         <div class="row" style="margin-top:10px">
             <div class="col-xs-12 pull-left">

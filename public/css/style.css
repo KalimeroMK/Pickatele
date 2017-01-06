@@ -823,9 +823,9 @@ ul.pagination, ul.pager {
 
 .inside-images {
     width: 360px;
-    padding-left: 8px;
+    padding-left: 0;
     padding-top: 25px;
-    margin-left: 6px;
+    margin-left: 0;
 }
 
 .inside-images a {
