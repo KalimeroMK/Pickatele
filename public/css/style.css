@@ -773,3 +773,88 @@ ul.pagination, ul.pager {
 .slider.slider-horizontal {
     width: 115px;
 }
+
+.link-back {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fa2557;
+
+}
+
+.link-back img {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.link-back:active, .link-back:focus, .link-back:hover {
+    text-decoration: none;
+    color: #3b3d40;
+}
+
+.book-details {
+    padding-top: 90px;
+}
+
+.book-details .main-content {
+    margin-top: 35px;
+}
+
+.book-details .main-content .author {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.book-details .main-content .emphased-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fa2557;
+}
+
+.book-details .main-content .genre {
+    color: #616161;
+    font-weight:600;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.book-details .section-header {
+    margin-top: -5px;
+}
+
+.inside-images {
+    width: 360px;
+    padding-left: 8px;
+    padding-top: 25px;
+    margin-left: 6px;
+}
+
+.inside-images a {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.inside-images a:last-child {
+    padding-right: 0;
+}
+
+.book-category-slider img {
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+.category-slider {
+    margin-top:50px;
+    margin-bottom: 100px;
+}
+
+.category-slider .more-from {
+    font-weight: 700;
+    color: #fa2557;
+
+}
+
+.category-slider span {
+    font-weight: 600;
+    font-size: 20px;
+    color: #616161;
+}

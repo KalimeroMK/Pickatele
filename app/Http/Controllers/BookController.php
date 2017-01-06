@@ -22,4 +22,12 @@ class BookController extends Controller
         $data = ["scripts" => $scripts, "mainpages" => $mainpages];
         return view('main.books')->with($data);
     }
+
+    public function getBook()
+    {
+        $mainpages = Mainpages::all();
+        $scripts = Script::where("status", "=", 1)->get();
+        $data = ["scripts" => $scripts, "mainpages" => $mainpages];
+        return view('main.book')->with($data);
+    }
 }
