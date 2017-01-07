@@ -152,7 +152,8 @@
                             <li><a href="http://abale.com">Company and Team</a></li>
                             <li><a href="http://abale.com">Blog</a></li>
                             <li><a href="http://abale.com">Help Center</a></li>
-                            <li><a href="http://abale.com">Contact Us</a></li>
+                            <li><a href="/copyright-policy">Copyright Policy</a></li>
+                            <li><a href="/about">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-xs-12">
