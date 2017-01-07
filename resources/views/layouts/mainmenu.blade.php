@@ -37,7 +37,7 @@
                                 <hr class="active-menu">
                             </a>
                         </li>
-                        <li data-menuanchor="fifthPage"><a href="/">About Us</a></li>
+                        <li data-menuanchor="fifthPage"><a href="/about">About Us</a></li>
                         <li data-menuanchor="fifthPage"><a href="/">Blog</a></li>
                     </ul>
                 </div>

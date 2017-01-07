@@ -858,3 +858,37 @@ ul.pagination, ul.pager {
     font-size: 20px;
     color: #616161;
 }
+
+.about-header {
+    height: 729px;
+    background-color: #7ccaea;
+}
+
+.about-header img {
+    display: inline-block;
+}
+
+.about-us p {
+    color: #7ccaea;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-us .section-subheader {
+    color: #fa2557;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: inherit;
+}
+
+.contact-form label {
+    color: #fa2557;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: #ababab;
+    color: #fff;
+}
