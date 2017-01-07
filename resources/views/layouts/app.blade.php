@@ -217,7 +217,7 @@
                             </a>
                         </li>
                         <li ui-sref-active="active">
-                            <a ui-sref="app.tabs" href="#/app/tabs">
+                            <a href="/admin/bundle">
                                 <span class="menu-text">Bundle</span>
                             </a>
                         </li>
