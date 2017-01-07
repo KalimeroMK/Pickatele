@@ -12,5 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(workflow_table_seeder::class);
+        $this->call('CountriesSeeder');
+        $this->command->info('Seeded the countries!');
     }
 }

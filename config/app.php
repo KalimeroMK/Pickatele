@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
+
         /*
          * Package Service Providers...
          */
@@ -179,6 +180,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Webpatser\Countries\CountriesServiceProvider::class,
+        Baum\Providers\BaumServiceProvider::class,
 
     ],
 
@@ -230,6 +233,8 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Countries' => Webpatser\Countries\CountriesFacade::class,
+        'Baum' => Baum\Providers\BaumServiceProvider::class,
 
     ],
 
