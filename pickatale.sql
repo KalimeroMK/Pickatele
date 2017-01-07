@@ -16,6 +16,79 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `categories`
+--
+
+DROP TABLE IF EXISTS `categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `categories` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `parent_id` int(11) DEFAULT NULL,
+  `lft` int(11) DEFAULT NULL,
+  `rgt` int(11) DEFAULT NULL,
+  `depth` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `categories_slug_unique` (`slug`),
+  KEY `categories_parent_id_index` (`parent_id`),
+  KEY `categories_lft_index` (`lft`),
+  KEY `categories_rgt_index` (`rgt`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `categories`
+--
+
+LOCK TABLES `categories` WRITE;
+/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `countries`
+--
+
+DROP TABLE IF EXISTS `countries`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `countries` (
+  `id` int(11) NOT NULL,
+  `capital` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `citizenship` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `country_code` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `currency` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `currency_code` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `currency_sub_unit` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `currency_symbol` varchar(3) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `full_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `iso_3166_2` char(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `iso_3166_3` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `region_code` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `sub_region_code` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `eea` tinyint(1) NOT NULL DEFAULT '0',
+  `calling_code` varchar(3) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `flag` varchar(6) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `countries_id_index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `countries`
+--
+
+LOCK TABLES `countries` WRITE;
+/*!40000 ALTER TABLE `countries` DISABLE KEYS */;
+/*!40000 ALTER TABLE `countries` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `mainpages`
 --
 
@@ -88,7 +161,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +170,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(6,'2014_10_12_100000_create_password_resets_table',2),(7,'2016_12_27_181755_users_table_update',2),(8,'2016_12_28_080153_create_static_page_table',2),(9,'2016_12_28_082106_create_workflow_table',2),(10,'2016_12_28_214932_create_slider_table',3),(11,'2016_12_29_193833_create_scripts_table',4),(15,'2016_12_29_212917_create_table_educators',5);
+INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(6,'2014_10_12_100000_create_password_resets_table',2),(7,'2016_12_27_181755_users_table_update',2),(8,'2016_12_28_080153_create_static_page_table',2),(9,'2016_12_28_082106_create_workflow_table',2),(10,'2016_12_28_214932_create_slider_table',3),(11,'2016_12_29_193833_create_scripts_table',4),(15,'2016_12_29_212917_create_table_educators',5),(18,'2017_01_07_144926_setup_countries_table',6),(19,'2017_01_07_144927_charify_countries_table',6),(20,'2017_01_07_145828_create_categories_table',6);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -175,7 +248,7 @@ CREATE TABLE `slider` (
   PRIMARY KEY (`id`),
   KEY `slider_user_id_foreign` (`user_id`),
   CONSTRAINT `slider_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -291,4 +364,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-04 22:25:43
+-- Dump completed on 2017-01-07 15:32:56
