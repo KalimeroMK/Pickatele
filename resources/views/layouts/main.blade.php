@@ -43,7 +43,7 @@
     <link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
     <link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
     <link href="/assets/js/slider-input/dist/css/bootstrap-slider.min.css" rel="stylesheet">
-
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/css/select2.min.css" rel="stylesheet">
 
     <!-- The Project core CSS file -->
     <link href="/assets/css/style.css" rel="stylesheet">
@@ -275,6 +275,8 @@
 <script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
 <!-- Contact form -->
 <script src="/assets/plugins/jquery.validate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/js/select2.min.js"></script>
+
 <!-- jQuery Revolution Slider  -->
 <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

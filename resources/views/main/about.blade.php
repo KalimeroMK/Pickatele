@@ -53,37 +53,34 @@
         </div>
     </div>
 
-    <div class="container about-us">
+    <div class="about-us-pattern-1"></div>
+    <div class="about-us-pattern-2"></div>
+
+    <div style="z-index:1" class="container about-us">
         <div class="row">
             <div class="col-xs-12 col-sm-offset-2 col-sm-8">
                 <h1 class="section-header text-center red">The Pickatale story</h1>
 
-                <p>Pickatale story started back in 2013. Knowing that children today grow up with digital devices, its
+                <p>Pickatale story started back in 2013. Knowing that children today grow up with digital devices, it's
                     natural for parents and teachers to use apps for educational purposes. There are so many mobile apps
-                    intended for children, but we realized theres one important problem. These apps are addictive and
-                    without any real educational value to improve childrens reading and language learning skills.</p>
+                    intended for children, but we realized there's one important problem. These apps are addictive and
+                    without any real educational value to improve children's reading and language learning skills.</p>
 
                 <p>We wanted to help children develop a love of reading. In the course of the years, Pickatale now
-                    features
-                    1000+ interactive childrens books in our app on English, Norwegian, Danish, Swedish and Chinese. We
-                    are
-                    paying special attention to each and every book released and we take pride in the knowing that both,
-                    the
-                    parents and children will enjoy the experience.</p>
-
+                    features 1000+ interactive childrens books in our app on English, Norwegian, Danish, Swedish and Chinese. We
+                    are paying special attention to each and every book released and we take pride in the knowing that both,
+                    the parents and children will enjoy the experience.</p>
 
                 <p>Always on the lookout for talented individuals, we bring together the work of authors, illustrators,
                     narrators and translators from all over the globe, sewing them seamlessly together into unique
-                    pieces of
-                    our own and delivering them to children all around the world through the library apps. Our books are
-                    to
-                    a child what art galleries are to an adult: a collection of masterpieces, finely curated by our
+                    pieces of our own and delivering them to children all around the world through the library apps. Our books are
+                    to a child what art galleries are to an adult: a collection of masterpieces, finely curated by our
                     dedicated team of professionals.</p>
 
 
                 <h2 class="section-subheader">Mission</h2>
 
-                <p>Our mission is to create an absolute digital reading platform for young children utilizing todays
+                <p>Our mission is to create an absolute digital reading platform for young children utilizing today's
                     technology in order to learn new languages.</p>
 
                 <h2 class="section-subheader">Vision</h2>
@@ -91,71 +88,70 @@
                 <p>Transforming young childhood education through the power of technology.</p>
 
                 <p>The parent company behind Pickatale is Wisdom Edition AS. It was founded in January 2013 in Norway.
-                    Today
-                    our family counts over 90 employees with offices based in Beijing, Shanghai and Skopje.</p>
+                    Today our family counts over 90 employees with offices based in Beijing, Shanghai and Skopje.</p>
 
                 <p>During the years we have developed successful partnerships with content owners, including the Walt
-                    Disney
-                    Company and BabyFirst. These co-developed projects include co-branded library apps for China and
-                    Global
-                    markets, and premium offerings in Pickatales library app.</p>
+                    Disney Company and BabyFirst. These co-developed projects include co-branded library apps for China and
+                    Global markets, and premium offerings in Pickatale's library app.</p>
 
                 <h2 class="section-subheader">What's next</h2>
 
                 <p>Pickatale v2.0 is an adaptive learning system developed to assist parents and teachers with
-                    personalized
-                    lesson plans to teach English through a variety of books, games, media and assessments. Parents and
-                    teachers will get access to comprehensive reporting and recommendations that improve the learning
-                    process. It is scheduled to launch in Q2 2017 and will become a digital platform for media &
-                    learning
+                    personalized lesson plans to teach English through a variety of books, games, media and assessments.
+                    Parents and teachers will get access to comprehensive reporting and recommendations that improve the learning
+                    process. It is scheduled to launch in Q2 2017 and will become a digital platform for media & learning
                     app distribution globally.</p>
 
                 <p>While the Wisdom Edition AS focuses on new technology development and extending into new markets such
-                    as
-                    USA and Europe, the Chinese joint venture, Qudu Edu has built a substantial distribution network in
+                    as USA and Europe, the Chinese joint venture, Qudu Edu has built a substantial distribution network in
                     China. Pickatale ha over 10.000 schools and 12.000 kindergartens.</p>
 
-                <h2 class="section-header text-center red">Want to learn more about us?<br>Get in touch</h2>
-
-                <form class="contact-form">
-                    <div class="form-group col-xs-12 col-sm-6">
-                        <label for="nameInput">Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="Name">
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6">
-                        <label for="emailInput">Email</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="Email">
-                    </div>
-                    {{--<div class="form-group col-xs-12 col-sm-6">--}}
-                        {{--<label class="custom">Type of Contact</label>--}}
-                        {{--<div class="form-control">--}}
-                        {{--<div class="selectdiv">--}}
-                            {{--<select>--}}
-                                {{--<option value="customers">Customers</option>--}}
-                            {{--</select>--}}
-                        {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-
-                    {{--<div class="form-group col-xs-12 col-sm-6">--}}
-                        {{--<div class="selectdiv">--}}
-                            {{--<select>--}}
-                                {{--<option value="parent">Parent</option>--}}
-                            {{--</select>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    <div class="form-group col-xs-12">
-                        <label for="subjectInput">Subject</label>
-                        <input type="text" class="form-control" id="subjectInput" placeholder="Subject">
-                    </div>
-                    <div class="form-group col-xs-12">
-                        <label for="messageInput">Message</label>
-                        <textarea id="messageInput" name="message" class="form-control" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group col-xs-12 text-center">
-                    <button type="submit" class="btn custom-btn pink-btn">Submit</button>
-                    </div>
-                </form>
+                <h2 class="section-header text-center red" style="margin-top: 75px;">Want to learn more about us?<br>Get
+                    in touch</h2>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+                    <form>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label for="nameInput">Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label for="emailInput">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label class="custom" for="typeInput1">Type of Contact</label>
+                            <select id="typeInput1" class="select2 form-control">
+                                <option value="customers">Customers</option>
+                                <option value="developers">Developers</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label class="custom" for="typeInput2">&nbsp;</label>
+                            <select id="typeInput2" class="select2 form-control">
+                                <option value="parent">Parent</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xs-12">
+                            <label for="subjectInput">Subject</label>
+                            <input type="text" class="form-control" id="subjectInput" placeholder="Subject">
+                        </div>
+                        <div class="form-group col-xs-12">
+                            <label for="messageInput">Message</label>
+                        <textarea id="messageInput" rows="10" name="message" class="form-control"
+                                  placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group col-xs-12 text-center">
+                            <button type="submit" class="btn custom-btn pink-btn">Submit</button>
+                        </div>
+                    </form>
+                    <p>&nbsp;</p>
+                </div>
             </div>
         </div>
     </div>

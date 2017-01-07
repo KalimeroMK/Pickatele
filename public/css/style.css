@@ -870,8 +870,13 @@ ul.pagination, ul.pager {
 
 .about-us p {
     color: #7ccaea;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-us .section-header {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .about-us .section-subheader {
@@ -880,6 +885,35 @@ ul.pagination, ul.pager {
     font-size: 25px;
     font-weight: 600;
     text-transform: inherit;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.about-us-pattern-1 {
+    background-image: url('../assets/images/about-pattern-1.png');
+    background-repeat: no-repeat;
+    height: 373px;
+    position: absolute;
+    width: 143px;
+    margin-top: 100px;
+    z-index: 0;
+}
+
+.about-us-pattern-2 {
+    background-image: url('../assets/images/about-pattern-2.png');
+    background-repeat: no-repeat;
+    height: 379px;
+    position: absolute;
+    width: 117px;
+    right: 0;
+    margin-top: 680px;
+    z-index: 0;
+}
+
+.contact-form {
+    background-image: url('../assets/images/about-pattern-3.png');
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 
 .contact-form label {
@@ -889,6 +923,66 @@ ul.pagination, ul.pager {
 }
 
 .contact-form input, .contact-form textarea {
-    background-color: #ababab;
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    box-shadow: none;
+    color: #a2a2a2;
+    height: 50px;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.select2-container--default .select2-selection--single{
+    padding:10px 5px;
+    height: 50px;
+    position: relative;
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    box-shadow: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #a2a2a2;
+}
+
+.select2-results__option, .select2-results__option--highlighted {
+    height: 50px;
+    padding:10px 15px;
+    background-color: #eeeeee;
+    border-top: 1px;
+    color: #a2a2a2;
+}
+
+
+.select2-container--default .select2-results__option[aria-selected="true"] {
+    background-color: #eeeeee;
+    color: #a2a2a2;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #fa2557;
+    border-color: #fa2557;
     color: #fff;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 40px;
+    color: #a2a2a2;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 0;
+    height: 50px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+span.select2-selection.select2-selection--single {
+    outline: none;
+}
+
+.select2-dropdown {
+    border: none;
 }

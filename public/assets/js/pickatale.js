@@ -8,4 +8,9 @@ $( document ).ready(function() {
             $(".slider-handle").text(slideEvt.value);
         });
 
+        $('select.select2').select2({
+            minimumResultsForSearch: -1
+        });
+        $('b[role="presentation"]').hide();
+        $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 });
