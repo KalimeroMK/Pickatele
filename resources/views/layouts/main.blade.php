@@ -146,6 +146,8 @@
                             <li><a href="http://abale.com">Parents</a></li>
                             <li><a href="http://abale.com">Educators</a></li>
                             <li><a href="http://abale.com">Partner</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/copyright-policy">Copyright Policy</a></li>
                         </ul>
                         <ul class="pull-right" style="margin-right:20px">
                             <li><a href="/careers">Career</a></li>
@@ -153,8 +155,6 @@
                             <li><a href="http://abale.com">Blog</a></li>
                             <li><a href="http://abale.com">Help Center</a></li>
                             <li><a href="/terms">Terms and Conditions</a></li>
-                            <li><a href="/privacy">Privacy Policy</a></li>
-                            <li><a href="/copyright-policy">Copyright Policy</a></li>
                             <li><a href="/about">Contact Us</a></li>
                         </ul>
                     </div>

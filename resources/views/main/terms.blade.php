@@ -10,10 +10,11 @@
                             <p>&nbsp;</p>
                             <h2>1. Introduction</h2>
                             <p>
-                                Thanks for choosing Pickatale <strong>("Pickatale", "we", "us", "our")</strong>. By using the Pickatale service, websites, or software applications (together, the "Pickatale Service" or "Service"), including by purchasing or receiving <a href="http://www.pickatale.com/en/index.php?controller=outputpage&amp;tpl=aboutUs">Codes or Limited Offers</a>, you are entering into a binding contract with Wisdom Edition AS, sole proprietor of the Pickatale Service. Your agreement with us includes these Terms and Conditions of Use ("Terms") and our <a href="http://www.pickatale.com/en/index.php?controller=outputpage&amp;tpl=privacyPolicy">Privacy Policy</a> (together the <strong>"Agreements"</strong>). If you don't agree with these Terms, then please don't use the Service.
+                                Thanks for choosing Pickatale <strong>("Pickatale", "we", "us", "our")</strong>. By using the Pickatale service, websites, or software applications (together, the "Pickatale Service" or "Service"), including by purchasing or receiving <a href="/about">Codes or Limited Offers</a>, you are entering into a binding contract with Wisdom Edition AS, sole proprietor of the Pickatale Service. Your agreement with us includes these Terms and Conditions of Use ("Terms") and our <a href="/privacy">Privacy Policy</a> (together the <strong>"Agreements"</strong>). If you don't agree with these Terms, then please don't use the Service.
                             </p>
                             <p>
-                                We're pleased to make our Service available to you. The Pickatale Service includes social and interactive features. Learn more about the Pickatale Service <a href="http://www.pickatale.com/en/index.php?controller=outputpage&amp;tpl=howItsWork">here</a>.
+                                We're pleased to make our Service available to you. The Pickatale Service includes social and interactive features.
+                                {{--Learn more about the Pickatale Service <a href="http://www.pickatale.com/en/index.php?controller=outputpage&amp;tpl=howItsWork">here</a>.--}}
                             </p>
                             <p>
                                 In order to use the Pickatale Service, you need to (a) be 18 or older, or be 13 or older and have your parent or guardian's consent to these Terms, (b) have the power to enter a binding contract with us and are not barred from doing so under any applicable laws You also warrant that any registration information that you submit to Pickatale is true, accurate and complete, and you agree to keep it that way at all times.
@@ -84,11 +85,11 @@
                                 Please be thoughtful about what you make public on Pickatale. The Pickatale Service includes the ability to share content. Remember that shared or publicly available information may be used and re-shared by other users on Pickatale or across the web, so please use Pickatale carefully and manage your account settings regularly. Pickatale has no responsibility for your choices to make any actions or material public on the Service.
                             </p>
                             <p>
-                                Your password protects your user account, and you are solely responsible for keeping your password confidential and secure. You understand that you are responsible for all use of your username and password on the Service. If your username or password is lost or stolen, or if you believe there has been unauthorized access to your account by third parties, please <a href="http://www.pickatale.com/en/index.php?controller=outputpage&amp;tpl=contactUs">notify us</a> immediately and change your password as soon as possible.
+                                Your password protects your user account, and you are solely responsible for keeping your password confidential and secure. You understand that you are responsible for all use of your username and password on the Service. If your username or password is lost or stolen, or if you believe there has been unauthorized access to your account by third parties, please <a href="/about">notify us</a> immediately and change your password as soon as possible.
                             </p>
                             <h2>9. Copyright infringement</h2>
                             <p>
-                                Pickatale respects the rights of intellectual property owners. For details on Pickatale,s copyright policy, please <a href="http://www.pickatale.com/en/index.php?controller=outputpage&amp;tpl=copyrightPolicy">click here</a>.
+                                Pickatale respects the rights of intellectual property owners. For details on Pickatale,s copyright policy, please <a href="/copyright-policy">click here</a>.
                             </p>
                             <h2>10. Technology limitations and modifications</h2>
                             <p>
@@ -106,7 +107,7 @@
                             </p>
                             <h2>12. Term and termination</h2>
                             <p>
-                                These Terms will continue to apply to you until terminated by either you or Pickatale. Pickatale may terminate the Terms or suspend your access to the Pickatale Service at any time, including in the event of your actual or suspected unauthorised use of the Pickatale Service or non-compliance with the Terms. If you or Pickatale terminate the Terms, or if Pickatale suspends your access to the Pickatale Service, you agree that Pickatale shall have no liability or responsibility to you and Pickatale will not refund any amounts that you have already paid, to the fullest extent permitted under applicable law. To learn how to terminate your Pickatale account, please <a href="http://www.pickatale.com/en/index.php?controller=outputpage&amp;tpl=termofCondition">go here</a>.
+                                These Terms will continue to apply to you until terminated by either you or Pickatale. Pickatale may terminate the Terms or suspend your access to the Pickatale Service at any time, including in the event of your actual or suspected unauthorised use of the Pickatale Service or non-compliance with the Terms. If you or Pickatale terminate the Terms, or if Pickatale suspends your access to the Pickatale Service, you agree that Pickatale shall have no liability or responsibility to you and Pickatale will not refund any amounts that you have already paid, to the fullest extent permitted under applicable law. To learn how to terminate your Pickatale account, please <a href="/terms">go here</a>.
                             </p>
                             <h2>13. Warranty</h2>
                             <p>
