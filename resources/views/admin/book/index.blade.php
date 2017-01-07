@@ -31,6 +31,10 @@
                                                     <span class="time"><a href="/admin/sliders/{{ $book->id }}/book" class="btn btn-info">Add gallery</a></span>
                                                 </div>
 
+                                                <div class="ticket-time col-lg-3 col-sm-6 col-xs-12">
+                                                    <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                                    <span class="time">Gallery images: {{ $book->images()->count() }}</span>
+                                                </div>
 
 
                                                 <div class="ticket-state bg-palegreen">

@@ -57,4 +57,9 @@ class Books extends Model
     {
         return $this->belongsTo('App\Workflow', 'user_id');
     }
+
+    public function images()
+    {
+        return $this->belongsTo('App\Sliders','id','book_id');
+    }
 }
