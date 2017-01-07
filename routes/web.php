@@ -20,8 +20,8 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Route::get('/', 'SettingsController@index');
     Route::get('/settings', 'SettingsController@index');
     Route::post('/settings/store', 'SettingsController@store')->name('admin.settings.store');
-    Route::get('/settings/{id}/edit', 'HomeController@edit')->name('admin.settings.edit');
-    Route::post('/settings/update', 'HomeController@update')->name('admin.settings.update');
+    Route::get('/settings/{id}/edit', 'SettingsController@edit')->name('admin.settings.edit');
+    Route::post('/settings/update', 'SettingsController@update')->name('admin.settings.update');
     Route::resource('/users', 'UserController');
     Route::resource('/staticpage', 'StaticpageController');
     Route::resource('/slider', 'SliderController');
