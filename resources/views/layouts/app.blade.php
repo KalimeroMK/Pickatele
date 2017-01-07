@@ -222,7 +222,7 @@
                             </a>
                         </li>
                         <li ui-sref-active="active">
-                            <a ui-sref="app.alerts" href="#/app/alerts">
+                            <a href="/admin/partner">
                                 <span class="menu-text">Partner</span>
                             </a>
                         </li>

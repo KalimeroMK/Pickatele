@@ -25,6 +25,7 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Route::resource('/mainpages', 'MainpagesController');
     Route::resource('/genre', 'GenreController');
     Route::resource('/bundle', 'BundleController');
+    Route::resource('/partner', 'PartnerController');
 });
 
 

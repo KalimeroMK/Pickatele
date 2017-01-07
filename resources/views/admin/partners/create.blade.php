@@ -19,7 +19,9 @@
                     <div class="widget-body">
                         <div id="horizontal-form">
 
-                            {{ Form::model('bundle', array('route' => array('bundle.store'), 'method' => 'POST', 'files'=>true)) }}
+                            {{ Form::model('partner', array('route' => array('partner.store'), 'method' => 'POST', 'files'=>true)) }}
+
+
 
                             <div class="input-group{{ $errors->has('image') ? ' has-error' : '' }}">
 							<span class="input-group-btn">
@@ -47,14 +49,6 @@
                             </div>
                             @if ($errors->has('link')) <p
                                     class="alert alert-danger">{{ $errors->first('link') }}</p> @endif
-
-                            <div class="form-group">
-                                <label for="price">Price</label>
-                                <input type="text" name="price" class="form-control">
-                            </div>
-                            @if ($errors->has('price')) <p
-                                    class="alert alert-danger">{{ $errors->first('price') }}</p> @endif
-
 
                             <div class="form-group">
                                 <label for="description">Description</label>
