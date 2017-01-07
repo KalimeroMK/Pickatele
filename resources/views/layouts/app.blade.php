@@ -227,7 +227,7 @@
                             </a>
                         </li>
                         <li ui-sref-active="active">
-                            <a ui-sref="app.modals" href="#/app/modals">
+                            <a href="/admin/levels">
                                 <span class="menu-text">Level</span>
                             </a>
                         </li>
