@@ -7,8 +7,7 @@
 
     <script>
 
-        $(document).ready(function()
-        {
+        $(document).ready(function () {
 // Google Maps
 
 
@@ -27,11 +26,11 @@
             var searchBox = new google.maps.places.SearchBox(input);
             map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
-            google.maps.event.addListener(searchBox,'places_changed',function() {
+            google.maps.event.addListener(searchBox, 'places_changed', function () {
                 var places = searchBox.getPlaces();
                 var bounds = new google.maps.LatLngBounds();
                 var i, place;
-                for(i=0;place=places[i];i++) {
+                for (i = 0; place = places[i]; i++) {
                     bounds.extend(place.geometry.location);
                     marker.setPosition(place.geometry.location);
                 }
@@ -40,7 +39,7 @@
 
             });
 
-            google.maps.event.addListener(marker,'position_changed',function() {
+            google.maps.event.addListener(marker, 'position_changed', function () {
                 var lat = marker.getPosition().lat();
                 var lng = marker.getPosition().lng();
 
@@ -83,10 +82,11 @@
 
                         <div class="img-refferal">
                             @if(!!$settings->logo)
-                                <img class="img-responsive" src="/assets/img/logo/thumbnails/{{ $settings->logo }}" alt="{{ $settings->title }}"/>
+                                <img class="img-responsive" src="/assets/img/logo/thumbnails/{{ $settings->logo }}"
+                                     alt="{{ $settings->title }}"/>
                             @endif
                         </div>
-                        <br />
+                        <br/>
 
 
                         <div id="horizontal-form">
@@ -103,14 +103,16 @@
                         </span>
                                 <input type="text" class="form-control" readonly="">
                             </div>
-                            <br />
-                            @if ($errors->has('image')) <p class="alert alert-danger">{{ $errors->first('image') }}</p> @endif
+                            <br/>
+                            @if ($errors->has('image')) <p
+                                    class="alert alert-danger">{{ $errors->first('image') }}</p> @endif
 
                             <div class="form-group">
                                 <label for="title">Наслов</label>
                                 <input type="text" name="title" class="form-control" value="{{ $settings->title }}">
                             </div>
-                            @if ($errors->has('title')) <p class="alert alert-danger">{{ $errors->first('title') }}</p> @endif
+                            @if ($errors->has('title')) <p
+                                    class="alert alert-danger">{{ $errors->first('title') }}</p> @endif
 
                             <div class="form-group">
                                 <label>Главна адреса: </label>
@@ -150,7 +152,8 @@
 
                             <div class="form-group">
                                 <label>Facebook: </label>
-                                <input name="facebook" type="text" class="form-control" value="{{ $settings->facebook }}">
+                                <input name="facebook" type="text" class="form-control"
+                                       value="{{ $settings->facebook }}">
                             </div>
                             @if ($errors->has('facebook')) <p
                                     class="alert alert-danger">{{ $errors->first('facebook') }}</p> @endif
@@ -164,7 +167,8 @@
 
                             <div class="form-group">
                                 <label>LinkedIn: </label>
-                                <input name="linkedin" type="text" class="form-control" value="{{ $settings->linkedin }}">
+                                <input name="linkedin" type="text" class="form-control"
+                                       value="{{ $settings->linkedin }}">
                             </div>
                             @if ($errors->has('linkedin')) <p
                                     class="alert alert-danger">{{ $errors->first('linkedin') }}</p> @endif
@@ -192,7 +196,8 @@
 
                             <div class="form-group">
                                 <label>Pinterest: </label>
-                                <input name="pinterest" type="text" class="form-control" value="{{ $settings->pinterest }}">
+                                <input name="pinterest" type="text" class="form-control"
+                                       value="{{ $settings->pinterest }}">
                             </div>
                             @if ($errors->has('pinterest')) <p
                                     class="alert alert-danger">{{ $errors->first('pinterest') }}</p> @endif
@@ -205,17 +210,19 @@
 
                             <div class="form-group">
                                 <label for="description">Опис</label>
-                                <textarea class="ckeditor" id="elm3" name="description">{{ $settings->description }}</textarea>
+                                <textarea class="ckeditor" id="elm3"
+                                          name="description">{{ $settings->description }}</textarea>
                             </div>
-                            @if ($errors->has('description')) <p class="alert alert-danger">{{ $errors->first('description') }}</p> @endif
-
+                            @if ($errors->has('description')) <p
+                                    class="alert alert-danger">{{ $errors->first('description') }}</p> @endif
 
 
                             <div class="form-group">
                                 <label for="user">Translator</label>
                                 <select name="user_id" id="user" class="form-control">
                                     @foreach ($users as $user)
-                                        <option value="{{ $user->id }}" @if($settings->user_id == $user->id) selected @endif >{{ $user->name }}</option>
+                                        <option value="{{ $user->id }}"
+                                                @if($settings->user_id == $user->id) selected @endif >{{ $user->name }}</option>
                                     @endforeach
 
                                 </select>
@@ -226,7 +233,9 @@
                                 <label>Workflow: </label>
                                 @foreach($workflows as $workflow)
                                     <label>
-                                        <input name="workflow_id" type="radio" class="form-control {{ $workflow->color }}" value="{{ $workflow->id }}" @if($workflow->id  == $settings->workflow_id) checked @endif>
+                                        <input name="workflow_id" type="radio"
+                                               class="form-control {{ $workflow->color }}" value="{{ $workflow->id }}"
+                                               @if($workflow->id  == $settings->workflow_id) checked @endif>
                                         <span class="text"> {{ $workflow->name }}</span>
                                     </label>
                                 @endforeach
@@ -242,10 +251,10 @@
                             <input type="hidden" id="lng" class="form-control" name="lng" value="{{ $settings->lng }}">
                             <input type="hidden" id="id" class="form-control" name="id" value="{{ $settings->id }}">
 
-                            <button type="submit" class="btn btn-labeled shiny btn-warning btn-large"><i class="btn-label fa fa-plus"></i> Update</button>
+                            <button type="submit" class="btn btn-labeled shiny btn-warning btn-large"><i
+                                        class="btn-label fa fa-plus"></i> Update
+                            </button>
                             {!! Form::close() !!}
-
-
 
 
                         </div>

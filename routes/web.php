@@ -31,6 +31,7 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Route::resource('/bundle', 'BundleController');
     Route::resource('/partner', 'PartnerController');
     Route::resource('/levels', 'LevelsController');
+    Route::resource('/book', 'BooksController');
 });
 
 

@@ -231,6 +231,11 @@
                                 <span class="menu-text">Level</span>
                             </a>
                         </li>
+                        <li ui-sref-active="active">
+                            <a href="/admin/book">
+                                <span class="menu-text">Books</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
