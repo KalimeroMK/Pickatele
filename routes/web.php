@@ -17,7 +17,9 @@
 Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Auth::routes();
     Route::get('logout', 'Auth\LoginController@logout');
-    Route::get('/', 'UserController@index');
+    Route::get('/', 'SettingsController@index');
+    Route::get('/settings', 'SettingsController@index');
+    Route::post('/settings/store', 'SettingsController@store')->name('admin.settings.store');
     Route::resource('/users', 'UserController');
     Route::resource('/staticpage', 'StaticpageController');
     Route::resource('/slider', 'SliderController');
