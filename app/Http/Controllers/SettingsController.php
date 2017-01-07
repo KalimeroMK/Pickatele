@@ -108,7 +108,7 @@ class SettingsController extends Controller
         $workflows = Workflow::all();
         $users = User::all();
         $data = ['users' => $users, "settings" => $settings, 'workflows' => $workflows];
-        return view('admin.editsettings')->with($data);
+        return view('admin.settings.edit')->with($data);
     }
 
     public function update(Request $request)
