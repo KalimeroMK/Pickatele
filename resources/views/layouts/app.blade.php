@@ -212,7 +212,7 @@
                     <ul class="submenu" style="display: none;">
 
                         <li ui-sref-active="active">
-                            <a ui-sref="app.tabs" href="#/app/tabs">
+                            <a href="/admin/genre">
                                 <span class="menu-text">Genre</span>
                             </a>
                         </li>
