@@ -161,12 +161,10 @@
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <h6 class="section-header">Help Center</h6>
-                        <p class="qa">Q: Lorem ipsum dolor sit amet, adipiscing elit. <br>Lorem ipsum dolor<br>
-                            A: Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-
-
-                        <p class="qa">Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                            A: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        @foreach($faqs as $faq)
+                        <p class="qa">Q: {!! $faq->question !!} <br><br>
+                            A: {!! $faq->answer !!}</p>
+                        @endforeach
 
                         <a class="btn custom-btn pink-btn">Help Center</a>
                     </div>
