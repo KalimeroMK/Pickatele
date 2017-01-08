@@ -24,6 +24,10 @@ $( document ).ready(function() {
             }
         });
 
+        $.post( "/books", data, function( res ) {
+            console.log(res);
+            //$( ".result" ).html( data );
+        });
         console.log('data', data);
     };
 

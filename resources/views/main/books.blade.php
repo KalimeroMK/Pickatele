@@ -45,12 +45,7 @@
                 <div class="row text-center">
                     <div class="form-group col-sm-4">
                         <label class="custom">Genre</label>
-                        <select name="genre" class="select2 red form-control" style="width:200px">
-                            <option value="">Select Genre</option>
-                            <option value="Adventure">Adventure</option>
-                            <option value="Romance">Romance</option>
-                            <option value="Comedy">Comedy</option>
-                        </select>
+                        {{ Form::select('genre', $genres, 0, ['class' => 'select2 red form-control']) }}
                     </div>
                     <div class="form-group col-sm-4 age-range">
                         <label class="custom" for="age-range">Age</label>
@@ -62,11 +57,8 @@
                     </div>
                     <div class="form-group col-sm-4">
                         <label class="custom">Partner</label>
-                        <select name="partner" class="select2 red form-control">
-                            <option value="">Select Partner</option>
-                            <option value="Disney">Disney</option>
-                            <option value="BabyFirst">BabyFirst</option>
-                        </select>
+                        {{ Form::select('partner', $partners, 0, ['class' => 'select2 red form-control']) }}
+
                     </div>
                 </div>
                 <div class="row text-center">
@@ -81,20 +73,12 @@
 
                     <div class="form-group col-sm-4">
                         <label class="custom">Bundle</label>
-                        <select name="bundle" class="select2 red form-control">
-                            <option value="">Select Bundle</option>
-                            <option value="1">Bundle 1</option>
-                            <option value="2">Bundle 2</option>
-                        </select>
+                        {{ Form::select('bundle', $bundles, 0, ['class' => 'select2 red form-control']) }}
                     </div>
 
                     <div class="form-group col-sm-4">
                         <label class="custom">Level</label>
-                        <select name="level" class="select2 red form-control">
-                            <option value="">Select Level</option>
-                            <option value="1">Level 1</option>
-                            <option value="2">Level 2</option>
-                        </select>
+                        {{ Form::select('level', $levels, 0, ['class' => 'select2 red form-control']) }}
                     </div>
                 </div>
 
@@ -157,14 +141,16 @@
                     </div>
                 </div>
 
-                <div class="row loading text-center pv-30">
-                    <div class="spinner">
-                        <div class="bounce1"></div>
-                        <div class="bounce2"></div>
-                        <div class="bounce3"></div>
-                    </div>
-                </div>
+                {!! csrf_field() !!}
             </form>
+
+            <div class="row loading text-center pv-30">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
         </div>
     </div>
 

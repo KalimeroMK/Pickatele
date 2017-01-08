@@ -9,6 +9,11 @@ use App\Slider as Slider;
 use App\Script as Script;
 use App\Books as Books;
 use App\Sliders as Sliders;
+use App\Genre as Genre;
+use App\Country as Country;
+use App\Bundle as Bundle;
+use App\Levels as Level;
+use App\Partner as Partner;
 
 class BookController extends Controller
 {
@@ -19,11 +24,41 @@ class BookController extends Controller
      */
     public function index()
     {
+        $genres = Genre::pluck('name', 'id');
+        $countries = Country::pluck('name', 'id');
+
+        $bundles = Bundle::pluck('title', 'id');
+        $levels = Level::pluck('name', 'id');
+        $partners = Partner::pluck('title', 'id');
+
         $books = Books::orderBy('created_at', 'asc')->paginate(12);
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $data = ["books" => $books,"scripts" => $scripts, "mainpages" => $mainpages];
+        $data = [
+            "books" => $books,"scripts" => $scripts, "mainpages" => $mainpages, "levels" => $levels,
+            "genres" => $genres, "countries" => $countries, "bundles" => $bundles, "partners" => $partners
+        ];
         return view('main.books')->with($data);
+    }
+
+    public function filter(Request $request) {
+
+        $builder = Books::query();
+        $term = $request->all();
+        if(!empty($term['genre'])){
+            $builder->where('categories_id','=',$term['genre']);
+        }
+        if(!empty($term['partner'])){
+            $builder->where('partner_id','=',$term['partner']);
+        }
+        if(!empty($term['bundle'])){
+            $builder->where('bundle_id','=',$term['bundle']);
+        }
+        if(!empty($term['level'])){
+            $builder->where('level_id','=',$term['level']);
+        }
+        $result = $builder->orderBy('id')->get();
+        // TODO finish up gavron
     }
 
     public function getBook($slug)
