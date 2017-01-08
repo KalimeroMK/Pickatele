@@ -50,23 +50,16 @@ $( document ).ready(function() {
 
 // SELECT2
         $('select.select2').select2({
-            minimumResultsForSearch: -1,
-            //width: '100%'
+            minimumResultsForSearch: -1
         });
+
         $('b[role="presentation"]').hide();
         $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 
-    /*$('.owl-carousel').owlCarousel({
-        navigation: true, // Show next and prev buttons
-        slideSpeed: 300,
-        pagination:false,
-        singleItem: true, transitionStyle: "fade",
-        navigationText: ["", ""]
-        }
-    );*/
+// IMAGE CAROUSEL
     var owlOne = $(".owl-carousel").owlCarousel({
-        items: 4,
-        margin: 30
+        //items: 6,
+        margin: 20
     });
 
     $(".next").click(function(e){

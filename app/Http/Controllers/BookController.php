@@ -22,11 +22,18 @@ class BookController extends Controller
     public function index()
     {
         $genres = Genre::pluck('name', 'id');
+        $genres->prepend('Select Genre');
         $countries = Country::pluck('name', 'id');
+        $countries->prepend('Select Country');
 
         $bundles = Bundle::pluck('title', 'id');
+        $bundles->prepend('Select Bundles');
+
         $levels = Level::pluck('name', 'id');
+        $levels->prepend('Select Levels');
+
         $partners = Partner::pluck('title', 'id');
+        $partners->prepend('Select Partner');
 
         $books = Books::orderBy('created_at', 'asc')->paginate(12);
         $mainpages = Mainpages::all();
