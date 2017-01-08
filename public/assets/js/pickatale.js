@@ -55,6 +55,26 @@ $( document ).ready(function() {
         $('b[role="presentation"]').hide();
         $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 
+    /*$('.owl-carousel').owlCarousel({
+        navigation: true, // Show next and prev buttons
+        slideSpeed: 300,
+        pagination:false,
+        singleItem: true, transitionStyle: "fade",
+        navigationText: ["", ""]
+        }
+    );*/
+    var owlOne = $(".owl-carousel").owlCarousel({
+        items: 4,
+        margin: 30
+    });
 
+    $(".next").click(function(e){
+        e.preventDefault();
+        owlOne.trigger('owl.next');
+    });
 
+    $(".prev").click(function(e){
+        e.preventDefault();
+        owlOne.trigger('owl.prev');
+    });
 });
