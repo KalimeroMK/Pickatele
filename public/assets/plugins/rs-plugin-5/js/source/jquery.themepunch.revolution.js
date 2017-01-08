@@ -17,7 +17,7 @@
 				responsiveLevels:4064,					// Single or Array for Responsive Levels i.e.: 4064 or i.e. [2048, 1024, 768, 480]					
 				visibilityLevels:[2048,1024,778,480],	// Single or Array for Responsive Visibility Levels i.e.: 4064 or i.e. [2048, 1024, 768, 480]					
 				gridwidth:960,							// Single or Array i.e. 960 or [960, 840,760,460]
-				gridheight:500,							// Single or Array i.e. 500 or [500, 450,400,350]
+				gridheight:750,							// Single or Array i.e. 500 or [500, 450,400,350]
 				minHeight:0,
 				autoHeight:"off",					
 				sliderType : "standard",				// standard, carousel, hero					
