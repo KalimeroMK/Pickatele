@@ -14,6 +14,8 @@ use App\Country as Country;
 use App\Bundle as Bundle;
 use App\Levels as Level;
 use App\Partner as Partner;
+use Illuminate\Contracts\Pagination;
+use DB;
 
 class BookController extends Controller
 {
@@ -35,14 +37,14 @@ class BookController extends Controller
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
         $data = [
-            "books" => $books,"scripts" => $scripts, "mainpages" => $mainpages, "levels" => $levels,
+            "books" => $books, "scripts" => $scripts, "mainpages" => $mainpages, "levels" => $levels,
             "genres" => $genres, "countries" => $countries, "bundles" => $bundles, "partners" => $partners
         ];
         return view('main.books')->with($data);
     }
 
-    public function filter(Request $request) {
-
+    public function filter(Request $request)
+    {
         $builder = Books::query();
         $term = $request->all();
         if(!empty($term['genre'])){
@@ -57,23 +59,28 @@ class BookController extends Controller
         if(!empty($term['level'])){
             $builder->where('level_id','=',$term['level']);
         }
-        $result = $builder->orderBy('id')->get();
-        // TODO finish up gavron
+        if(!empty($term['age-range'])){
+            $builder->where('age','>=',$term['age-range']);
+        }
+        if(!empty($term['bundle'])){
+            $builder->where('bundle_id','>=',$term['bundle']);
+        }
+        $result = $builder->orderBy('id')->paginate(12);
+        $data = ["books" => $result, "bookpaginator" => $result];
+        return view('main.books.ajax')->with($data);
     }
 
     public function getBook($slug)
     {
-
         $book = Books::where('slug', '=', $slug)->first();
-
         $partnerid = $book[0]['partner_id'];
         $bookid = $book->id;
         $bookimages = Sliders::where('book_id', '=', $bookid)->get();
         $books = Books::where('partner_id', '=', $partnerid)->get();
         $relatedbook =
             Books::where('categories_id', '=', $book->categories_id)
-            ->where('id', '!=', $book->id)
-            ->get();
+                ->where('id', '!=', $book->id)
+                ->get();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
         $data = ["scripts" => $scripts, "mainpages" => $mainpages, "book" => $book, "books" => $books, "bookimages" => $bookimages, "relatedbooks" => $relatedbook];
