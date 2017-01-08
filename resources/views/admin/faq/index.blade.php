@@ -32,11 +32,11 @@
                                             <a href="/admin/faq/{{ $faq->id }}" class="info">
                                                 <div class="ticket-time  col-lg-5 col-sm-12 col-xs-12">
                                                     <div class="divider hidden-md hidden-sm hidden-xs"></div>
-                                                    <span class="time">{{str_limit($faq->question, 200)}} @if ($faq->status == 1) <i class="fa fa-check"></i> @else <i class="fa fa-times"></i> @endif</span>
+                                                    <span class="time">{{str_limit($faq->question, 50, '...')}} @if ($faq->status == 1) <i class="fa fa-check"></i> @else <i class="fa fa-times"></i> @endif</span>
                                                 </div>
                                                 <div class="ticket-type  col-lg-5 col-sm-12 col-xs-12">
                                                     <span class="divider hidden-xs"></span>
-                                                    <span class="">{{ substr(str_limit($faq->answer, 200), 0, 100) }}</span>
+                                                    <span class="">{{ substr(str_limit($faq->answer, 50, '...'), 0, 100) }}</span>
                                                 </div>
                                                 <div class="ticket-type  col-lg-2 col-sm-12 col-xs-12">
 

@@ -378,8 +378,9 @@ div.tparrows {
 }
 
 .slider-banner-fullwidth-big-height {
-    height: 750px !important;
-    max-height: 750px !important;
+    height: 750px;
+    max-height: 750px;
+
 }
 
 .bundles .section-header {

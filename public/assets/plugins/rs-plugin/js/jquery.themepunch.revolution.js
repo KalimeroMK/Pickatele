@@ -27,7 +27,7 @@
 				////////////////////////////////
 				var defaults = {
 					delay:9000,
-					startheight:500,
+					startheight:750,
 					startwidth:960,
 					fullScreenAlignForce:"off",
 					autoHeight:"off",
