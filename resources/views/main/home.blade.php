@@ -32,6 +32,7 @@
                              data-y="0"
                              data-speed="500"
                              data-start="1000"
+                             start-height="750"
                              data-easing="easeOutQuad"><img src="/assets/img/slider/{{ $slider->image }}"
                                                             alt="{{ $slider->title }}"/>
                         </div>
@@ -127,5 +128,6 @@
         </div>
     </div>
 </section>
+
 
 @endsection
