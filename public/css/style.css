@@ -512,10 +512,6 @@ ul.store-links img {
     width: 100px;
 }
 
-.books-filter select {
-    /*width: 200px;*/
-}
-
 .books-filter .letter-filter a.active {
     color: #fa2557;
 }

@@ -33,6 +33,24 @@
             border-color: #fa2557;
             color: #e4e4e7;
         }
+
+        .select2-container--default .select2-selection--single {
+            height: 40px;
+            padding:5px;
+        }
+        .select2-results__option, .select2-results__option--highlighted {
+            height: 40px;
+            padding: 5px;
+            padding-left: 15px;
+        }
+        
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 40px;
+            position: absolute;
+            top: -10px;
+            right: 0;
+        }
+
     </style>
 
 @endsection
