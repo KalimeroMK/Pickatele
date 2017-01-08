@@ -93,6 +93,17 @@
 
 
                             <div class="form-group">
+                                <label for="bundle">Genre</label>
+
+                                <select name="categories_id" id="bundle" class="form-control">
+                                    @foreach ($genres as $genre)
+                                        <option value="{{ $genre->id }}">@for ($i = 0; $i < $genre->depth; $i++)
+                                                - @endfor {{ $genre->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="country">Partner</label>
 
                                 <select name="partner_id" id="country" class="form-control">

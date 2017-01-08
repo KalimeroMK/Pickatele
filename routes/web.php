@@ -46,6 +46,7 @@ Route::get('/careers', 'MiniPageController@careers');
 Route::get('/terms', 'MiniPageController@terms');
 Route::get('/privacy', 'MiniPageController@privacy');
 Route::get('/books', 'BookController@index');
+Route::get('/book/{slug}', 'BookController@getBook');
 Route::get('/books/1', 'BookController@getBook');
 Route::get('/{slug}', 'HomeController@mainpages');
 

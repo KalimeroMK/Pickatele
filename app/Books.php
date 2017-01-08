@@ -19,6 +19,7 @@ class Books extends Model
         'description',
         'level_id',
         'country_id',
+        'categories_id',
         'partner_id',
         'bundle_id',
         'user_id',
@@ -41,6 +42,11 @@ class Books extends Model
     public function bundle()
     {
         return $this->belongsTo('App\User', 'bundle_id');
+    }
+
+    public function genre()
+    {
+        return $this->belongsTo('App\Genre', 'categories_id');
     }
 
     public function country()

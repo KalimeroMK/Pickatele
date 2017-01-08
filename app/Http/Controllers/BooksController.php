@@ -12,6 +12,7 @@ use App\User as User;
 use App\Country as Country;
 use App\Levels as Level;
 use App\Partner as Partner;
+use App\Genre as Genre;
 use Validator;
 use Intervention\Image\ImageManagerStatic as Image;
 use Input;
@@ -40,13 +41,14 @@ class BooksController extends Controller
     public function create()
     {
         $categories = Bundle::get();
+        $genre = Genre::get();
         $users = User::get();
         $countries = Country::all();
         $bundles = Bundle::all();
         $levels = Level::all();
         $partners = Partner::all();
         $workflows = Workflow::orderBy('id', 'desc')->get();
-        $data = ['categories' => $categories, 'users' => $users, 'workflows' => $workflows, 'countries' => $countries, 'bundles' => $bundles, 'levels' => $levels,'partners' => $partners];
+        $data = ['categories' => $categories, 'genres' => $genre, 'users' => $users, 'workflows' => $workflows, 'countries' => $countries, 'bundles' => $bundles, 'levels' => $levels,'partners' => $partners];
         return view('admin.book.create')->with($data);
     }
 
@@ -74,7 +76,7 @@ class BooksController extends Controller
         $request['title'] = strip_tags($request['title']);
         $request['slug'] = str_slug($request['title']);
 
-        $slug = Book::where('title', $request['title'])->get();
+        $slug = Book::where('title', htmlspecialchars_decode($request['title']))->get();
 
         (int)$count = count($slug);
 
@@ -154,13 +156,14 @@ class BooksController extends Controller
     {
         $book = Book::FindOrFail($id);
         $categories = Bundle::get();
+        $genre = Genre::get();
         $users = User::get();
         $countries = Country::all();
         $bundles = Bundle::all();
         $levels = Level::all();
         $partners = Partner::all();
         $workflows = Workflow::orderBy('id', 'desc')->get();
-        $data = ['book' => $book, 'categories' => $categories, 'users' => $users, 'workflows' => $workflows, 'countries' => $countries, 'bundles' => $bundles, 'levels' => $levels,'partners' => $partners];
+        $data = ['book' => $book, 'genres' => $genre, 'categories' => $categories, 'users' => $users, 'workflows' => $workflows, 'countries' => $countries, 'bundles' => $bundles, 'levels' => $levels,'partners' => $partners];
         return view('admin.book.edit')->with($data);
     }
 

@@ -105,6 +105,18 @@
                                 </select>
                             </div>
 
+                            <div class="form-group">
+                                <label for="bundle">Genre</label>
+
+                                <select name="categories_id" id="bundle" class="form-control">
+                                    @foreach ($genres as $genre)
+                                        <option value="{{ $genre->id }}"
+                                                @if($genre->id == $book->categories_id) selected @endif>@for ($i = 0; $i < $genre->depth; $i++)
+                                                - @endfor {{ $genre->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
                             @if ($errors->has('level')) <p
                                     class="alert alert-danger">{{ $errors->first('level') }}</p> @endif
 

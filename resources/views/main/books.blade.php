@@ -5,43 +5,43 @@
         <div class="container">
             <form role="form" novalidate="novalidate" class="form-inline">
                 <div class="row text-center">
-                <div class="form-group">
-                    <label class="custom">Genre</label>
-                    <div class="selectdiv">
-                        <select>
-                        <option value="Adventure">Adventure</option>
-                        <option value="Romance">Romance</option>
-                        <option value="Comedy">Comedy</option>
-                    </select></div>
-                </div>
-                <div class="form-group age-range">
-                    <label class="custom">Age</label>
-                    <span>0</span>
-                    <input id="age-range" data-slider-id='age-range' type="text"
-                           data-slider-min="0" data-slider-max="8" data-slider-step="1" data-slider-value="0"
-                           data-slider-tooltip="hide"
-                    />
-                    <span>8</span>
-                </div>
-                <div class="form-group">
-                    <label class="custom">Partner</label>
-                    <div class="selectdiv">
-                        <select>
-                            <option value="Disney">Disney</option>
-                        <option value="BabyFirst">BabyFirst</option>
-                    </select>
+                    <div class="form-group">
+                        <label class="custom">Genre</label>
+                        <div class="selectdiv">
+                            <select>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Comedy">Comedy</option>
+                            </select></div>
+                    </div>
+                    <div class="form-group age-range">
+                        <label class="custom">Age</label>
+                        <span>0</span>
+                        <input id="age-range" data-slider-id='age-range' type="text"
+                               data-slider-min="0" data-slider-max="8" data-slider-step="1" data-slider-value="0"
+                               data-slider-tooltip="hide"
+                        />
+                        <span>8</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="custom">Partner</label>
+                        <div class="selectdiv">
+                            <select>
+                                <option value="Disney">Disney</option>
+                                <option value="BabyFirst">BabyFirst</option>
+                            </select>
                         </div>
-                </div>
+                    </div>
                 </div>
                 <div class="row text-center">
                     <div class="form-group">
                         <label class="custom">Language</label>
                         <div class="selectdiv">
                             <select>
-                            <option value="English">English</option>
-                            <option value="Spanish">Spanish</option>
-                        </select>
-                            </div>
+                                <option value="English">English</option>
+                                <option value="Spanish">Spanish</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="form-group">
@@ -57,13 +57,13 @@
                     <div class="form-group">
                         <label class="custom">Level</label>
                         <div class="selectdiv">
-                                <select>
-                                    <option value="1">Level 1</option>
-                                    <option value="2">Level 2</option>
-                                </select>
+                            <select>
+                                <option value="1">Level 1</option>
+                                <option value="2">Level 2</option>
+                            </select>
                         </div>
-                     </div>
-                {{--js-example-basic-single--}}
+                    </div>
+                    {{--js-example-basic-single--}}
                 </div>
 
                 <div class="row text-center">
@@ -101,8 +101,8 @@
 
                     <div class="form-group col-sm-6 col-md-2">
                         {{--<label>--}}
-                            {{--<input name="radio-filter" class="form-control" value="1" type="radio">--}}
-                            {{--<span class="text"> Newest</span>--}}
+                        {{--<input name="radio-filter" class="form-control" value="1" type="radio">--}}
+                        {{--<span class="text"> Newest</span>--}}
                         {{--</label>--}}
                         <div class="custom-radio radio-primary">
                             <input type="radio" id="radio-1" name="radio-filter" value="newest">
@@ -114,8 +114,8 @@
 
                     <div class="form-group col-sm-6 col-md-2">
                         {{--<label>--}}
-                            {{--<input name="radio-filter" class="form-control" value="1" type="radio">--}}
-                            {{--<span class="text"> Popular</span>--}}
+                        {{--<input name="radio-filter" class="form-control" value="1" type="radio">--}}
+                        {{--<span class="text"> Popular</span>--}}
                         {{--</label>--}}
                         <div class="custom-radio radio-primary">
                             <input type="radio" id="radio-2" name="radio-filter" value="popular">
@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="row text-center">
-                <button class="btn custom-btn white-btn">Apply Filter</button>
+                    <button class="btn custom-btn white-btn">Apply Filter</button>
                 </div>
             </form>
         </div>
@@ -140,90 +140,45 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book1.png">
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">Tom and Smudge's Rainy Day</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
+        @foreach(array_chunk($books->all(), 3) as $books)
+            <div class="row">
+                @foreach($books as $book)
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <img src="/assets/img/books/{{ $book->image }}">
+                        <div class="text-center book-title">
+                            <h6 class="section-header text-center red">{!! $book->title !!}</h6>
+                        </div>
+                        <div class="text-center">
+                            <a href="/book/{{ $book->slug }}" class="btn custom-btn pink-btn">Read More</a>
+                        </div>
+                    </div>
+                @endforeach
             </div>
+        @endforeach
+    </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book2.png">
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">The Sleepy Time Jungle</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book3.png">
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">Count the Animals at the Zoo</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book4.png">
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">The Christmas Fairies</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book5.png">
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">Brian's Grand Adventure</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book6.png">
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">The Princess on the Glass Hill</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-                <li><a class="active" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="row text-center">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </div>
     </div>
 @endsection
