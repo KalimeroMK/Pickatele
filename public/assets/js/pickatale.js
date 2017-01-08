@@ -13,7 +13,7 @@ $( document ).ready(function() {
     var doFilter = function () {
         var data = {};
         var $letter = $('.books-filter .letter-filter a.active');
-
+        var $loading = $('.loading');
         if ($letter.data('filter-value')) {
             data.letter = $letter.data('filter-value');
         }
@@ -24,15 +24,16 @@ $( document ).ready(function() {
             }
         });
 
+        $loading.show();
+
         $.post( "/books", data, function( res ) {
-            console.log(res);
-            //$( ".result" ).html( data );
+            $( ".results" ).html(res);
+            $loading.hide();
         });
-        console.log('data', data);
     };
 
     $('.books-filter select, .books-filter input').change(function() {
-        console.log(doFilter());
+        doFilter();
     });
 
     var $filterLinks = $('.books-filter .letter-filter a');
@@ -44,7 +45,7 @@ $( document ).ready(function() {
         $filterLinks.removeClass('active');
         $this.addClass('active');
 
-        console.log(doFilter());
+        doFilter();
     });
 
 // SELECT2

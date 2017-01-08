@@ -660,7 +660,7 @@ ul.store-links img {
     padding: 10px 45px;
 }
 
-ul.pagination li > a, .pagination > li:first-child > a, .pagination > li:last-child > a, ul.pager li > a {
+ul.pagination li > span, ul.pagination li > a, .pagination > li:first-child > a, .pagination > li:last-child > a, ul.pager li > a {
     border-radius: 0;
     background-color: #fff;
     border: none;
@@ -674,7 +674,7 @@ ul.pagination li > a.active {
     color: #fa2557;
 }
 
-ul.pagination li > a:hover, ul.pagination li > a:focus {
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, ul.pagination li > a:hover, ul.pagination li > a:focus {
     background-color: #fff;
     border-color: #fff;
     color: #fa2557;
@@ -969,4 +969,11 @@ span.select2-selection.select2-selection--single {
 
 .row.loading {
     display: none;
+}
+
+.error-msg {
+    margin:30px;
+    text-align:center;
+    color:#fa2557;
+    font-weight:600;
 }
