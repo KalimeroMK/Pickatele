@@ -14,6 +14,7 @@ use App\Country as Country;
 use App\Bundle as Bundle;
 use App\Levels as Level;
 use App\Partner as Partner;
+use App\Faq as Faq;
 use Illuminate\Contracts\Pagination;
 use DB;
 
@@ -38,10 +39,11 @@ class BookController extends Controller
         $books = Books::orderBy('created_at', 'asc')->paginate(12);
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
+        $faqs = Faq::take(2)->get();
         $data = [
             "books" => $books, "bookpaginator" => $books, "scripts" => $scripts, "mainpages" => $mainpages,
             "levels" => $levels, "genres" => $genres, "countries" => $countries, "bundles" => $bundles,
-            "partners" => $partners
+            "partners" => $partners, "faqs" => $faqs
         ];
         return view('main.books')->with($data);
     }
@@ -77,6 +79,7 @@ class BookController extends Controller
     {
         $book = Books::where('slug', '=', $slug)->first();
         $partnerid = $book[0]['partner_id'];
+        $faqs = Faq::take(2)->get();
         $bookid = $book->id;
         $bookimages = Sliders::where('book_id', '=', $bookid)->get();
         $books = Books::where('partner_id', '=', $partnerid)->get();
@@ -86,7 +89,7 @@ class BookController extends Controller
                 ->get();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $data = ["scripts" => $scripts, "mainpages" => $mainpages, "book" => $book, "books" => $books, "bookimages" => $bookimages, "relatedbooks" => $relatedbook];
+        $data = ["faqs" => $faqs,"scripts" => $scripts, "mainpages" => $mainpages, "book" => $book, "books" => $books, "bookimages" => $bookimages, "relatedbooks" => $relatedbook];
         return view('main.book')->with($data);
     }
 }
