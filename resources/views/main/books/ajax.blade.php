@@ -15,5 +15,4 @@
         </div>
     @endforeach
 
-
     {{ $bookpaginator->links() }}

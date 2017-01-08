@@ -19,11 +19,6 @@ use DB;
 
 class BookController extends Controller
 {
-    /**
-     * Show the books index.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $genres = Genre::pluck('name', 'id');
