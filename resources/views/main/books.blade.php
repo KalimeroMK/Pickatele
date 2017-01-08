@@ -42,13 +42,13 @@
     <div class="books-filter">
         <div class="container">
             <form role="form" novalidate="novalidate" class="form-inline">
-                <div class="row text-center">
+                <div class="row">
                     <div class="form-group col-sm-4">
                         <label class="custom">Genre</label>
                         {{ Form::select('genre', $genres, 0, ['class' => 'select2 red form-control']) }}
                     </div>
                     <div class="form-group col-sm-4 age-range">
-                        <label class="custom" for="age-range">Age</label>
+                        <label class="custom" for="age-range" style="width: 60px;">Age</label>
                         <span>0</span>
                         <input id="age-range" name="age-range" data-slider-id='age-range' type="text"
                                data-slider-min="0" data-slider-max="8" data-slider-step="1" data-slider-value="0"
@@ -61,7 +61,7 @@
 
                     </div>
                 </div>
-                <div class="row text-center">
+                <div class="row">
                     <div class="form-group col-sm-4">
                         <label class="custom">Language</label>
                         <select name="language" class="select2 red form-control">
@@ -82,8 +82,8 @@
                     </div>
                 </div>
 
-                <div class="row text-center">
-                    <div class="form-group letter-filter col-sm-12 col-md-8">
+                <div class="row">
+                    <div class="form-group letter-filter col-sm-12 col-md-7">
                         <label class="custom">By name</label>
 
                         <div class="form-group">
