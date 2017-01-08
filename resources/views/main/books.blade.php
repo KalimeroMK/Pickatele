@@ -174,76 +174,22 @@
                 <h1 class="section-header text-center red" style="margin-top: 60px">Book Library</h1>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book1.png">
-
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">Tom and Smudge's Rainy Day</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
+        @foreach(array_chunk($books->all(), 3) as $books)
+            <div class="row">
+                @foreach($books as $book)
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <img src="/assets/img/books/{{ $book->image }}">
+                        <div class="text-center book-title">
+                            <h6 class="section-header text-center red">{!! $book->title !!}</h6>
+                        </div>
+                        <div class="text-center">
+                            <a href="/book/{{ $book->slug }}" class="btn custom-btn pink-btn">Read More</a>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book2.png">
-
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">The Sleepy Time Jungle</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book3.png">
-
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">Count the Animals at the Zoo</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book4.png">
-
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">The Christmas Fairies</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book5.png">
-
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">Brian's Grand Adventure</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <img src="/assets/images/book6.png">
-
-                <div class="text-center book-title">
-                    <h6 class="section-header text-center red">The Princess on the Glass Hill</h6>
-                </div>
-                <div class="text-center">
-                    <a class="btn custom-btn pink-btn">Read More</a>
-                </div>
-            </div>
-        </div>
+        @endforeach
+    </div>
 
         <div class="row text-center">
             <ul class="pagination">
