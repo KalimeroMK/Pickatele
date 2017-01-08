@@ -521,76 +521,16 @@ ul.store-links img {
     /*width: 200px;*/
 }
 
+.books-filter .letter-filter a.active {
+    color: #fa2557;
+}
+
 .books-filter .btn.custom-btn {
     width: 255px;
     height: 40px;
     font-size:14px;
     text-transform: inherit;
     letter-spacing: 1px;
-}
-
-.selectdiv {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.selectdiv:after {
-    content: '\f078';
-    font: normal normal normal 17px/1 FontAwesome;
-    color: #fff;
-    right: 11px;
-    top: 6px;
-    height: 34px;
-    padding: 15px 0px 0px 8px;
-    position: absolute;
-    pointer-events: none;
-}
-
-/* IE11 hide native button (thanks Matt!) */
-select::-ms-expand {
-    display: none;
-}
-
-.selectdiv select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* Add some styling */
-
-    display: block;
-    min-width: 200px;
-    max-width: 320px;
-    height: 50px;
-    float: right;
-    margin: 5px 0px;
-    padding: 0px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.75;
-    color: #fff;
-    background-color: #fa2557;
-    background-image: none;
-    border: none;
-    border-radius: 3px;
-    -ms-word-break: normal;
-    word-break: normal;
-}
-
-.selectdiv select, .selectdiv select:active, .selectdiv select:focus {
-    border: 0 !important;
-    outline:none !important;
-}
-
-.selectdiv select option {
-    padding: 12px 25px;
-    height: 50px;
-    line-height: 1.75;
-}
-
-.selectdiv select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #fff;
 }
 
 .white-btn {
@@ -934,7 +874,7 @@ ul.pagination, ul.pager {
     height: 200px;
 }
 
-.select2-container--default .select2-selection--single{
+.select2-container--default .select2-selection--single {
     padding:10px 5px;
     height: 50px;
     position: relative;
@@ -954,7 +894,6 @@ ul.pagination, ul.pager {
     border-top: 1px;
     color: #a2a2a2;
 }
-
 
 .select2-container--default .select2-results__option[aria-selected="true"] {
     background-color: #eeeeee;
@@ -985,4 +924,49 @@ span.select2-selection.select2-selection--single {
 
 .select2-dropdown {
     border: none;
+}
+
+.spinner {
+    margin: 0 auto;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+      }
+}
+
+.row.loading {
+    display: none;
 }

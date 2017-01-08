@@ -51,6 +51,7 @@
 
     <!-- Custom css -->
     <link href="/css/style.css" rel="stylesheet">
+    @yield('style')
 
     @include('admin.scripts.block')
 </head>
