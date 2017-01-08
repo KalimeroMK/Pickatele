@@ -19,6 +19,7 @@ class CreateBooksTable extends Migration
             $table->integer('age');
             $table->string('author');
             $table->text('description');
+            $table->integer('categories_id')->unsigned();
             $table->integer('level_id')->unsigned();
             $table->foreign('level_id')->references('id')->on('levels');
             $table->integer('country_id')->unsigned();
