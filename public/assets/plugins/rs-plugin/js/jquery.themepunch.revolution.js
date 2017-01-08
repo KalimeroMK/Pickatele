@@ -26,7 +26,7 @@
 				// SET DEFAULT VALUES OF ITEM //
 				////////////////////////////////
 				var defaults = {
-					delay:9000,
+					delay:500,
 					startheight:750,
 					startwidth:960,
 					fullScreenAlignForce:"off",

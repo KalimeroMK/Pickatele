@@ -281,7 +281,7 @@
 			$('.slider-banner-container .slider-banner-fullwidth-big-height').show().revolution({
 				delay:8000,
 				startwidth:1140,
-				startheight:650,
+				startheight:750,
 
 				navigationArrows:"solo",
 
@@ -706,7 +706,7 @@
 				sliderLayout:"fullwidth",
 				delay:8000,
 				gridwidth:1140,
-				gridheight:650,
+				gridheight:750,
 				navigation: {
 					onHoverStop: "off",
 					arrows: {
