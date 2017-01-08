@@ -76,7 +76,7 @@ class BooksController extends Controller
         $request['title'] = strip_tags($request['title']);
         $request['slug'] = str_slug($request['title']);
 
-        $slug = Book::where('title', htmlspecialchars_decode($request['title']))->get();
+        $slug = Book::where('title', htmlspecialchars_decode(str_replace('39','', $request['title'])))->get();
 
         (int)$count = count($slug);
 
