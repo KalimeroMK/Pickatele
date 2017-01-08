@@ -287,6 +287,12 @@
                         <span class="menu-text"> Scripts </span>
                     </a>
                 </li>
+                <li>
+                    <a href="/admin/faq" class="menu">
+                        <i class="menu-icon fa fa-question"></i>
+                        <span class="menu-text"> Help Center </span>
+                    </a>
+                </li>
 
             </ul>
             <!-- /Sidebar Menu -->

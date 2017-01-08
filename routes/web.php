@@ -32,6 +32,7 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Route::resource('/partner', 'PartnerController');
     Route::resource('/levels', 'LevelsController');
     Route::resource('/book', 'BooksController');
+    Route::resource('/faq', 'FaqController');
     Route::get('/sliders/{id}/book', 'SlidersController@index')->name('admin.sliders.index');
     Route::post('/sliders/store', 'SlidersController@store')->name('admin.sliders.store');
     Route::post('/sliders/destroy', 'SlidersController@destroy')->name('admin.sliders.destroy');
