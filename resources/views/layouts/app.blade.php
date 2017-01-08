@@ -166,68 +166,114 @@
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
                 <!--Dashboard-->
-                <!--
-                <li class="active">
-                    <a href="/admin">
+
+
+
+                <li class="">
+                    <a href="#" class="menu-dropdown">
                         <i class="menu-icon glyphicon glyphicon-home"></i>
-                        <span class="menu-text"> Подесувања </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/categories" class="menu">
-                        <i class="menu-icon fa fa-list-ol"></i>
-                        <span class="menu-text"> Категории </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/slider" class="menu">
-                        <i class="menu-icon fa fa-image"></i>
-                        <span class="menu-text"> Слајдер </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/scripts" class="menu">
-                        <i class="menu-icon fa fa-code"></i>
-                        <span class="menu-text"> Скрипти </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/product" class="menu">
-                        <i class="menu-icon fa fa-sellsy"></i>
-                        <span class="menu-text"> Продукти </span>
+                        <span class="menu-text"> Homepage </span>
 
+                        <i class="menu-expand"></i>
                     </a>
-                </li>
-                <li>
-                    <a href="/admin/services" class="menu">
-                        <i class="menu-icon fa fa-bell-o"></i>
-                        <span class="menu-text"> Услуги </span>
 
-                    </a>
-                </li>
-                    -->
-                <li>
-                    <a href="/admin/mainpages" class="menu">
-                        <i class="menu-icon fa fa-sort-amount-desc"></i>
-                        <span class="menu-text"> Main pages </span>
+                    <ul class="submenu" style="display: none;">
+                        <li>
+                            <a href="/admin/settings" class="menu">
+                                <i class="menu-icon glyphicon glyphicon-cog"></i>
+                                <span class="menu-text"> Settings </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/admin/slider" class="menu">
+                                <i class="menu-icon fa fa-image"></i>
+                                <span class="menu-text"> Slider </span>
+                            </a>
+                        </li>
 
-                    </a>
+                    </ul>
                 </li>
 
-                <li>
-                    <a href="/admin/slider" class="menu">
-                        <i class="menu-icon fa fa-image"></i>
-                        <span class="menu-text"> Slider </span>
+
+
+
+
+
+
+
+                <li class="">
+                    <a href="#" class="menu-dropdown">
+                        <i class="menu-icon glyphicon glyphicon-book"></i>
+                        <span class="menu-text"> Books </span>
+
+                        <i class="menu-expand"></i>
                     </a>
+
+                    <ul class="submenu" style="display: none;">
+
+                        <li ui-sref-active="active">
+                            <a href="/admin/genre">
+                                <span class="menu-text">Genre</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a href="/admin/bundle">
+                                <span class="menu-text">Bundle</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a href="/admin/partner">
+                                <span class="menu-text">Partner</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a href="/admin/levels">
+                                <span class="menu-text">Level</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a href="/admin/book">
+                                <span class="menu-text">Books</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="/admin/staticpage" class="menu">
-                        <i class="menu-icon fa fa-file"></i>
+
+
+
+
+
+
+                <li class="">
+                    <a href="#" class="menu-dropdown">
+                        <i class="menu-icon glyphicon glyphicon-home"></i>
                         <span class="menu-text"> Pages </span>
 
+                        <i class="menu-expand"></i>
                     </a>
+
+                    <ul class="submenu" style="display: none;">
+                        <li>
+                            <a href="/admin/mainpages" class="menu">
+                                <i class="menu-icon fa fa-sort-amount-desc"></i>
+                                <span class="menu-text"> Main pages </span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/admin/staticpage" class="menu">
+                                <i class="menu-icon fa fa-file"></i>
+                                <span class="menu-text"> Static pages </span>
+
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
-                -->
+
+
+
+
                 <li>
                     <a href="/admin/users" class="menu">
                         <i class="menu-icon fa fa-users"></i>

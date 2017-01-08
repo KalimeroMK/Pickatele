@@ -17,12 +17,24 @@
 Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
     Auth::routes();
     Route::get('logout', 'Auth\LoginController@logout');
-    Route::get('/', 'UserController@index');
+    Route::get('/', 'SettingsController@index');
+    Route::get('/settings', 'SettingsController@index');
+    Route::post('/settings/store', 'SettingsController@store')->name('admin.settings.store');
+    Route::get('/settings/{id}/edit', 'SettingsController@edit')->name('admin.settings.edit');
+    Route::post('/settings/update', 'SettingsController@update')->name('admin.settings.update');
     Route::resource('/users', 'UserController');
     Route::resource('/staticpage', 'StaticpageController');
     Route::resource('/slider', 'SliderController');
     Route::resource('/scripts', 'ScriptsController');
     Route::resource('/mainpages', 'MainpagesController');
+    Route::resource('/genre', 'GenreController');
+    Route::resource('/bundle', 'BundleController');
+    Route::resource('/partner', 'PartnerController');
+    Route::resource('/levels', 'LevelsController');
+    Route::resource('/book', 'BooksController');
+    Route::get('/sliders/{id}/book', 'SlidersController@index')->name('admin.sliders.index');
+    Route::post('/sliders/store', 'SlidersController@store')->name('admin.sliders.store');
+    Route::post('/sliders/destroy', 'SlidersController@destroy')->name('admin.sliders.destroy');
 });
 
 
@@ -34,6 +46,7 @@ Route::get('/careers', 'MiniPageController@careers');
 Route::get('/terms', 'MiniPageController@terms');
 Route::get('/privacy', 'MiniPageController@privacy');
 Route::get('/books', 'BookController@index');
+Route::get('/book/{slug}', 'BookController@getBook');
 Route::get('/books/1', 'BookController@getBook');
 Route::get('/{slug}', 'HomeController@mainpages');
 
