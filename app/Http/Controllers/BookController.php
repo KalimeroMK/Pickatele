@@ -32,8 +32,9 @@ class BookController extends Controller
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
         $data = [
-            "books" => $books, "scripts" => $scripts, "mainpages" => $mainpages, "levels" => $levels,
-            "genres" => $genres, "countries" => $countries, "bundles" => $bundles, "partners" => $partners
+            "books" => $books, "bookpaginator" => $books, "scripts" => $scripts, "mainpages" => $mainpages,
+            "levels" => $levels, "genres" => $genres, "countries" => $countries, "bundles" => $bundles,
+            "partners" => $partners
         ];
         return view('main.books')->with($data);
     }

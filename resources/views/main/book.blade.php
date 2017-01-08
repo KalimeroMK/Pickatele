@@ -71,15 +71,23 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 book-category-slider">
-                        @foreach($relatedbooks as $relatedbook)
-                            <a href="{{ $relatedbook->slug }}"><img style="padding-left:0"
-                                                                    src="/assets/img/books/{{ $relatedbook->image }}"></a>
+                    <div class="col-xs-1">
+                        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
+                    </div>
+                    <div class="col-xs-10 book-category-sliderr">
+                        <div class="owl-carousel">
+                            @foreach($relatedbooks as $relatedbook)
+                            <a href="{{ $relatedbook->slug }}">
+                                <img style="padding-left:0" src="/assets/img/books/{{ $relatedbook->imagethumb }}">
+                            </a>
                         @endforeach
+                        </div>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
                     </div>
                 </div>
                 @endif
             </div>
-
     </div>
 @endsection

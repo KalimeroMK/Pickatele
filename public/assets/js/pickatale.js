@@ -13,7 +13,7 @@ $( document ).ready(function() {
     var doFilter = function () {
         var data = {};
         var $letter = $('.books-filter .letter-filter a.active');
-
+        var $loading = $('.loading');
         if ($letter.data('filter-value')) {
             data.letter = $letter.data('filter-value');
         }
@@ -24,15 +24,16 @@ $( document ).ready(function() {
             }
         });
 
+        $loading.show();
+
         $.post( "/books", data, function( res ) {
-            console.log(res);
-            //$( ".result" ).html( data );
+            $( ".results" ).html(res);
+            $loading.hide();
         });
-        console.log('data', data);
     };
 
     $('.books-filter select, .books-filter input').change(function() {
-        console.log(doFilter());
+        doFilter();
     });
 
     var $filterLinks = $('.books-filter .letter-filter a');
@@ -44,7 +45,7 @@ $( document ).ready(function() {
         $filterLinks.removeClass('active');
         $this.addClass('active');
 
-        console.log(doFilter());
+        doFilter();
     });
 
 // SELECT2
@@ -55,6 +56,26 @@ $( document ).ready(function() {
         $('b[role="presentation"]').hide();
         $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 
+    /*$('.owl-carousel').owlCarousel({
+        navigation: true, // Show next and prev buttons
+        slideSpeed: 300,
+        pagination:false,
+        singleItem: true, transitionStyle: "fade",
+        navigationText: ["", ""]
+        }
+    );*/
+    var owlOne = $(".owl-carousel").owlCarousel({
+        items: 4,
+        margin: 30
+    });
 
+    $(".next").click(function(e){
+        e.preventDefault();
+        owlOne.trigger('owl.next');
+    });
 
+    $(".prev").click(function(e){
+        e.preventDefault();
+        owlOne.trigger('owl.prev');
+    });
 });

@@ -134,23 +134,16 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-xs-offset-9 col-xs-3">
-                        <button class="btn btn-xs custom-btn" style="width: auto" type="reset">Reset</button>
-                    </div>
-                </div>
-
                 {!! csrf_field() !!}
             </form>
 
-            <div class="row loading text-center pv-30">
-                <div class="spinner">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-            </div>
+            {{--<div class="row loading text-center pv-30">--}}
+                {{--<div class="spinner">--}}
+                    {{--<div class="bounce1"></div>--}}
+                    {{--<div class="bounce2"></div>--}}
+                    {{--<div class="bounce3"></div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </div>
 
@@ -160,43 +153,27 @@
                 <h1 class="section-header text-center red" style="margin-top: 60px">Book Library</h1>
             </div>
         </div>
-        @foreach(array_chunk($books->all(), 3) as $books)
-            <div class="row">
-                @foreach($books as $book)
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <img src="/assets/img/books/{{ $book->image }}">
-                        <div class="text-center book-title">
-                            <h6 class="section-header text-center red">{!! $book->title !!}</h6>
-                        </div>
-                        <div class="text-center">
-                            <a href="/book/{{ $book->slug }}" class="btn custom-btn pink-btn">Read More</a>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        @endforeach
-    </div>
 
-        <div class="row text-center">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-                <li><a class="active" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="results">
+            @foreach(array_chunk($books->all(), 3) as $books)
+                <div class="row">
+                    @foreach($books as $book)
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="/assets/img/books/thumbnails/{{ $book->imagethumb }}">
+
+                            <div class="text-center book-title">
+                                <h6 class="section-header text-center red">{!! $book->title !!}</h6>
+                            </div>
+                            <div class="text-center">
+                                <a href="/book/{{ $book->slug }}" class="btn custom-btn pink-btn">Read More</a>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            @endforeach
+            <div class="row text-center">
+                {{  $bookpaginator->links() }}
+            </div>
         </div>
     </div>
 @endsection
