@@ -53,6 +53,7 @@ class BookController extends Controller
         $builder = Books::query();
         $term = $request->all();
         $order = 'id';
+        $direction = 'asc';
 
         if(!empty($term['genre'])){
             $builder->where('categories_id','=',$term['genre']);
@@ -78,9 +79,10 @@ class BookController extends Controller
         if(!empty($term['radio-filter'])){
             if($term['radio-filter'] === 'newest') {
                 $order = 'created_at';
+                $direction = 'desc';
             }
         }
-        $result = $builder->orderBy($order)->paginate(12);
+        $result = $builder->orderBy($order, $direction)->paginate(12);
         $data = ["books" => $result, "bookpaginator" => $result];
         return view('main.books.ajax')->with($data);
     }
