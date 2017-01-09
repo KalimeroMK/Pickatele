@@ -7,6 +7,7 @@ use App\Staticpage as StaticPage;
 use App\Mainpages as Mainpages;
 use App\Slider as Slider;
 use App\Script as Script;
+use App\Faq as Faq;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,8 @@ class HomeController extends Controller
         $staticpages = StaticPage::all();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $data = ["staticpages" => $staticpages, "sliders" => $sliders, "scripts" => $scripts, "mainpages" => $mainpages];
+        $faqs = Faq::take(2)->get();
+        $data = ["faqs" => $faqs,"staticpages" => $staticpages, "sliders" => $sliders, "scripts" => $scripts, "mainpages" => $mainpages];
         return view('main.home')->with($data);
     }
 
@@ -32,7 +34,8 @@ class HomeController extends Controller
         $staticpage = StaticPage::where("slug", "=", $slug)->first();
         $staticpages = StaticPage::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $data = ["staticpage" => $staticpage, "staticpages" => $staticpages, "scripts" => $scripts];
+        $faqs = Faq::take(2)->get();
+        $data = ["faqs" => $faqs,"staticpage" => $staticpage, "staticpages" => $staticpages, "scripts" => $scripts];
         return view('main.staticpage')->with($data);
 
     }
@@ -41,7 +44,8 @@ class HomeController extends Controller
         $mainpage = Mainpages::where("slug", "=", $slug)->first();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $data = ["mainpage" => $mainpage, "mainpages" => $mainpages, "scripts" => $scripts];
+        $faqs = Faq::take(2)->get();
+        $data = ["faqs" => $faqs,"mainpage" => $mainpage, "mainpages" => $mainpages, "scripts" => $scripts];
         return view('main.mainpages')->with($data);
 
     }
