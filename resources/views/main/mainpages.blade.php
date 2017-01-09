@@ -298,6 +298,8 @@
 
                 <!-- main-container start -->
         <!-- ================ -->
+        <div class="about-us-pattern-1"></div>
+        <div class="about-us-pattern-2"></div>
         <section class="main-container padding-ver-clear">
             <div class="pv-40 parents">
                 <div class="container">
