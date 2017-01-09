@@ -52,6 +52,8 @@ class BookController extends Controller
     {
         $builder = Books::query();
         $term = $request->all();
+        $order = 'id';
+
         if(!empty($term['genre'])){
             $builder->where('categories_id','=',$term['genre']);
         }
@@ -70,7 +72,15 @@ class BookController extends Controller
         if(!empty($term['bundle'])){
             $builder->where('bundle_id','>=',$term['bundle']);
         }
-        $result = $builder->orderBy('id')->paginate(12);
+        if(!empty($term['letter'])){
+            $builder->where('title', 'like', $term['letter'].'%');
+        }
+        if(!empty($term['radio-filter'])){
+            if($term['radio-filter'] === 'newest') {
+                $order = 'created_at';
+            }
+        }
+        $result = $builder->orderBy($order)->paginate(12);
         $data = ["books" => $result, "bookpaginator" => $result];
         return view('main.books.ajax')->with($data);
     }
