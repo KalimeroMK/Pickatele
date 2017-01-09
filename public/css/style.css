@@ -210,12 +210,10 @@ footer p.qa {
 }
 
 .navbar-default .active-menu {
-    width: 70%;
-    float: left;
+    width: 100%;
     border-color: #FFF;
-    top: 13px;
-
-    left: 8px;
+    top: 12px;
+    left: 0;
     position: absolute;
 }
 

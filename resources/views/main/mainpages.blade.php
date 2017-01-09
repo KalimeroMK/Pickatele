@@ -123,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container" style="margin-top:-500px">
+                <div class="container" style="margin-top:-450px">
                     <div class="row reasons">
                         <div class="col-md-4">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->itemimage }}"
