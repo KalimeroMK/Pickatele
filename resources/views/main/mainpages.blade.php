@@ -12,55 +12,55 @@
 
 
         @if($mainpage->image)
-            <!-- banner start -->
-            <!-- ================ -->
+                <!-- banner start -->
+        <!-- ================ -->
 
-            <!-- banner start -->
+        <!-- banner start -->
+        <!-- ================ -->
+        <div class="banner clearfix">
+
+            <!-- slideshow start -->
             <!-- ================ -->
-            <div class="banner clearfix">
+            <div class="slideshow">
+
 
                 <!-- slideshow start -->
                 <!-- ================ -->
                 <div class="slideshow">
 
-
-                    <!-- slideshow start -->
+                    <!-- slider revolution start -->
                     <!-- ================ -->
-                    <div class="slideshow">
+                    <div class="slider-banner-container">
+                        <div class="slider-banner-fullwidth-big-height">
+                            <ul class="slides">
+                                <!-- slide 1 start -->
+                                <!-- ================ -->
+                                <li data-transition="fadefromtop" data-slotamount="1" data-masterspeed="500"
+                                    data-saveperformance="on" data-title="Slide 1">
 
-                        <!-- slider revolution start -->
-                        <!-- ================ -->
-                        <div class="slider-banner-container">
-                            <div class="slider-banner-fullwidth-big-height">
-                                <ul class="slides">
-                                    <!-- slide 1 start -->
-                                    <!-- ================ -->
-                                    <li data-transition="fadefromtop" data-slotamount="1" data-masterspeed="500"
-                                        data-saveperformance="on" data-title="Slide 1">
-
-                                        <!-- main image -->
-                                        <img src="/assets/img/mainpages/{{$mainpage->image}}" alt="slidebg1"
-                                             data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
+                                    <!-- main image -->
+                                    <img src="/assets/img/mainpages/{{$mainpage->image}}" alt="slidebg1"
+                                         data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
 
 
-                                    </li>
-                                    <!-- slide 1 end -->
+                                </li>
+                                <!-- slide 1 end -->
 
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
-                        <!-- slider revolution end -->
-
                     </div>
-                    <!-- slideshow end -->
+                    <!-- slider revolution end -->
 
                 </div>
+                <!-- slideshow end -->
+
             </div>
-            <!-- banner end -->
+        </div>
+        <!-- banner end -->
         @endif
 
-        <!-- main-container start -->
+                <!-- main-container start -->
         <!-- ================ -->
         <section class="main-container padding-ver-clear">
             <div class="pv-40 parents">
@@ -73,8 +73,6 @@
                             <p class="title">{!! $mainpage->paragraph !!}</p>
                         </div>
                         <!-- main end -->
-
-
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -90,14 +88,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="section-header text-center red">{!! $mainpage->secondheadertitle !!}</h2>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="section-header text-center red">{!! $mainpage->secondheadertitle !!}</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="container">
 
+                <div class="container">
+                    <div class="row">
                         <div class="col-md-6">
                             <p>
 
@@ -111,10 +112,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row why-will-you-love">
-                    <div class="col-md-12">
-                        <h2 class="section-header blue text-center"
-                            style="margin-top:50px;">{!! $mainpage->sectiontitle !!}</h2>
+
+                <div class="why-will-you-love">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="section-header blue text-center"
+                                    style="margin-top:50px;">{!! $mainpage->sectiontitle !!}</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container" style="margin-top:-500px">
@@ -163,7 +169,7 @@
                         </div>
                         <div class="col-md-4">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->item6image }}"
-                                                          alt="{{ $mainpage->item6title }}"></p>
+                                    alt="{{ $mainpage->item6title }}"></p>
 
                             <p class="emphased-text">{!! $mainpage->item6title !!}</p>
 
@@ -242,55 +248,55 @@
 
 
         @if($mainpage->image)
-            <!-- banner start -->
-            <!-- ================ -->
+                <!-- banner start -->
+        <!-- ================ -->
 
-            <!-- banner start -->
+        <!-- banner start -->
+        <!-- ================ -->
+        <div class="banner clearfix">
+
+            <!-- slideshow start -->
             <!-- ================ -->
-            <div class="banner clearfix">
+            <div class="slideshow">
+
 
                 <!-- slideshow start -->
                 <!-- ================ -->
                 <div class="slideshow">
 
-
-                    <!-- slideshow start -->
+                    <!-- slider revolution start -->
                     <!-- ================ -->
-                    <div class="slideshow">
+                    <div class="slider-banner-container">
+                        <div class="slider-banner-fullwidth-big-height">
+                            <ul class="slides">
+                                <!-- slide 1 start -->
+                                <!-- ================ -->
+                                <li data-transition="fadefromtop" data-slotamount="1" data-masterspeed="500"
+                                    data-saveperformance="on" data-title="Slide 1">
 
-                        <!-- slider revolution start -->
-                        <!-- ================ -->
-                        <div class="slider-banner-container">
-                            <div class="slider-banner-fullwidth-big-height">
-                                <ul class="slides">
-                                    <!-- slide 1 start -->
-                                    <!-- ================ -->
-                                    <li data-transition="fadefromtop" data-slotamount="1" data-masterspeed="500"
-                                        data-saveperformance="on" data-title="Slide 1">
-
-                                        <!-- main image -->
-                                        <img src="/assets/img/mainpages/{{$mainpage->image}}" alt="slidebg1"
-                                             data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
+                                    <!-- main image -->
+                                    <img src="/assets/img/mainpages/{{$mainpage->image}}" alt="slidebg1"
+                                         data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
 
 
-                                    </li>
-                                    <!-- slide 1 end -->
+                                </li>
+                                <!-- slide 1 end -->
 
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
-                        <!-- slider revolution end -->
-
                     </div>
-                    <!-- slideshow end -->
+                    <!-- slider revolution end -->
 
                 </div>
+                <!-- slideshow end -->
+
             </div>
-            <!-- banner end -->
+        </div>
+        <!-- banner end -->
         @endif
 
-        <!-- main-container start -->
+                <!-- main-container start -->
         <!-- ================ -->
         <section class="main-container padding-ver-clear">
             <div class="pv-40 parents">
@@ -437,7 +443,8 @@
         <div style="z-index:1" class="container about-us">
             <div class="row">
                 <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-                    <h2 class="section-header text-center red" style="margin-top: 75px;">Get in touch if you want to work with us
+                    <h2 class="section-header text-center red" style="margin-top: 75px;">Get in touch if you want to
+                        work with us</h2>
                 </div>
             </div>
         </div>
@@ -483,7 +490,8 @@
                         <p>&nbsp;</p>
                     </div>
                 </div>
-            </div
+            </div>
+        </div>
     @endif
 @endsection
 
