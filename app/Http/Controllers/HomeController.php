@@ -9,7 +9,7 @@ use App\Slider as Slider;
 use App\Script as Script;
 use App\Faq as Faq;
 use App\Partner as Partner;
-
+use App\Bundle as Bundle;
 class HomeController extends Controller
 {
 
@@ -21,13 +21,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $bundles = Bundle::first();
         $partners = Partner::all();
         $sliders = Slider::all();
         $staticpages = StaticPage::all();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
         $faqs = Faq::take(2)->get();
-        $data = ["partners" => $partners,"faqs" => $faqs,"staticpages" => $staticpages, "sliders" => $sliders, "scripts" => $scripts, "mainpages" => $mainpages];
+        $data = ["bundles" => $bundles,"partners" => $partners,"faqs" => $faqs,"staticpages" => $staticpages, "sliders" => $sliders, "scripts" => $scripts, "mainpages" => $mainpages];
         return view('main.home')->with($data);
     }
 

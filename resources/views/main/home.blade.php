@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="section-header">Become our partner</h1>
-                <button class="btn custom-btn white-btn">Read More</button>
+                <a href="/partners" class="btn custom-btn white-btn">Read More</a>
             </div>
         </div>
     </div>
@@ -79,7 +79,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="section-header">Great offers from Pickatale</h1>
-                <img class="slider" src="/assets/images/bundles.png">
+                <img class="slider img-responsive center-block" src="/assets/img/bundle/{{ $bundles->image }}">
             </div>
         </div>
     </div>
