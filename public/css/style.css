@@ -210,12 +210,10 @@ footer p.qa {
 }
 
 .navbar-default .active-menu {
-    width: 70%;
-    float: left;
+    width: 100%;
     border-color: #FFF;
-    top: 13px;
-
-    left: 8px;
+    top: 12px;
+    left: 0;
     position: absolute;
 }
 
@@ -296,7 +294,7 @@ footer p.qa {
 }
 
 .helpful-links a {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 16px;
 }
 
@@ -320,7 +318,6 @@ footer p.qa {
 .bundles img {
     text-align: center;
     margin: 0 auto;
-    height: 100%;
 }
 
 
@@ -388,19 +385,19 @@ div.tparrows {
 .parents .section-header {
     color: #fa4c72;
     font-size: 46px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .parents-title > p {
     color: #fa2557;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .partners-title > p {
     color: #75c6e7;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .partners-bg {
     background-color: #fec41f;
@@ -413,7 +410,7 @@ div.tparrows {
 .how-it-works {
     color: #fa2557;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .red {

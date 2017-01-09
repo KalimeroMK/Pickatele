@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @include('layouts.mainmenu')
+@include('layouts.partners')
 @section('content')
 
     @if($mainpage->slug == 'parents' || $mainpage->slug == 'educators')
@@ -123,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container" style="margin-top:-500px">
+                <div class="container" style="margin-top:-450px">
                     <div class="row reasons">
                         <div class="col-md-4">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->itemimage }}"
@@ -182,29 +183,7 @@
         <!-- main-container end -->
 
 
-        <!-- ================ -->
-        <section class="light-gray-bg partners">
-            <div class="container">
-                <h1 class="section-header-dark">They love to work with us</h1>
-                <!-- clients start -->
-                <!-- ================ -->
-                <div class="clients-container">
-                    <div class="clients">
-                        <div class="client-image object-non-visible" data-animation-effect="fadeIn"
-                             data-effect-delay="100">
-                            <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
-                        </div>
-                        <div class="client-image object-non-visible" data-animation-effect="fadeIn"
-                             data-effect-delay="200">
-                            <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- clients end -->
-            </div>
-        </section>
-        <!-- section end -->
+        @yield('partners')
 
         <!-- ================ -->
         <!-- TODO red-bg for parents blue-bg is for educators -->
@@ -298,6 +277,8 @@
 
                 <!-- main-container start -->
         <!-- ================ -->
+        <div class="about-us-pattern-1"></div>
+        <div class="about-us-pattern-2"></div>
         <section class="main-container padding-ver-clear">
             <div class="pv-40 parents">
                 <div class="container">
@@ -384,29 +365,7 @@
             <!-- main-container end -->
         </div>
 
-        <!-- ================ -->
-        <section class="light-gray-bg partners">
-            <div class="container">
-                <h1 class="section-header-dark">They love to work with us</h1>
-                <!-- clients start -->
-                <!-- ================ -->
-                <div class="clients-container">
-                    <div class="clients">
-                        <div class="client-image object-non-visible" data-animation-effect="fadeIn"
-                             data-effect-delay="100">
-                            <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
-                        </div>
-                        <div class="client-image object-non-visible" data-animation-effect="fadeIn"
-                             data-effect-delay="200">
-                            <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- clients end -->
-            </div>
-        </section>
-        <!-- section end -->
+        @yield('partners')
 
         <!-- ================ -->
         <!-- TODO red-bg for parents blue-bg is for educators -->

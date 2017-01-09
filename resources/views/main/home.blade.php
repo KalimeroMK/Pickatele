@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @include('layouts.mainmenu')
+@include('layouts.partners')
 @section('content')
  <!-- banner start -->
 <div class="banner clearfix">
@@ -59,7 +60,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="section-header">Become our partner</h1>
-                <button class="btn custom-btn white-btn">Read More</button>
+                <a href="/partners" class="btn custom-btn white-btn">Read More</a>
             </div>
         </div>
     </div>
@@ -78,33 +79,13 @@
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="section-header">Great offers from Pickatale</h1>
-                <img class="slider" src="/assets/images/bundles.png">
+                <img class="slider img-responsive center-block" src="/assets/img/bundle/{{ $bundles->image }}">
             </div>
         </div>
-    </div>
-</section>
-<!-- section start -->
-<!-- ================ -->
-<section class="light-gray-bg partners">
-    <div class="container">
-        <h1 class="section-header-dark">They love to work with us</h1>
-        <!-- clients start -->
-        <!-- ================ -->
-        <div class="clients-container">
-            <div class="clients">
-                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
-                    <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
-                </div>
-                <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="200">
-                    <a href="#"><img src="/assets/images/babyfirst-logo.png" alt=""></a>
-                </div>
-
-            </div>
-        </div>
-        <!-- clients end -->
     </div>
 </section>
 <!-- section end -->
+@yield('partners')
 
 <section class="newsletter">
     <div class="container">
