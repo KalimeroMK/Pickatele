@@ -738,6 +738,10 @@ ul.pagination, ul.pager {
     font-weight: 700;
 }
 
+.slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle {
+    padding-left: 8px;
+}
+
 .age-range span {
     color: #fff;
     font-weight: 600;
