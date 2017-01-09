@@ -72,12 +72,37 @@ $( document ).ready(function() {
         owlOne.trigger('owl.prev');
     });
 
+// LOOK INSIDE LIGHTBOX
+    $('.quick-look').click(function(e){
+        e.preventDefault();
+        $('.owl-item:first a').trigger('click');
+    });
+
+
+
 // MENU ACTIVE
 
     var pageUrl = "/" + window.location.href.substr(window.location.href.lastIndexOf("/")+1);
     $("ul.nav li a:not(:last)").each(function(){
         if ($(this).attr("href") == pageUrl) {
             $(this).append('<hr class="active-menu">');
+        }
+    });
+});
+
+// LOOK INSIDE LIGHTBOX
+$(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+    event.preventDefault();
+    return $(this).ekkoLightbox({
+        onShown: function() {
+            if (window.console) {
+                return console.log('Checking our the events huh?');
+            }
+        },
+        onNavigate: function(direction, itemIndex) {
+            if (window.console) {
+                return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+            }
         }
     });
 });

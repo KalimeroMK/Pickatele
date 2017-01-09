@@ -1055,3 +1055,11 @@ span.select2-selection.select2-selection--single {
 .input.active.focus {
     outline: none;
 }
+
+.modal-content .modal-header {
+    background-color: #fa2557;
+}
+
+.modal-header .close {
+    color: #fff;
+}

@@ -14,13 +14,16 @@
             <div class="col-xs-12 col-sm-4 pull-left">
                 <img src="/assets/img/books/{{ $book->image }}"/>
 
-                <div class="col-xs-12 pull-left inside-images">
+                <div class="col-xs-12 book-category-slider" style="margin-left:-25px">
+                    <a href="#" class="prev"><img src="/assets/images/left-arrow.png" /></a>
+                    <div class="owl-carousel">
                     @foreach($bookimages as $image)
-
-                        <a href="#">
+                        <a href="/assets/img/sliders/{{ $image->image }}" data-toggle="lightbox" data-gallery="look-inside">
                             <img src="/assets/img/sliders/{{ $image->image }}"/>
                         </a>
                     @endforeach
+                    </div>
+                    <a href="#" class="next"><img src="/assets/images/right-arrow.png" /></a>
                 </div>
             </div>
 
@@ -55,12 +58,13 @@
         <div class="row">
 
         </div>
+        @if(count($bookimages))
         <div class="row" style="margin-top:10px">
             <div class="col-xs-12 pull-left">
-                <a class="link-back" href="/">Quick look inside</a>
+                <a class="link-back quick-look" href="/">Quick look inside</a>
             </div>
         </div>
-
+        @endif
 
             <div class="category-slider">
                 @if(count($relatedbooks) > 1)
