@@ -96,13 +96,13 @@
                             <!-- top navigation -->
                             <ul class="nav top-nav navbar-right visible-md visible-lg">
                                 <li>
-                                    <a class="top-nav-link" href="/">Sign in</a>
+                                    <a class="top-nav-link" href="#">Sign in</a>
                                 </li>
                                 <li>
-                                    <a class="top-nav-link" href="/">Get Started</a>
+                                    <a class="top-nav-link" href="#">Get Started</a>
                                 </li>
                                 <li>
-                                    <a class="top-nav-link" href="/">EN <i style="color: #a8a8a8" class="fa fa-chevron-down"></i></a>
+                                    <a class="top-nav-link" href="#">EN <i style="color: #a8a8a8" class="fa fa-chevron-down"></i></a>
                                 </li>
                             </ul>
 
@@ -153,9 +153,9 @@
                         </ul>
                         <ul class="pull-right" style="margin-right:20px">
                             <li><a href="/careers">Career</a></li>
-                            <li><a href="/">Company and Team</a></li>
-                            <li><a href="/">Blog</a></li>
-                            <li><a href="/">Help Center</a></li>
+                            <li><a href="#">Company and Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
                             <li><a href="/terms">Terms and Conditions</a></li>
                             <li><a href="/about">Contact Us</a></li>
                         </ul>
