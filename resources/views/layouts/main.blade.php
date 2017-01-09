@@ -96,13 +96,13 @@
                             <!-- top navigation -->
                             <ul class="nav top-nav navbar-right visible-md visible-lg">
                                 <li>
-                                    <a class="top-nav-link" href="http://abale.com">Sign in</a>
+                                    <a class="top-nav-link" href="/">Sign in</a>
                                 </li>
                                 <li>
-                                    <a class="top-nav-link" href="http://abale.com">Get Started</a>
+                                    <a class="top-nav-link" href="/">Get Started</a>
                                 </li>
                                 <li>
-                                    <a class="top-nav-link" href="http://abale.com">EN <i style="color: #a8a8a8" class="fa fa-chevron-down"></i></a>
+                                    <a class="top-nav-link" href="/">EN <i style="color: #a8a8a8" class="fa fa-chevron-down"></i></a>
                                 </li>
                             </ul>
 
@@ -144,18 +144,18 @@
                     <div class="col-sm-4 col-xs-12 helpful-links">
                         <h6 class="section-header">Helpful Links</h6>
                         <ul class="pull-left">
-                            <li><a href="http://abale.com">Book Library</a></li>
-                            <li><a href="http://abale.com">Parents</a></li>
-                            <li><a href="http://abale.com">Educators</a></li>
-                            <li><a href="http://abale.com">Partner</a></li>
+                            <li><a href="/books">Book Library</a></li>
+                            <li><a href="/parents">Parents</a></li>
+                            <li><a href="/educators">Educators</a></li>
+                            <li><a href="/partners">Partners</a></li>
                             <li><a href="/privacy">Privacy Policy</a></li>
                             <li><a href="/copyright-policy">Copyright Policy</a></li>
                         </ul>
                         <ul class="pull-right" style="margin-right:20px">
                             <li><a href="/careers">Career</a></li>
-                            <li><a href="http://abale.com">Company and Team</a></li>
-                            <li><a href="http://abale.com">Blog</a></li>
-                            <li><a href="http://abale.com">Help Center</a></li>
+                            <li><a href="/">Company and Team</a></li>
+                            <li><a href="/">Blog</a></li>
+                            <li><a href="/">Help Center</a></li>
                             <li><a href="/terms">Terms and Conditions</a></li>
                             <li><a href="/about">Contact Us</a></li>
                         </ul>
