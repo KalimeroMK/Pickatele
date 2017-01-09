@@ -15,7 +15,7 @@
                 <img src="/assets/img/books/{{ $book->image }}"/>
 
                 <div class="col-xs-12 book-category-slider" style="margin-left:-25px">
-                    <a href="#" class="prev inside-prev"><img src="/assets/images/left-arrow.png" /></a>
+                    <a href="#" style="left:-10px" class="prev inside-prev"><img src="/assets/images/left-arrow.png" /></a>
                     <div class="inside-carousel owl-carousel">
                     @foreach($bookimages as $image)
                         <a href="/assets/img/sliders/{{ $image->image }}" data-toggle="lightbox" data-gallery="look-inside">
@@ -23,7 +23,7 @@
                         </a>
                     @endforeach
                     </div>
-                    <a href="#" class="next inside-next"><img src="/assets/images/right-arrow.png" /></a>
+                    <a href="#" style="right:-15px" class="next inside-next"><img src="/assets/images/right-arrow.png" /></a>
                 </div>
             </div>
 
