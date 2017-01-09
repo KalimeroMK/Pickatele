@@ -250,7 +250,7 @@ footer p.qa {
 }
 
 .fixed.header .main-navigation.animated .active-menu {
-    display: none;
+    /*display: none;*/
 }
 
 .fixed.header .main-navigation.animated .navbar-nav > li > a {
@@ -490,7 +490,7 @@ ul.store-links img {
     margin: 0;
 }
 
-.row.why-will-you-love {
+.why-will-you-love {
     background-image: url('../assets/images/how-it-works-bg.png');
     background-repeat: no-repeat;
     background-position: center right;
@@ -1005,4 +1005,22 @@ span.select2-selection.select2-selection--single {
     text-align:center;
     color:#fa2557;
     font-weight:600;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.input:focus,
+.input:active:focus,
+.input.active:focus,
+.input.focus,
+.input:active.focus,
+.input.active.focus {
+    outline: none;
 }

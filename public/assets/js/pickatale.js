@@ -71,4 +71,13 @@ $( document ).ready(function() {
         e.preventDefault();
         owlOne.trigger('owl.prev');
     });
+
+// MENU ACTIVE
+
+    var pageUrl = "/" + window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+    $("ul.nav li a:not(:last)").each(function(){
+        if ($(this).attr("href") == pageUrl) {
+            $(this).append('<hr class="active-menu">');
+        }
+    });
 });

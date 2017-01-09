@@ -43,7 +43,7 @@
             padding: 5px;
             padding-left: 15px;
         }
-        
+
         .select2-container--default .select2-selection--single .select2-selection__arrow {
             height: 40px;
             position: absolute;
