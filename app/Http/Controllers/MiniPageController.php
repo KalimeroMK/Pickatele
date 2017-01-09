@@ -5,14 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Mainpages as Mainpages;
 use App\Script as Script;
+use App\Faq as Faq;
 
 class MiniPageController extends Controller
 {
 
     private function getData() {
+        $faqs = Faq::take(2)->get();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $data = ["scripts" => $scripts, "mainpages" => $mainpages];
+        $data = ["faqs" => $faqs,"scripts" => $scripts, "mainpages" => $mainpages];
         return $data;
     }
 

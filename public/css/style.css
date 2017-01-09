@@ -397,6 +397,19 @@ div.tparrows {
     font-weight: 600;
 }
 
+.partners-title > p {
+    color: #75c6e7;
+    font-size: 20px;
+    font-weight: 600;
+}
+.partners-bg {
+    background-color: #fec41f;
+}
+
+.white {
+    color: #ffffff !important;
+}
+
 .how-it-works {
     color: #fa2557;
     font-size: 17px;
@@ -423,6 +436,24 @@ div.tparrows {
 }
 
 .reasons p.emphased-text {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+
+.reasons-partners img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.reasons-partners p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.reasons-partners p.emphased-text {
     font-weight: 800;
     margin-bottom: 10px;
 }

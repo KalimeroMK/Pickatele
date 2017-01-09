@@ -27,7 +27,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul id="fullpage-menu" class="nav navbar-nav navbar-right uppercase">
-                        <li><a href="/" class="active">Home</a></li>
+                        <li class="active"><a href="/" class="active">Home</a></li>
                         @foreach($mainpages as $mainpage)
                             <li><a href="/{{ $mainpage->slug }}">{{ $mainpage->title }}</a></li>
                         @endforeach
