@@ -15,15 +15,15 @@
                 <img src="/assets/img/books/{{ $book->image }}"/>
 
                 <div class="col-xs-12 book-category-slider" style="margin-left:-25px">
-                    <a href="#" class="prev"><img src="/assets/images/left-arrow.png" /></a>
-                    <div class="owl-carousel">
+                    <a href="#" class="prev inside-prev"><img src="/assets/images/left-arrow.png" /></a>
+                    <div class="inside-carousel owl-carousel">
                     @foreach($bookimages as $image)
                         <a href="/assets/img/sliders/{{ $image->image }}" data-toggle="lightbox" data-gallery="look-inside">
                             <img src="/assets/img/sliders/{{ $image->image }}"/>
                         </a>
                     @endforeach
                     </div>
-                    <a href="#" class="next"><img src="/assets/images/right-arrow.png" /></a>
+                    <a href="#" class="next inside-next"><img src="/assets/images/right-arrow.png" /></a>
                 </div>
             </div>
 
@@ -78,15 +78,15 @@
                     <div class="">
                     </div>
                     <div class="col-xs-12 book-category-slider">
-                        <a href="#" class="prev"><img src="/assets/images/left-arrow.png" /></a>
-                        <div class="owl-carousel">
+                        <a href="#" class="prev more-prev"><img src="/assets/images/left-arrow.png" /></a>
+                        <div class="more-carousel owl-carousel">
                             @foreach($relatedbooks as $relatedbook)
                             <a href="{{ $relatedbook->slug }}">
                                 <img style="padding-left:0" src="/assets/img/books/thumbnails/{{ $relatedbook->imagethumb }}">
                             </a>
                             @endforeach
                         </div>
-                        <a href="#" class="next"><img src="/assets/images/right-arrow.png" /></a>
+                        <a href="#" class="next more-next"><img src="/assets/images/right-arrow.png" /></a>
                     </div>
                     <div class="">
                     </div>

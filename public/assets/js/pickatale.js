@@ -57,19 +57,34 @@ $( document ).ready(function() {
         $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 
 // IMAGE CAROUSEL
-    var owlOne = $(".owl-carousel").owlCarousel({
+    var owlOne = $(".more-carousel").owlCarousel({
         //items: 6,
         margin: 20
     });
 
-    $(".next").click(function(e){
+    var owlTwo = $(".inside-carousel").owlCarousel({
+        //items: 6,
+        margin: 20
+    });
+
+    $(".more-next").click(function(e){
         e.preventDefault();
         owlOne.trigger('owl.next');
     });
 
-    $(".prev").click(function(e){
+    $(".more-prev").click(function(e){
         e.preventDefault();
         owlOne.trigger('owl.prev');
+    });
+
+    $(".inside-next").click(function(e){
+        e.preventDefault();
+        owlTwo.trigger('owl.next');
+    });
+
+    $(".inside-prev").click(function(e){
+        e.preventDefault();
+        owlTwo.trigger('owl.prev');
     });
 
 // LOOK INSIDE LIGHTBOX
@@ -81,7 +96,6 @@ $( document ).ready(function() {
 
 
 // MENU ACTIVE
-
     var pageUrl = "/" + window.location.href.substr(window.location.href.lastIndexOf("/")+1);
     $("ul.nav li a:not(:last)").each(function(){
         if ($(this).attr("href") == pageUrl) {
