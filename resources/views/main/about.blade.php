@@ -146,8 +146,11 @@
                         <textarea id="messageInput" rows="10" name="message" class="form-control"
                                   placeholder="Message"></textarea>
                         </div>
-                        <div class="form-group col-xs-12 text-center">
-                            <button type="submit" class="btn custom-btn pink-btn">Submit</button>
+                        <div class="form-group col-xs-6 pull left">
+                            {!! Recaptcha::render() !!}
+                        </div>
+                        <div class="form-group col-xs-6 button-container">
+                            <button type="submit" class="btn custom-btn pink-btn pull-right">Submit</button>
                         </div>
                     </form>
                     <p>&nbsp;</p>

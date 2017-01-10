@@ -182,6 +182,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Webpatser\Countries\CountriesServiceProvider::class,
         Baum\Providers\BaumServiceProvider::class,
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
 
     ],
 
@@ -235,7 +236,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Countries' => Webpatser\Countries\CountriesFacade::class,
         'Baum' => Baum\Providers\BaumServiceProvider::class,
-
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
     ],
 
 ];

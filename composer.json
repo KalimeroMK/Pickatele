@@ -10,7 +10,8 @@
         "laravelcollective/html": "^5.3.0",
         "intervention/image": "^2.3",
         "webpatser/laravel-countries": "^1.4",
-        "baum/baum": "^1.1"
+        "baum/baum": "^1.1",
+        "greggilbert/recaptcha": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

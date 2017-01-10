@@ -890,6 +890,12 @@ ul.pagination, ul.pager {
     margin-bottom: 15px;
 }
 
+.contact-form button {
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+}
+
 .about-us-pattern-1 {
     background-image: url('../assets/images/about-pattern-1.png');
     background-repeat: no-repeat;
@@ -1064,3 +1070,4 @@ span.select2-selection.select2-selection--single {
 .modal-header .close {
     color: #fff;
 }
+
