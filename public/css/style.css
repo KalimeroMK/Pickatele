@@ -60,10 +60,14 @@
     color: #b4def1;
 }
 
-.logo {
-    position: absolute;
-    top: 25px;
+.fixed.header .main-navigation.animated .navbar-nav > li > a, .header-left {
+    margin-top: 10px;
 }
+
+.fixed-header-on .header .logo, .fixed-header-on .header .site-slogan {
+    margin-top: 10px;
+}
+
 .text-center {
     display:block;
     text-align: center;
@@ -400,6 +404,14 @@ div.tparrows {
 
 .educators .main-page-title, .partners .main-page-title {
     color: #75c6e7;
+}
+
+.parents.call-to-action {
+    background-color: #fa2557;
+}
+
+.educators.call-to-action, .partners.call-to-action {
+    background-color: #75c6e7;
 }
 
 .partners-bg {

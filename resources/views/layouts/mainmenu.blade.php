@@ -27,21 +27,27 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul id="fullpage-menu" class="nav navbar-nav navbar-right uppercase">
-                        <li>
+                        <li class="hidden">
                             <a href="/" class="active">Home</a>
                         </li>
-                        @foreach($mainpages as $mainpage)
-                            <li>
-                                <a href="/{{ $mainpage->slug }}">{{ $mainpage->title }}</a>
-                            </li>
-                        @endforeach
-                        <li data-menuanchor="fourthPage">
-                            <a href="/books">
-                                Book Library
-                            </a>
+                        <li>
+                            <a href="/parents">Parents</a>
                         </li>
-                        <li data-menuanchor="fifthPage"><a href="/about">About Us</a></li>
-                        <li data-menuanchor="fifthPage"><a href="/">Blog</a></li>
+                        <li>
+                            <a href="/educators">Educators</a>
+                        </li>
+                        <li>
+                            <a href="/books">Book Library</a>
+                        </li>
+                        <li>
+                            <a href="/partners">Partners</a>
+                        </li>
+                        <li>
+                            <a href="/about">About Us</a>
+                        </li>
+                        <li class="hidden">
+                            <a href="/">Blog</a>
+                        </li>
                     </ul>
                 </div>
 

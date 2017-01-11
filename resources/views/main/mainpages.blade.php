@@ -187,7 +187,7 @@
 
         <!-- ================ -->
         <!-- TODO red-bg for parents blue-bg is for educators -->
-        <section class="main-container padding-ver-clear red-bg call-to-action {{$mainpage->slug}}">
+        <section class="main-container padding-ver-clear call-to-action {{$mainpage->slug}}">
             <div class="container pv-40">
                 <div class="row">
                     <h2 class="section-header text-center">Experience some of our amazing books for free!</h2>
@@ -369,7 +369,7 @@
 
         <!-- ================ -->
         <!-- TODO red-bg for parents blue-bg is for educators -->
-        <section class="main-container padding-ver-clear blue-bg call-to-action">
+        <section class="main-container padding-ver-clear call-to-action {{$mainpage->slug}}">
             <div class="container pv-40">
                 <div class="row">
                     <h2 class="section-header text-center">Experience some of our amazing books for free!</h2>

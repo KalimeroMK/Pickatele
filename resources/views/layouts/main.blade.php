@@ -88,7 +88,7 @@
                         <div class="header-left clearfix">
 
                             <!-- logo -->
-                            <div id="logo" class="logo">
+                            <div id="logo" class="logo top-nav navbar-left">
                                 <a href="/"><img id="logo_img" src="/assets/images/logo.png" alt="Pickatale"/>
                                 </a>
                             </div>
