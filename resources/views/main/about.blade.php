@@ -116,26 +116,27 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-offset-2 col-sm-8">
                     <form>
-                        <div class="form-group col-xs-12 col-sm-6">
+                        <div class="form-group col-xs-12 col-sm-6 col-md-6">
                             <label for="nameInput">Name</label>
                             <input type="text" class="form-control" id="nameInput" placeholder="Name">
                         </div>
-                        <div class="form-group col-xs-12 col-sm-6">
+                        <div class="form-group col-xs-12 col-sm-12 col-md-6">
                             <label for="emailInput">Email</label>
                             <input type="email" class="form-control" id="emailInput" placeholder="Email">
                         </div>
-                        <div class="form-group col-xs-12 col-sm-6">
+                        <div class="form-group col-sm-12 col-md-6">
                             <label class="custom" for="typeInput1">Type of Contact</label>
                             <select id="typeInput1" class="select2 form-control">
                                 <option value="customers">Customers</option>
                                 <option value="developers">Developers</option>
                             </select>
                         </div>
-                        <div class="form-group col-xs-12 col-sm-6">
-                            <label class="custom" for="typeInput2">&nbsp;</label>
-                            <select id="typeInput2" class="select2 form-control">
-                                <option value="parent">Parent</option>
-                            </select>
+                        <div class="form-group col-sm-12 col-md-6" style="margin-top: 28px;">
+                            <div>
+                                <select class="select2 form-control">
+                                    <option value="parent">Parent</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group col-xs-12">
                             <label for="subjectInput">Subject</label>

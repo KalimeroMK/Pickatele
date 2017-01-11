@@ -299,11 +299,11 @@ footer p.qa {
 }
 
 .helpful-links ul {
-    padding: 0px;
+    padding:0;
 }
 
 .partners .section-header-dark, .become-partner .section-header {
-    padding-top: 0px;
+    padding-top: 0;
     margin-top: 20px;
 }
 
@@ -377,7 +377,7 @@ div.tparrows {
 .bundles .section-header {
     color: #fa2557;
     text-align: center;
-    padding-top: 0px;
+    padding-top: 0;
     margin-top: 20px;
 }
 
@@ -489,7 +489,7 @@ ul.store-links img {
 }
 
 .call-to-action ul.store-links li img {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .jumbotron-row {
@@ -940,6 +940,10 @@ ul.pagination, ul.pager {
 .contact-form textarea {
     height: 200px;
 }
+
+/*.select2 .select2-container .select2-container--default {*/
+    /*width: 100%;*/
+/*}*/
 
 .select2-container--default .select2-selection--single {
     padding:10px 5px;
