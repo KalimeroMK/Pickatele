@@ -63,14 +63,14 @@
 
                 <!-- main-container start -->
         <!-- ================ -->
-        <section class="main-container padding-ver-clear">
-            <div class="pv-40 parents">
+        <section class="main-container main-page-container padding-ver-clear {{$mainpage->slug}}">
+            <div class="pv-40">
                 <div class="container">
                     <div class="row">
 
                         <!-- main start -->
                         <!-- ================ -->
-                        <div class="main col-md-12 parents-title">
+                        <div class="main col-md-12 main-page-title">
                             <p class="title">{!! $mainpage->paragraph !!}</p>
                         </div>
                         <!-- main end -->
@@ -187,7 +187,7 @@
 
         <!-- ================ -->
         <!-- TODO red-bg for parents blue-bg is for educators -->
-        <section class="main-container padding-ver-clear red-bg call-to-action">
+        <section class="main-container padding-ver-clear red-bg call-to-action {{$mainpage->slug}}">
             <div class="container pv-40">
                 <div class="row">
                     <h2 class="section-header text-center">Experience some of our amazing books for free!</h2>
@@ -279,14 +279,14 @@
         <!-- ================ -->
         <div class="about-us-pattern-1"></div>
         <div class="about-us-pattern-2"></div>
-        <section class="main-container padding-ver-clear">
-            <div class="pv-40 parents">
+        <section class="main-container main-page-container padding-ver-clear {{$mainpage->slug}}">
+            <div class="pv-40">
                 <div class="container">
                     <div class="row">
 
                         <!-- main start -->
                         <!-- ================ -->
-                        <div class="main col-md-12 partners-title">
+                        <div class="main col-md-12 main-page-title">
                             <p class="title">{!! $mainpage->paragraph !!}</p>
                         </div>
                         <!-- main end -->

@@ -382,23 +382,26 @@ div.tparrows {
 }
 
 
-.parents .section-header {
+.main-page-container .section-header {
     color: #fa4c72;
     font-size: 46px;
+    font-weight: 800;
+}
+
+
+.main-page-title > p {
+    font-size: 20px;
     font-weight: 400;
 }
 
-.parents-title > p {
+.main-page-container .main-page-title {
     color: #fa2557;
-    font-size: 20px;
-    font-weight: 400;
 }
 
-.partners-title > p {
+.educators .main-page-title, .partners .main-page-title {
     color: #75c6e7;
-    font-size: 20px;
-    font-weight: 400;
 }
+
 .partners-bg {
     background-color: #fec41f;
 }
