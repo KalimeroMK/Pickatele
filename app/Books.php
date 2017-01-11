@@ -25,7 +25,21 @@ class Books extends Model
         'user_id',
         'workflow_id',
         'created_at',
-        'updated_at'
+        'updated_at',
+        'country_code',
+        'url_commun_file',
+        'url_language_file',
+        'book_language',
+        'description_short',
+        'backend_version',
+        'atos',
+        'lexile',
+        'isFree',
+        'isPreview',
+        'coverCorrect',
+        'isChoose',
+        'priority',
+        'freebook'
     ];
 
 
@@ -66,6 +80,6 @@ class Books extends Model
 
     public function images()
     {
-        return $this->belongsTo('App\Sliders','id','book_id');
+        return $this->belongsTo('App\Sliders', 'id', 'book_id');
     }
 }
