@@ -432,7 +432,7 @@ div.tparrows {
     color: #fa2557;
 }
 
-.section-header.blue {
+.section-header.blue, .section-subheader.blue, .section-subheader2.blue {
     color: #74c6e7;
 }
 
@@ -1090,3 +1090,76 @@ span.select2-selection.select2-selection--single {
     color: #fff;
 }
 
+.help-center .section-subheader {
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: inherit;
+}
+
+.help-center .section-subheader2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: inherit;
+}
+
+.help-center .recent-activity {
+    background-color: #fca0aa;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 35px 50px 60px 30px;
+    border-radius: 3px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+/**/
+#accordion {
+    margin-top: 20px;
+}
+
+#accordion .accordion-group {
+    padding: 18px;
+    margin-top: 2px;
+    border-radius: 1px;
+}
+
+#accordion .accordion-group .accordion-toggle {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#accordion .accordion-group:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#accordion .accordion-group:nth-child(odd) .accordion-toggle,
+#accordion .accordion-group:nth-child(odd) .accordion-inner {
+    color: #fa2557;
+}
+
+#accordion .accordion-group:nth-child(even) {
+    background-color: #fca0aa;
+}
+
+#accordion .accordion-group:nth-child(even) .accordion-toggle,
+#accordion .accordion-group:nth-child(even) .accordion-inner {
+    color: #fff;
+}
+
+#accordion .accordion-inner {
+    padding: 15px 0;
+}
+
+.accordion-toggle:after {
+    color: #fa2557;
+    font-family: 'FontAwesome';
+    content: "\f078";
+    float: right;
+}
+.accordion-opened .accordion-toggle:after {
+    color: #fa2557;
+    content: "\f054";
+}

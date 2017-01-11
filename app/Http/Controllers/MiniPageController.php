@@ -23,6 +23,13 @@ class MiniPageController extends Controller
         return view('main.about')->with($this->getData());
     }
 
+    public function help()
+    {
+        $data = $this->getData();
+        $data["faqs"] = Faq::where("status", "=", 1)->get();
+        return view('main.help-center')->with($data);
+    }
+
     public function copyright()
     {
         return view('main.copyright')->with($this->getData());

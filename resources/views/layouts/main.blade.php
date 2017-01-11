@@ -155,7 +155,7 @@
                             <li><a href="/careers">Career</a></li>
                             <li><a href="#">Company and Team</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Help Center</a></li>
+                            <li><a href="/help-center">Help Center</a></li>
                             <li><a href="/terms">Terms and Conditions</a></li>
                             <li><a href="/about">Contact Us</a></li>
                         </ul>
@@ -167,7 +167,7 @@
                             A: {!! str_limit($faq->answer, 70, '...') !!}</p>
                         @endforeach
 
-                        <a class="btn custom-btn pink-btn">Help Center</a>
+                        <a class="btn custom-btn pink-btn" href="/help-center">Help Center</a>
                     </div>
                     <div class="col-sm-4 col-xs-12 follow-us">
                         <h6 class="section-header">Follow us</h6>

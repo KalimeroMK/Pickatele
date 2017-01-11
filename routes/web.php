@@ -44,6 +44,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/about', 'MiniPageController@about');
 Route::get('/copyright-policy', 'MiniPageController@copyright');
 Route::get('/careers', 'MiniPageController@careers');
+Route::get('/help-center', 'MiniPageController@help');
 Route::get('/terms', 'MiniPageController@terms');
 Route::get('/privacy', 'MiniPageController@privacy');
 Route::get('/books', 'BookController@index');
