@@ -102,6 +102,23 @@ $( document ).ready(function() {
             $(this).append('<hr class="active-menu">');
         }
     });
+
+// HELPCENTER SEARCH
+
+    $('.help-center #seachInput').change(function() {
+            // $loading.show();
+            var data = {};
+            $('.help-center form').serializeArray().map(function(x){
+                if (x.value && x.value != "0"){
+                    data[x.name] = x.value;
+                }
+            });
+
+            $.post( "/help-center/search", data, function( res ) {
+                $( "#accordion" ).empty().html(res);
+                // $loading.hide();
+            });
+    });
 });
 
 // LOOK INSIDE LIGHTBOX

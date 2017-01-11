@@ -16,28 +16,17 @@
                             app and your subscription</h3>
 
                         <div class="accordion" id="accordion">
-                            @foreach($faqs as $faq)
-                                <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$faq->id}}">
-                                            {{$faq->question}}
-                                        </a>
-                                    </div>
-                                    <div id="collapse{{$faq->id}}" class="accordion-body collapse">
-                                        <div class="accordion-inner">
-                                            {{$faq->answer}}
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
+                            @include('main.partials.help-center-accordion')
                         </div>
                         <p>&nbsp;</p>
 
                         <h2 class="section-subheader2 blue">Search for Questions</h2>
-                        <div class="contact-form">
+                        <div class="contact-form search">
                             <form class="inline">
+                                {!! csrf_field() !!}
+
                                 <div class="form-group col-xs-12 no-padding">
-                                    <input class="form-control" id="seachInput" placeholder="Search for questions"
+                                    <input class="form-control" id="seachInput" name="q" placeholder="Search for questions"
                                            type="text">
                                 </div>
                             </form>

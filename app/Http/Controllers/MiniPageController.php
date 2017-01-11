@@ -26,7 +26,7 @@ class MiniPageController extends Controller
     public function help()
     {
         $data = $this->getData();
-        $data["faqs"] = Faq::where("status", "=", 1)->get();
+        $data["faqs"] = Faq::all();
         return view('main.help-center')->with($data);
     }
 
