@@ -12,7 +12,7 @@
 
         <div class="row main-content">
             <div class="col-xs-12 col-sm-4 pull-left">
-                <img src="/assets/img/books/{{ $book->image }}"/>
+                <img src="/assets/img/books/thumbnails/{{ $book->image }}"/>
 
                 <div class="col-xs-12 book-category-slider" style="margin-left:-25px">
                     <a href="#" style="left:-10px" class="prev inside-prev"><img src="/assets/images/left-arrow.png" /></a>

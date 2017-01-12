@@ -165,6 +165,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
 
 
+
         /*
          * Package Service Providers...
          */
@@ -183,6 +184,7 @@ return [
         Webpatser\Countries\CountriesServiceProvider::class,
         Baum\Providers\BaumServiceProvider::class,
         Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
+        Ixudra\Curl\CurlServiceProvider::class,
 
     ],
 
@@ -237,6 +239,7 @@ return [
         'Countries' => Webpatser\Countries\CountriesFacade::class,
         'Baum' => Baum\Providers\BaumServiceProvider::class,
         'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
+        'Curl'          => Ixudra\Curl\Facades\Curl::class,
     ],
 
 ];

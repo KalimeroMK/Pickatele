@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb9f4237308cbf93bdef4f580adf5160",
+    "content-hash": "20034ec348fb3d7084c38ab40aa2689f",
     "packages": [
         {
             "name": "baum/baum",
@@ -265,7 +265,7 @@
                 "laravel5",
                 "recaptcha"
             ],
-            "time": "2016-02-17T12:41:57+00:00"
+            "time": "2016-02-17 12:41:57"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -386,6 +386,49 @@
                 "watermark"
             ],
             "time": "2016-09-01T17:04:03+00:00"
+        },
+        {
+            "name": "ixudra/curl",
+            "version": "6.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ixudra/curl.git",
+                "reference": "fcb379c7fa9884e2c81b5faa592022268dc83395"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ixudra/curl/zipball/fcb379c7fa9884e2c81b5faa592022268dc83395",
+                "reference": "fcb379c7fa9884e2c81b5faa592022268dc83395",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=4.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Ixudra\\Curl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Oris",
+                    "email": "jan.oris@ixudra.be"
+                }
+            ],
+            "description": "Custom PHP Curl library for the Laravel 5 framework - developed by Ixudra",
+            "homepage": "http://ixudra.be",
+            "keywords": [
+                "Ixudra",
+                "curl",
+                "laravel"
+            ],
+            "time": "2016-11-17T16:41:29+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
