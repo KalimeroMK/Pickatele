@@ -142,8 +142,8 @@
             <div class="container">
                 <div class=”row”>
                     <div class="col-sm-4 col-xs-12 helpful-links">
-                        <h6 class="section-header">Helpful Links</h6>
-                        <ul class="pull-left">
+                        <h6 class="section-header" style="margin-bottom:0">Helpful Links</h6>
+                        <ul class="col-xs-6">
                             <li><a href="/books">Book Library</a></li>
                             <li><a href="/parents">Parents</a></li>
                             <li><a href="/educators">Educators</a></li>
@@ -151,7 +151,7 @@
                             <li><a href="/privacy">Privacy Policy</a></li>
                             <li><a href="/copyright-policy">Copyright Policy</a></li>
                         </ul>
-                        <ul class="pull-right" style="margin-right:20px">
+                        <ul class="col-xs-6">
                             <li><a href="/careers">Career</a></li>
                             <li><a href="#">Company and Team</a></li>
                             <li><a href="#">Blog</a></li>
@@ -182,7 +182,7 @@
                                     <i class="fa fa-twitter"></i>
                                 </a>
                             </li>
-                            <li>
+<!--                            <li>
                                 <a href="http://tumblr.com">
                                     <i class="fa fa-tumblr"></i>
                                 </a>
@@ -192,6 +192,7 @@
                                     <i class="fa fa-instagram"></i>
                                 </a>
                             </li>
+-->
                             <li>
                                 <a href="http://linkedin.com">
                                     <i class="fa fa-linkedin"></i>

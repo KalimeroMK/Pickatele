@@ -265,7 +265,7 @@
                 "laravel5",
                 "recaptcha"
             ],
-            "time": "2016-02-17 12:41:57"
+            "time": "2016-02-17T12:41:57+00:00"
         },
         {
             "name": "guzzlehttp/psr7",

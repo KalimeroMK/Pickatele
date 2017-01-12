@@ -353,6 +353,10 @@ footer p.qa {
     padding: 10px 20px;
 }
 
+footer .follow-us {
+    margin-bottom: 50px;
+}
+
 .helpful-links a {
     font-weight: 100;
     font-size: 16px;
@@ -735,7 +739,7 @@ ul.store-links img {
 }
 
 .book-list .row {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 .book-list .book-title .section-header{
@@ -748,6 +752,14 @@ ul.store-links img {
     font-size: 12px;
     font-weight: 700;
     padding: 10px 45px;
+}
+
+.book-list .book-entry {
+    margin: 15px 0;
+}
+
+.book-list .results {
+    margin: 25px 0;
 }
 
 ul.pagination li > span, ul.pagination li > a, .pagination > li:first-child > a, .pagination > li:last-child > a, ul.pager li > a {

@@ -41,7 +41,7 @@ class BookController extends Controller
         $scripts = Script::where("status", "=", 1)->get();
         $faqs = Faq::take(2)->get();
         $data = [
-            "books" => $books, "bookpaginator" => $books, "scripts" => $scripts, "mainpages" => $mainpages,
+            "books" => $books, "scripts" => $scripts, "mainpages" => $mainpages,
             "levels" => $levels, "genres" => $genres, "countries" => $countries, "bundles" => $bundles,
             "partners" => $partners, "faqs" => $faqs
         ];
@@ -83,8 +83,7 @@ class BookController extends Controller
             }
         }
         $result = $builder->orderBy($order, $direction)->paginate(12);
-        $data = ["books" => $result, "bookpaginator" => $result];
-        return view('main.books.ajax')->with($data);
+        return view('main.partials.book-results')->with(["books" => $result]);
     }
 
     public function getBook($slug)
