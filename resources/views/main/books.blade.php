@@ -66,12 +66,14 @@
                         {{ Form::select('genre', $genres, 0, ['class' => 'select2 red form-control']) }}
                     </div>
                     <div class="form-group col-sm-4 age-range">
-                        <label class="custom" for="age-range" style="width: 60px;">Age</label>
-                        <span>0</span>
-                        <input id="age-range" name="age-range" data-slider-id='age-range' type="text"
+                        <label class="custom" for="age-range">Age</label>
+                        <div style="display:inline-block">
+                            <span>0</span>
+                                <input id="age-range" name="age-range" data-slider-id='age-range' type="text"
                                data-slider-min="0" data-slider-max="8" data-slider-step="1" data-slider-value="0"
                                data-slider-tooltip="hide"/>
-                        <span>8</span>
+                            <span>8</span>
+                        </div>
                     </div>
                     <div class="form-group col-sm-4">
                         <label class="custom">Partner</label>
