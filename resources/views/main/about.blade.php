@@ -116,7 +116,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-offset-2 col-sm-8">
                     <form>
-                        <div class="form-group col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group col-xs-12 col-sm-12 col-md-6">
                             <label for="nameInput">Name</label>
                             <input type="text" class="form-control" id="nameInput" placeholder="Name">
                         </div>
@@ -124,19 +124,20 @@
                             <label for="emailInput">Email</label>
                             <input type="email" class="form-control" id="emailInput" placeholder="Email">
                         </div>
-                        <div class="form-group col-sm-12 col-md-6">
+                        <div class="form-group col-xs-12 col-sm-12 col-md-6">
                             <label class="custom" for="typeInput1">Type of Contact</label>
-                            <select id="typeInput1" class="select2 form-control">
+                            <select id="typeInput1" class="select2 form-control" style="width: 100%">
                                 <option value="customers">Customers</option>
                                 <option value="developers">Developers</option>
                             </select>
                         </div>
-                        <div class="form-group col-sm-12 col-md-6" style="margin-top: 28px;">
-                            <div>
-                                <select class="select2 form-control">
-                                    <option value="parent">Parent</option>
-                                </select>
-                            </div>
+                        <div class="form-group col-xs-12 col-sm-12 col-md-6">
+                            <label class="custom visible-md visible-lg">&nbsp;</label>
+                            <select class="select2 form-control" style="width: 100%">
+                                <option value="parent">Parent</option>
+                                <option value="step-parent">Step-Parent</option>
+
+                            </select>
                         </div>
                         <div class="form-group col-xs-12">
                             <label for="subjectInput">Subject</label>
@@ -147,11 +148,11 @@
                         <textarea id="messageInput" rows="10" name="message" class="form-control"
                                   placeholder="Message"></textarea>
                         </div>
-                        <div class="form-group col-xs-6 pull left">
-                            {!! Recaptcha::render() !!}
+                        <div class="form-group col-sm-12 col-md-6">
+                            <label>{!! Recaptcha::render() !!}</label>
                         </div>
-                        <div class="form-group col-xs-6 button-container">
-                            <button type="submit" class="btn custom-btn pink-btn pull-right">Submit</button>
+                        <div class="form-group col-sm-12 col-md-6 button-container">
+                            <button type="submit" class="btn custom-btn pink-btn pull-right-md pull-right-lg">Submit</button>
                         </div>
                     </form>
                     <p>&nbsp;</p>
