@@ -30,6 +30,13 @@ class MiniPageController extends Controller
         return view('main.help-center')->with($data);
     }
 
+    public function contact()
+    {
+        $data = $this->getData();
+        return view('main.contact')->with($data);
+    }
+
+
     public function copyright()
     {
         return view('main.copyright')->with($this->getData());

@@ -166,6 +166,7 @@ body:not(.transparent-header) .header-container .header {
 
 .navbar-collapse .active-menu {
     display: none;
+
 }
 
 body:not(.transparent-header) .header-container .header .nav.navbar-nav.navbar-right.uppercase {
@@ -204,6 +205,11 @@ body:not(.transparent-header) .header-container .header .nav.navbar-nav.navbar-r
 .fixed-header-on .dark.header.fixed {
     background-color: #007299;
     padding-top: 10px;
+}
+
+
+.transparent-header .dark .main-navigation .navbar.navbar-default {
+    background-color: inherit;
 }
 
 img#logo_img {
@@ -1238,7 +1244,7 @@ span.select2-selection.select2-selection--single {
     text-transform: inherit;
 }
 
-.help-center .section-subheader2 {
+.help-center .section-subheader2, .contact-form .section-subheader2 {
     font-size: 20px;
     font-weight: 600;
     text-transform: inherit;
@@ -1304,4 +1310,35 @@ span.select2-selection.select2-selection--single {
 .accordion-opened .accordion-toggle:after {
     color: #fa2557;
     content: "\f054";
+}
+
+.container.contact-us .contact-form {
+    background-image: none;
+}
+
+.container.contact-us {
+    background-image: url('../assets/images/contact-bg-1.png'), url('../assets/images/contact-bg-2.png');
+    background-repeat: no-repeat;
+    background-position: left center, right top;
+    height: 100%;
+    width: 100%;
+}
+
+.container.offices {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.office-info {
+    margin: 10px 0;
+}
+
+.office-info p {
+    margin-bottom: 2px;
+    color: #7ccaea;
+    font-weight: 600;
+}
+
+.office-info p.office-header {
+    font-size: 17px;
 }

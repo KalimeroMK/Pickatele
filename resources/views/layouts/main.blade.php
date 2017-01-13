@@ -96,7 +96,7 @@
                                     <a class="top-nav-link" href="#">Get Started</a>
                                 </li>
                                 <li>
-                                    <a class="top-nav-link" href="#">EN <i style="color: #a8a8a8" class="fa fa-chevron-down"></i></a>
+                                    <a class="top-nav-link" href="#">EN <i style="color: #fff/*color: #a8a8a8*/" class="fa fa-chevron-down"></i></a>
                                 </li>
                             </ul>
 
@@ -150,7 +150,7 @@
                             <li><a href="#">Blog</a></li>
                             <li><a href="/help-center">Help Center</a></li>
                             <li><a href="/terms">Terms and Conditions</a></li>
-                            <li><a href="/about">Contact Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-xs-12">

@@ -43,6 +43,7 @@ Route::group(['middleware' => ['web'], 'prefix' => 'admin'], function () {
 
 Route::get('/', 'HomeController@index');
 Route::get('/about', 'MiniPageController@about');
+Route::get('/contact', 'MiniPageController@contact');
 Route::get('/copyright-policy', 'MiniPageController@copyright');
 Route::get('/careers', 'MiniPageController@careers');
 Route::get('/help-center', 'MiniPageController@help');
