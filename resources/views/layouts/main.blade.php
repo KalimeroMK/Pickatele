@@ -155,7 +155,7 @@
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <h6 class="section-header">Help Center</h6>
-                        @foreach($faqs as $faq)
+                        @foreach(array_slice($faqs->all(), 3) as $faq)
                         <p class="qa">Q: {!! str_limit($faq->question, 70, '...') !!} <br><br>
                             A: {!! str_limit($faq->answer, 70, '...') !!}</p>
                         @endforeach

@@ -1342,3 +1342,11 @@ span.select2-selection.select2-selection--single {
 .office-info p.office-header {
     font-size: 17px;
 }
+
+.help-center {
+    background-image: url('../assets/images/contact-bg-1.png'), url('../assets/images/contact-bg-2.png');
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    height: 100%;
+    width: 100%;
+}
