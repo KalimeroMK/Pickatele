@@ -1,4 +1,18 @@
 @extends('layouts.main')
+@section('style')
+    <style>
+        .header-container .header {
+            background-color: #ee295e;
+            background-image: none;
+
+        }
+
+        .bg-container {
+            background-color: #ee295e;
+            background-image: none;
+        }
+    </style>
+@endsection
 @include('layouts.mainmenu')
 @section('content')
     <section class="main-container help-center padding-ver-clear">
