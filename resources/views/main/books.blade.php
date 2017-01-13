@@ -1,6 +1,13 @@
 @extends('layouts.main')
 @section('style')
     <style>
+
+        .header-container .header {
+            background-image: url('../assets/images/blue-header-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
         select.select2 {
             width: 200px !important;
         }

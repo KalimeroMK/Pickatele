@@ -78,23 +78,17 @@
         <!-- "full-width": mandatory class for the full-width menu layout -->
         <!-- "centered": mandatory class for the centered logo layout -->
         <!-- ================ -->
-        <header class="header fixed dark clearfix">
+        <header class="header transparent-header fixed dark clearfix">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 visible-md visible-lg">
                         <!-- header-left start -->
                         <!-- ================ -->
                         <div class="header-left clearfix">
 
-                            <!-- logo -->
-                            <div id="logo" class="logo top-nav navbar-left">
-                                <a href="/"><img id="logo_img" src="/assets/images/logo.png" alt="Pickatale"/>
-                                </a>
-                            </div>
-
                             <!-- top navigation -->
-                            <ul class="nav top-nav navbar-right visible-md visible-lg">
+                            <ul class="nav top-nav navbar-right">
                                 <li>
                                     <a class="top-nav-link" href="#">Sign in</a>
                                 </li>
@@ -115,7 +109,6 @@
                         <!-- header-right start -->
                         <!-- ================ -->
                         <div class="header-right clearfix">
-
                             @yield('mainmenu')
                         </div>
                         <!-- header-right end -->

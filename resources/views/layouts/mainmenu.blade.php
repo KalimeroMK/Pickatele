@@ -6,7 +6,11 @@
     <!-- "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns -->
     <!-- ================ -->
     <div class="main-navigation  animated ">
-
+        <!-- logo -->
+        <div id="logo" class="logo top-nav navbar-left">
+            <a href="/" style="position:relative;z-index:10;"><img id="logo_img" src="/assets/images/logo.png" alt="Pickatale"/>
+            </a>
+        </div>
         <!-- navbar start -->
         <!-- ================ -->
         <nav class="navbar navbar-default" role="navigation">
