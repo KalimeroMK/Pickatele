@@ -1,9 +1,17 @@
 @extends('layouts.main')
 @section('style')
     <style>
-
+        /*mi treba bg pattern za books*/
         .header-container .header {
+            /*background-color: #007299;*/
             background-image: url('../assets/images/blue-header-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .bg-container {
+            /*background-color: #007299;*/
+            background-image: url('../assets/images/books-bg-pattern.png');
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -64,6 +72,7 @@
 
 @include('layouts.mainmenu')
 @section('content')
+<div class="bg-container">
     <div class="books-filter">
         <div class="container">
             <form role="form" novalidate="novalidate" class="form-inline">
@@ -185,4 +194,5 @@
             @include('main.partials.book-results')
         </div>
     </div>
+</div>
 @endsection
