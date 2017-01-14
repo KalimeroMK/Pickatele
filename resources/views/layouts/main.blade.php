@@ -137,20 +137,21 @@
                     <div class="col-sm-4 col-xs-12 helpful-links">
                         <h6 class="section-header" style="margin-bottom:0">Helpful Links</h6>
                         <ul class="col-xs-6">
-                            <li><a href="/books">Book Library</a></li>
                             <li><a href="/parents">Parents</a></li>
                             <li><a href="/educators">Educators</a></li>
+                            <li><a href="/books">Book Library</a></li>
                             <li><a href="/partners">Partners</a></li>
-                            <li><a href="/privacy">Privacy Policy</a></li>
-                            <li><a href="/copyright-policy">Copyright Policy</a></li>
+                            <li><a href="/help-center">Help Center</a></li>
                         </ul>
                         <ul class="col-xs-6">
-                            <li><a href="/careers">Career</a></li>
-                            <li><a href="#">Company and Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="/help-center">Help Center</a></li>
-                            <li><a href="/terms">Terms and Conditions</a></li>
+                            <li><a href="/about">About us</a></li>
+                            <li><a href="/careers">Careers</a></li>
                             <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/terms">Terms and Conditions</a></li>
+                            <li><a href="/copyright-policy">Copyright Policy</a></li>
+                            {{--<li><a href="#">Company and Team</a></li>--}}
+                            {{--<li><a href="#">Blog</a></li>--}}
                         </ul>
                     </div>
                     <div class="col-sm-4 col-xs-12">
@@ -166,12 +167,12 @@
                         <h6 class="section-header">Follow us</h6>
                         <ul class="social-icons">
                             <li style="padding-left:0px;">
-                                <a href="http://facebook.com">
+                                <a href="https://www.facebook.com/Pickatale">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://twitter.com">
+                                <a href="https://twitter.com/PickataleApp">
                                     <i class="fa fa-twitter"></i>
                                 </a>
                             </li>
@@ -187,7 +188,7 @@
                             </li>
 -->
                             <li>
-                                <a href="http://linkedin.com">
+                                <a href="https://www.linkedin.com/company/pickatale">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
                             </li>
@@ -195,12 +196,12 @@
 
                         <ul class="store-links">
                             <li style="padding-left:0px;">
-                                <a href="http://apple.com">
+                                <a href="https://itunes.apple.com/us/app/pickatale-200+-interactive/id669433655?mt=8">
                                     <img src="/assets/images/apple-store.png">
                                 </a>
                             </li>
                             <li>
-                                <a href="http://google.com">
+                                <a href="https://play.google.com/store/apps/details?id=com.WisdomEdition.Pickatale.Bookshelf&hl=en">
                                     <img src="/assets/images/google-store.png">
                                 </a>
                             </li>
