@@ -823,6 +823,7 @@ ul.store-links li a:hover, ul.store-links li a:focus {
 
 .book-list img {
     margin: 0 auto;
+    max-width: 200px;
 }
 
 .book-list .row {

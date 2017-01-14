@@ -51,8 +51,9 @@
 
         .select2-container--default .select2-selection--single {
             height: 40px;
-            padding:5px;
+            padding: 5px;
         }
+
         .select2-results__option, .select2-results__option--highlighted {
             height: 40px;
             padding: 5px;
@@ -72,7 +73,6 @@
 
 @include('layouts.mainmenu')
 @section('content')
-<div class="bg-container">
     <div class="books-filter">
         <div class="container">
             <form role="form" novalidate="novalidate" class="form-inline">
@@ -83,11 +83,12 @@
                     </div>
                     <div class="form-group col-sm-4 age-range">
                         <label class="custom" for="age-range">Age</label>
+
                         <div style="display:inline-block">
                             <span>0</span>
-                                <input id="age-range" name="age-range" data-slider-id='age-range' type="text"
-                               data-slider-min="0" data-slider-max="8" data-slider-step="1" data-slider-value="0"
-                               data-slider-tooltip="hide"/>
+                            <input id="age-range" name="age-range" data-slider-id='age-range' type="text"
+                                   data-slider-min="0" data-slider-max="8" data-slider-step="1" data-slider-value="0"
+                                   data-slider-tooltip="hide"/>
                             <span>8</span>
                         </div>
                     </div>
@@ -174,25 +175,26 @@
             </form>
 
             {{--<div class="row loading text-center pv-30">--}}
-                {{--<div class="spinner">--}}
-                    {{--<div class="bounce1"></div>--}}
-                    {{--<div class="bounce2"></div>--}}
-                    {{--<div class="bounce3"></div>--}}
-                {{--</div>--}}
+            {{--<div class="spinner">--}}
+            {{--<div class="bounce1"></div>--}}
+            {{--<div class="bounce2"></div>--}}
+            {{--<div class="bounce3"></div>--}}
+            {{--</div>--}}
             {{--</div>--}}
         </div>
     </div>
 
-    <div class="container book-list">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="section-header text-center red" style="margin-top: 60px">Book Library</h1>
+    <div class="bg-container">
+        <div class="container book-list">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="section-header text-center red" style="margin-top: 60px">Book Library</h1>
+                </div>
+            </div>
+
+            <div class="results">
+                @include('main.partials.book-results')
             </div>
         </div>
-
-        <div class="results">
-            @include('main.partials.book-results')
-        </div>
     </div>
-</div>
 @endsection
