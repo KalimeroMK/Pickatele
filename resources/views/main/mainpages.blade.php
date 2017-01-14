@@ -200,14 +200,20 @@
                 <div class="col-xs-12 text-center">
                     <ul class="store-links">
                         <li>
-                            <a href="http://apple.com">
-                                <img src="/assets/images/apple-store.png">
+                            <a href="https://itunes.apple.com/us/app/pickatale-200+-interactive/id669433655?mt=8">
+                                <img src="/assets/images/1-apple-store.png">
                             </a>
                         </li>
 
                         <li>
-                            <a href="http://google.com">
-                                <img src="/assets/images/google-store.png">
+                            <a href="https://play.google.com/store/apps/details?id=com.WisdomEdition.Pickatale.Bookshelf&hl=en">
+                                <img src="/assets/images/2-google-store.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.wandoujia.com/apps/com.quduedu.pickatale">
+                                <img src="/assets/images/3-cn-store.png">
                             </a>
                         </li>
                     </ul>
@@ -382,14 +388,20 @@
                 <div class="col-xs-12 text-center">
                     <ul class="store-links">
                         <li>
-                            <a href="http://apple.com">
-                                <img src="/assets/images/apple-store.png">
+                            <a href="https://itunes.apple.com/us/app/pickatale-200+-interactive/id669433655?mt=8">
+                                <img src="/assets/images/1-apple-store.png">
                             </a>
                         </li>
 
                         <li>
-                            <a href="http://google.com">
-                                <img src="/assets/images/google-store.png">
+                            <a href="https://play.google.com/store/apps/details?id=com.WisdomEdition.Pickatale.Bookshelf&hl=en">
+                                <img src="/assets/images/2-google-store.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.wandoujia.com/apps/com.quduedu.pickatale">
+                                <img src="/assets/images/3-cn-store.png">
                             </a>
                         </li>
                     </ul>
