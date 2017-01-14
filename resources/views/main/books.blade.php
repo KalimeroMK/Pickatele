@@ -11,9 +11,9 @@
 
         .bg-container {
             /*background-color: #007299;*/
-            background-image: url('../assets/images/books-bg-pattern.png');
+            background-image: url('../assets/images/transparent-left.png'), url('../assets/images/transparent-right.png');
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center left, bottom right;
         }
 
         select.select2 {
