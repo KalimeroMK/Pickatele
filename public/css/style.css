@@ -1383,3 +1383,14 @@ span.select2-selection.select2-selection--single {
 .container-small, .container-large {
     max-width: 100%;
 }
+
+.clients-container .clients a {
+    line-height: 70px;
+}
+
+.clients-container .clients img {
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
+    max-height:50px;
+}
