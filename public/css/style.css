@@ -1012,6 +1012,7 @@ ul.pagination, ul.pager {
 .book-category-slider img {
     padding: 20px 10px;
     display: inline-block;
+    max-width: 100px;
 }
 
 .category-slider {
