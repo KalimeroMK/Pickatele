@@ -39,7 +39,7 @@ class BookController extends Controller
         $books = Books::orderBy('created_at', 'asc')->paginate(9);
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $faqs = Faq::take(2)->get();
+        $faqs = Faq::take(3)->get();
         $data = [
             "books" => $books, "scripts" => $scripts, "mainpages" => $mainpages,
             "levels" => $levels, "genres" => $genres, "countries" => $countries, "bundles" => $bundles,
@@ -90,7 +90,7 @@ class BookController extends Controller
     {
         $book = Books::where('slug', '=', $slug)->first();
         $partnerid = $book[0]['partner_id'];
-        $faqs = Faq::take(2)->get();
+        $faqs = Faq::take(3)->get();
         $bookid = $book->id;
         $bookimages = Sliders::where('book_id', '=', $bookid)->get();
         $books = Books::where('partner_id', '=', $partnerid)->get();
