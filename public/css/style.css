@@ -940,6 +940,12 @@ ul.pagination, ul.pager {
     color: #3b3d40;
 }
 
+.book-bg {
+    background-image: url('../assets/images/transparent-left.png'), url('../assets/images/transparent-right.png');
+    background-repeat: no-repeat;
+    background-position: top left, center right;
+}
+
 .book-details {
     padding-top: 90px;
 }
@@ -982,8 +988,8 @@ ul.pagination, ul.pager {
     padding-right: 7px;
 }
 
-.inside-images a:last-child {
-    padding-right: 0;
+.inside-carousel img {
+    max-height: 110px;
 }
 
 
@@ -1013,6 +1019,10 @@ ul.pagination, ul.pager {
     padding: 20px 10px;
     display: inline-block;
     max-width: 100px;
+}
+
+.book-category-slider .owl-item {
+    max-width: 120px;
 }
 
 .category-slider {

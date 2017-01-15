@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @include('layouts.mainmenu')
 @section('content')
-
+<div class="book-bg">
     <div class="book-details container">
         <div class="row">
             <div class="col-xs-12 pull-left">
@@ -110,4 +110,5 @@
                 @endif
             </div>
     </div>
+</div>
 @endsection
