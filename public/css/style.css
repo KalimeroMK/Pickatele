@@ -1328,6 +1328,39 @@ span.select2-selection.select2-selection--single {
     content: "\f054";
 }
 
+#accordion-links {
+    margin-top: 20px;
+}
+
+#accordion-links .accordion-group .accordion-heading {
+    height: 50px;
+}
+
+#accordion-links .accordion-group .accordion-heading  {
+    padding: 15px;
+    margin-top: 2px;
+    border-radius: 1px;
+}
+
+#accordion-links .accordion-group:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#accordion-links .accordion-group:nth-child(odd) .accordion-link,
+#accordion-links .accordion-group:nth-child(odd) .accordion-inner {
+    color: #fa2557;
+}
+
+#accordion-links .accordion-group:nth-child(even) {
+    background-color: #fca0aa;
+}
+
+#accordion-links .accordion-group:nth-child(even) .accordion-link,
+#accordion-links .accordion-group:nth-child(even) .accordion-inner {
+    color: #fff;
+}
+
+
 .container.contact-us .contact-form {
     background-image: none;
 }
