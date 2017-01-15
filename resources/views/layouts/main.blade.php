@@ -295,6 +295,8 @@
 <script type="text/javascript" src="/assets/js/custom.js"></script>
 <script type="text/javascript" src="/assets/js/slider-input/dist/bootstrap-slider.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/lightbox-4.0.2/dist/ekko-lightbox.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+
 
 <script type="text/javascript" src="/assets/js/pickatale.js"></script>
 

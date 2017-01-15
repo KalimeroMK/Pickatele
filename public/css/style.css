@@ -73,7 +73,7 @@
 
 .newsletter {
     height: 325px;
-    padding: 2em 0;
+    padding: 1em 0;
     text-align: center;
     background-color: #79c6e5;
     background-image: url('../assets/images/newsletter-bg.png');
@@ -1411,4 +1411,12 @@ span.select2-selection.select2-selection--single {
     /*max-height:50px;*/
     /*max-width: 100%;*/
     /*width: auto;*/
+}
+
+.error-text {
+    color: #a94442;
+}
+
+.success-text {
+    color: #2a5f2b;
 }

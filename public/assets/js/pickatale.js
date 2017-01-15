@@ -3,6 +3,32 @@
 //    });
 $( document ).ready(function() {
 
+// NEWSLETTER FORM
+    $('#newsletter-form').ajaxChimp({
+        url: '//pickatale.us7.list-manage.com/subscribe/post?u=3a6c77e71fffbefe4f1525df1&amp;id=90aba5b455',
+        callback: function (res) {
+            var $msg = $('#newsletter-msg');
+
+            $('.loading').hide();
+            $("#newsletter-form button").show();
+
+            if (res.result === 'error') {
+                $msg.addClass('error-text');
+                //$msg.text(res.msg.split('-')[1].trim());
+                $msg.text("Error occurred while sending request. Please check your email.");
+            } else {
+                $msg.addClass('success-text');
+                $msg.text("To complete the subscription process, please click the link in the email we just sent you.");
+            }
+        }
+    });
+
+    $("#newsletter-form button").on("click", function() {
+        $('#newsletter-msg').text('');
+        $(this).hide();
+        $('.loading').show();
+    });
+
 // SLIDER INPUT
         $('#age-range').slider();
 
