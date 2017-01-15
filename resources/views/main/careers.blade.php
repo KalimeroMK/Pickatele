@@ -41,7 +41,7 @@
         <div class="container-small" style="margin:0 auto">
             <div class="row">
                 <h1 class="col-xs-12">
-                    <h1 class="section-header">Join our team, make a difference and grow with us</h1>
+                    <h1 class="section-header text-center">Join our team, make a difference and grow with us</h1>
                     <div class="text" style="color:#7ccaea;font-weight:600;margin: 50px 0">
                     <p>Pickatale is an ed-tech startup based out of China and Macedonia. Our core business is the
                         digital publishing of interactive children books for young ages. We currently have over 1000
@@ -58,7 +58,7 @@
                         Pickatale is always looking for motivated and talented individuals to join our family and help
                         us test the boundaries of education technology.</p>
                     </div>
-                    <h1 class="section-header">Explore career opportunities</h1>
+                    <h1 class="section-header text-center">Explore career opportunities</h1>
                     <p>&nbsp;</p>
                     <div class="accordion" id="accordion">
                         <div class="accordion-group">
