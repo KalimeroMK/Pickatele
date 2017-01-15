@@ -164,11 +164,6 @@ body:not(.transparent-header) .header-container .header {
     border: 0;
 }
 
-.navbar-collapse .active-menu {
-    display: none;
-
-}
-
 body:not(.transparent-header) .header-container .header .nav.navbar-nav.navbar-right.uppercase {
     background-color: #007299;
     margin-top: 0;
@@ -181,6 +176,10 @@ body:not(.transparent-header) .header-container .header .nav.navbar-nav.navbar-r
 
     .transparent-header .main-navigation .navbar.navbar-default {
         top: 10px;
+    }
+
+    .navbar-collapse .active-menu {
+        display: none;
     }
     /*.navbar-toggle {*/
         /*display: block;*/
@@ -364,7 +363,7 @@ footer p.qa {
 .navbar-default .active-menu {
     width: 100%;
     border-color: #FFF;
-    top: 16px;
+    top: 18px;
     left: 0;
     position: absolute;
 }
