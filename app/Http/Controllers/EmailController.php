@@ -42,7 +42,7 @@ class EmailController extends Controller
                 ->withInput();
         }
 
-        Mail::to("kpapazov@gmail.com")->send(new About($data));
+        Mail::to("kpapazov@gmail.com")->send(new Contact($data));
         Session::flash('flash_message', 'Email successfully sent!');
         return redirect('/contact');
     }

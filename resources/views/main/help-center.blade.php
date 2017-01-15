@@ -1,10 +1,9 @@
 @extends('layouts.main')
 @section('style')
     <style>
-        .header-container .header {
-            background-color: #ee295e;
-            background-image: none;
-
+        .header-container .header, .fixed-header-on .dark.header.fixed {
+            background-color: #ee295e !important;
+            background-image: none !important;
         }
 
         .bg-container {

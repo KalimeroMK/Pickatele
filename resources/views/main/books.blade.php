@@ -1,7 +1,6 @@
 @extends('layouts.main')
 @section('style')
     <style>
-        /*mi treba bg pattern za books*/
         .header-container .header {
             /*background-color: #007299;*/
             background-image: url('../assets/images/blue-header-bg.png');

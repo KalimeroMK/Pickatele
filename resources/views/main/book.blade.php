@@ -1,4 +1,15 @@
 @extends('layouts.main')
+@section('style')
+    <style>
+        .header-container .header {
+            /*background-color: #007299;*/
+            background-image: url('../assets/images/blue-header-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+
+@endsection
 @include('layouts.mainmenu')
 @section('content')
 <div class="book-bg">
