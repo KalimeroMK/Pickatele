@@ -27,7 +27,7 @@ class HomeController extends Controller
         $staticpages = StaticPage::all();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $faqs = Faq::take(2)->get();
+        $faqs = Faq::take(3)->get();
         $data = ["bundles" => $bundles,"partners" => $partners,"faqs" => $faqs,"staticpages" => $staticpages, "sliders" => $sliders, "scripts" => $scripts, "mainpages" => $mainpages];
         return view('main.home')->with($data);
     }
@@ -38,7 +38,7 @@ class HomeController extends Controller
         $staticpage = StaticPage::where("slug", "=", $slug)->first();
         $staticpages = StaticPage::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $faqs = Faq::take(2)->get();
+        $faqs = Faq::take(3)->get();
         $data = ["partners" => $partners,"faqs" => $faqs,"staticpage" => $staticpage, "staticpages" => $staticpages, "scripts" => $scripts];
         return view('main.staticpage')->with($data);
 
@@ -49,7 +49,7 @@ class HomeController extends Controller
         $mainpage = Mainpages::where("slug", "=", $slug)->first();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
-        $faqs = Faq::take(2)->get();
+        $faqs = Faq::take(3)->get();
         $data = ["partners" => $partners,"faqs" => $faqs,"mainpage" => $mainpage, "mainpages" => $mainpages, "scripts" => $scripts];
         return view('main.mainpages')->with($data);
 

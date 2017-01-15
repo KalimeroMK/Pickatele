@@ -26,11 +26,23 @@ class HelpCenterController extends Controller
      * @param  Request $request
      * @return \Illuminate\Http\Response
      */
+    public function index()
+    {
+        $faqs = Faq::take(3)->get();
+        $mainpages = Mainpages::all();
+        $scripts = Script::where("status", "=", 1)->get();
+        $faqResults = Faq::all();
+        return view('main.help-center')->with([
+            "faqs" => $faqs, "results" => $faqResults, "scripts" => $scripts, "mainpages" => $mainpages
+        ]);
+
+    }
+
     public function search(Request $request)
     {
         $results = Faq::where('question', 'like', '%'.$request['q'].'%')
                 ->orWhere('answer', 'like', '%'.$request['q'].'%')->get();
 
-        return view('main.partials.help-center-accordion')->with(['faqs' => $results]);
+        return view('main.partials.help-center-accordion')->with(['results' => $results]);
     }
 }

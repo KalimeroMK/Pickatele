@@ -47,12 +47,12 @@ Route::post('/about/send', 'EmailController@sendAbout');
 Route::get('/contact', 'MiniPageController@contact');
 Route::get('/copyright-policy', 'MiniPageController@copyright');
 Route::get('/careers', 'MiniPageController@careers');
-Route::get('/help-center', 'MiniPageController@help');
+Route::get('/help-center', 'HelpCenterController@index');
+Route::post('/help-center/search', 'HelpCenterController@search');
 Route::get('/terms', 'MiniPageController@terms');
 Route::get('/privacy', 'MiniPageController@privacy');
 Route::get('/books', 'BookController@index');
 Route::post('/books', 'BookController@filter');
-Route::post('/help-center/search', 'HelpCenterController@search');
 Route::get('/book/{slug}', 'BookController@getBook');
 Route::get('/{slug}', 'HomeController@mainpages');
 

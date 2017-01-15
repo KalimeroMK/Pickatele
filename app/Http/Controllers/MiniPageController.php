@@ -11,7 +11,7 @@ class MiniPageController extends Controller
 {
 
     private function getData() {
-        $faqs = Faq::take(2)->get();
+        $faqs = Faq::take(3)->get();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
         $data = ["faqs" => $faqs,"scripts" => $scripts, "mainpages" => $mainpages];
