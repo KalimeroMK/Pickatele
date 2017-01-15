@@ -1399,10 +1399,16 @@ span.select2-selection.select2-selection--single {
 .clients-container .clients a {
     line-height: 70px;
 }
+.clients-container .clients .client-image {
+    min-width: 100px;
+}
 
 .clients-container .clients img {
     margin: auto;
     vertical-align: middle;
     display: inline-block;
-    max-height:50px;
+    /*min-height:30px;*/
+    /*max-height:50px;*/
+    /*max-width: 100%;*/
+    /*width: auto;*/
 }
