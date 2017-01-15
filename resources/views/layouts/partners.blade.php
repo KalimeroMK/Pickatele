@@ -16,7 +16,7 @@
 
                     <div class="client-image object-non-visible" data-animation-effect="fadeIn"
                          data-effect-delay="100">
-                        <a href="http://www.kidstime.co.nz/">
+                        <a href="#">
                             <img src="/assets/images/partners/kidstime_logo.png" alt="kidstime_logo.png">
                         </a>
                     </div>
@@ -44,14 +44,14 @@
 
                     <div class="client-image object-non-visible" data-animation-effect="fadeIn"
                          data-effect-delay="100">
-                        <a href="http://kiddoz.se/">
+                        <a href="http://kidoz.net/">
                             <img src="/assets/images/partners/kiddoz.png" alt="kiddoz.png">
                         </a>
                     </div>
 
                     <div class="client-image object-non-visible" data-animation-effect="fadeIn"
                          data-effect-delay="100">
-                        <a href="http://kiddoz.se/">
+                        <a href="http://www.lotuspen.com/">
                             <img src="/assets/images/partners/TrueColor.png" alt="TrueColor.png">
                         </a>
                     </div>
