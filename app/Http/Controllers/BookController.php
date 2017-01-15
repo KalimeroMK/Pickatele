@@ -36,7 +36,7 @@ class BookController extends Controller
         $partners = Partner::pluck('title', 'id');
         $partners->prepend('Select Partner');
 
-        $books = Books::orderBy('created_at', 'asc')->paginate(12);
+        $books = Books::orderBy('created_at', 'asc')->paginate(9);
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
         $faqs = Faq::take(2)->get();
@@ -82,7 +82,7 @@ class BookController extends Controller
                 $direction = 'desc';
             }
         }
-        $result = $builder->orderBy($order, $direction)->paginate(12);
+        $result = $builder->orderBy($order, $direction)->paginate(9);
         return view('main.partials.book-results')->with(["books" => $result]);
     }
 
