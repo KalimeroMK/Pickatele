@@ -45,6 +45,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/about', 'MiniPageController@about');
 Route::post('/about/send', 'EmailController@sendAbout');
 Route::get('/contact', 'MiniPageController@contact');
+Route::post('/contact/send', 'EmailController@sendContact');
 Route::get('/copyright-policy', 'MiniPageController@copyright');
 Route::get('/careers', 'MiniPageController@careers');
 Route::get('/help-center', 'HelpCenterController@index');

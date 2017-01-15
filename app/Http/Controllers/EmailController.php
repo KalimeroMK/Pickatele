@@ -23,6 +23,30 @@ class EmailController extends Controller
     }
 
 
+    public function sendContact(Request $request)
+    {
+
+        $data = $request->all();
+        $errors = Validator::make($data, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'interest' => 'required',
+            'subject' => 'required',
+            'message' => 'required',
+            'g-recaptcha-response' => 'required|recaptcha',
+        ]);
+
+        if ($errors->fails()) {
+            return redirect('/contact')
+                ->withErrors($errors)
+                ->withInput();
+        }
+
+        Mail::to("kpapazov@gmail.com")->send(new About($data));
+        Session::flash('flash_message', 'Email successfully sent!');
+        return redirect('/contact');
+    }
+
     public function sendAbout(Request $request)
     {
 
