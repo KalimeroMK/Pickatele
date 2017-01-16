@@ -280,8 +280,8 @@
 
 			$('.slider-banner-container .slider-banner-fullwidth-big-height').show().revolution({
 				delay:8000,
-				startwidth:1140,
-				startheight:750,
+				startwidth:1300,
+				startheight:728,
 
 				navigationArrows:"solo",
 
