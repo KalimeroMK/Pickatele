@@ -1406,11 +1406,11 @@ span.select2-selection.select2-selection--single {
 
 @media (min-width: 768px) {
     .container-small {
-        width: 300px;
+        width: 500px;
     }
 
     .container-medium {
-        width: 500px;
+        width: 600px;
     }
 
     .container-large {
@@ -1445,7 +1445,7 @@ span.select2-selection.select2-selection--single {
 }
 
 .container-small, .container-large, .container-medium {
-    max-width: 100%;
+    max-width: 85%;
 }
 
 .clients-container {
