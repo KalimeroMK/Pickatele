@@ -7,6 +7,12 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+        @media (max-width: 767px) {
+            #fullpage-menu {
+                background-color: #0196d8;
+                margin-top: 0;
+            }
+        }
     </style>
 
 @endsection

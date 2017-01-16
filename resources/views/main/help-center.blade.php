@@ -10,6 +10,14 @@
             background-color: #ee295e;
             background-image: none;
         }
+
+        @media (max-width: 767px) {
+
+            #fullpage-menu {
+                background-color: #ee295e;
+                margin-top: 0;
+            }
+        }
     </style>
 @endsection
 @include('layouts.mainmenu')

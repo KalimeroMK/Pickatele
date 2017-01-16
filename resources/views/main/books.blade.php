@@ -15,6 +15,13 @@
             background-position: center left, bottom right;
         }
 
+        @media (max-width: 767px) {
+            #fullpage-menu {
+                background-color: #0196d8;
+                margin-top: 0;
+            }
+        }
+
         select.select2 {
             width: 200px !important;
         }

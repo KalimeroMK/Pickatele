@@ -181,6 +181,11 @@ body:not(.transparent-header) .header-container .header .nav.navbar-nav.navbar-r
     .navbar-collapse .active-menu {
         display: none;
     }
+
+    #fullpage-menu {
+        background-color: #007299;
+        margin-top: 0;
+    }
     /*.navbar-toggle {*/
         /*display: block;*/
     /*}*/

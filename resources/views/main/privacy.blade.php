@@ -1,4 +1,25 @@
 @extends('layouts.main')
+@section('style')
+    <style>
+        .header-container .header, .fixed-header-on .dark.header.fixed {
+            background-color: #ee295e !important;
+            background-image: none !important;
+        }
+
+        .bg-container {
+            background-color: #ee295e;
+            background-image: none;
+        }
+
+        @media (max-width: 767px) {
+
+            #fullpage-menu {
+                background-color: #ee295e;
+                margin-top: 0;
+            }
+        }
+    </style>
+@endsection
 @include('layouts.mainmenu')
 @section('content')
     <section class="main-container padding-ver-clear">
