@@ -2,54 +2,32 @@
 @include('layouts.mainmenu')
 @section('content')
     <div class="banner clearfix">
+        <!-- slideshow start -->
+        <!-- ================ -->
         <div class="slideshow">
             <!-- slideshow start -->
             <!-- ================ -->
             <div class="slideshow">
                 <!-- slider revolution start -->
                 <!-- ================ -->
-                <div class="slider-banner-container" style="overflow: visible;">
-                    <div class="slider-banner-fullwidth-big-height revslider-initialised tp-simpleresponsive"
-                         style="max-height: 650px; height: 650px;" id="revslider-59">
-                        <ul class="slides tp-revslider-mainul"
-                            style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+                <div class="slider-banner-container">
+                    <div class="slider-banner-fullwidth-big-height">
+                        <ul class="slides">
                             <!-- slide 1 start -->
                             <!-- ================ -->
                             <li data-transition="fadefromtop" data-slotamount="1" data-masterspeed="500"
-                                data-saveperformance="on" data-title="Slide 1"
-                                class="tp-revslider-slidesli active-revslide current-sr-slide-visible"
-                                style="width: 100%; height: 100%; overflow: hidden; visibility: inherit; opacity: 1; z-index: 20;">
+                                data-saveperformance="on" data-title="Slide 1">
                                 <!-- main image -->
-                                <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined"
-                                     data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined"
-                                     data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined"
-                                     data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined"
-                                     data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined"
-                                     data-oheight="undefined">
-                                    <div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover"
-                                         data-bgposition="center top" data-bgrepeat="no-repeat"
-                                         data-lazydone="undefined" src="/assets/images/about-headline.png"
-                                         data-src="/assets/images/about-headline.png"
-                                         style="background-color: transparent; background-repeat: no-repeat; background-image: url(&quot;/assets/images/about-headline.png&quot;); background-size: cover; background-position: center top; width: 100%; height: 100%; opacity: 1; visibility: inherit;"></div>
-                                </div>
+                                <img src="/assets/images/about-headline.png" alt="slidebg1"
+                                     data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover">
                             </li>
                             <!-- slide 1 end -->
                         </ul>
-                        <div class="tp-loader spinner2" style="display: none;">
-                            <div class="dot1"></div>
-                            <div class="dot2"></div>
-                            <div class="bounce1"></div>
-                            <div class="bounce2"></div>
-                            <div class="bounce3"></div>
-                        </div>
-                        <div class="tp-bannertimer" style="visibility: hidden; width: 0%; margin-top: 101px;"></div>
                     </div>
                 </div>
                 <!-- slider revolution end -->
-
             </div>
             <!-- slideshow end -->
-
         </div>
     </div>
 
