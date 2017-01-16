@@ -20,7 +20,6 @@ class EmailController extends Controller
     {
     }
 
-
     public function sendContact(Request $request)
     {
 
@@ -98,4 +97,31 @@ class EmailController extends Controller
         Session::flash('flash_message', 'Email successfully sent!');
         return redirect('/about');
     }
+
+    public function sendPartners(Request $request)
+    {
+
+        $data = $request->all();
+        $errors = Validator::make($data, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'partnership-type' => 'required',
+            'subject' => 'required',
+            'message' => 'required',
+            'g-recaptcha-response' => 'required|recaptcha',
+        ]);
+
+        if ($errors->fails()) {
+            return redirect('/partners')
+                ->withErrors($errors)
+                ->withInput();
+        }
+
+        $data["title"] = "New message from Partners page";
+
+        Mail::to("kpapazov@gmail.com")->send(new Inquiry($data));
+        Session::flash('flash_message', 'Email successfully sent!');
+        return redirect('/partners');
+    }
+
 }

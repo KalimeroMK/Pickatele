@@ -385,43 +385,61 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-                        <form>
-                            <div class="form-group col-xs-12 col-sm-6">
+                        <form action="/partners/send" method="POST">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6">
                                 <label for="nameInput">Name</label>
-                                <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name">
                             </div>
-                            <div class="form-group col-xs-12 col-sm-6">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6">
                                 <label for="emailInput">Email</label>
-                                <input type="email" class="form-control" id="emailInput" placeholder="Email">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="custom" for="typeInput1">Type of Contact</label>
-                                <select id="typeInput1" class="select2 form-control">
-                                    <option value="customers">Customers</option>
-                                    <option value="developers">Developers</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="custom" for="typeInput2">&nbsp;</label>
-                                <select id="typeInput2" class="select2 form-control">
-                                    <option value="parent">Parent</option>
-                                </select>
+                                <input type="email" name="email" class="form-control" id="emailInput" placeholder="Email">
                             </div>
                             <div class="form-group col-xs-12">
+                                <label class="custom" for="typeInput1">Partnership types</label>
+                                <select id="typeInput1" name="partnership-type" class="select2 form-control" style="width: 100%">
+                                    <option value="Content owners">Content owners</option>
+                                    <option value="Content distribution">Content distribution</option>
+                                    <option value="Publishers">Publishers</option>
+                                    <option value="Co-development">Co-development</option>
+                                    <option value="Market experts">Market experts</option>
+                                    <option value="China partners">China partners</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-xs-12">
                                 <label for="subjectInput">Subject</label>
-                                <input type="text" class="form-control" id="subjectInput" placeholder="Subject">
+                                <input type="text" name="subject" class="form-control" id="subjectInput" placeholder="Subject">
                             </div>
                             <div class="form-group col-xs-12">
                                 <label for="messageInput">Message</label>
-                                <textarea id="messageInput" rows="10" name="message" class="form-control"
-                                          placeholder="Message"></textarea>
+                        <textarea id="messageInput" rows="10" name="message" class="form-control"
+                                  placeholder="Message"></textarea>
                             </div>
-                            <div class="form-group col-xs-6 pull left">
-                                {!! Recaptcha::render() !!}
+                            <div class="form-group col-xs-12 no-margin" style="margin-bottom:0">
+                                @if(Session::has('flash_message'))
+                                    <div class="alert alert-success">
+                                        {{ Session::get('flash_message') }}
+                                    </div>
+                                @elseif (count($errors) > 0)
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                             </div>
-                            <div class="form-group col-xs-6 button-container">
-                                <button type="submit" class="btn custom-btn pink-btn pull-right">Submit</button>
+
+                            <div class="form-group col-sm-12 col-md-6">
+                                <label>{!! Recaptcha::render() !!}</label>
                             </div>
+
+                            <div class="form-group col-sm-12 col-md-6 button-container">
+                                <button type="submit" @if (count($errors) > 0 || Session::has('flash_message')) autofocus @endif class="btn custom-btn pink-btn pull-right-md pull-right-lg">Submit</button>
+                            </div>
+                            {!! csrf_field() !!}
                         </form>
                         <p>&nbsp;</p>
                     </div>
