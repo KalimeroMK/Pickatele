@@ -557,7 +557,7 @@ div.tparrows {
     background-color: #fa2557;
 }
 
-.educators.call-to-action, .partners.call-to-action {
+.educators.call-to-action {
     background-color: #75c6e7;
 }
 
@@ -623,6 +623,10 @@ div.tparrows {
 
 .blue-bg {
     background-color: #74c6e7;
+}
+
+.yellow-bg {
+    background-color: #fec41f;
 }
 
 .white {

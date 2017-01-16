@@ -430,7 +430,7 @@
         </div>
 
         <!-- ================ -->
-        <section class="main-container padding-ver-clear call-to-action {{$mainpage->slug}}">
+        <section class="main-container padding-ver-clear yellow-bg call-to-action {{$mainpage->slug}}">
             <div class="container pv-40">
                 <div class="row">
                     <h2 class="section-header text-center">Experience some of our amazing books for free!</h2>
