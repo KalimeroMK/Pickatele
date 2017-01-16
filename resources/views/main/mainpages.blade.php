@@ -307,10 +307,10 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h2 class="section-header white text-center"
-                                    style="margin-top:50px;">{!! $mainpage->sectiontitle !!}</h2>
+                                    style="margin-top:15px;">{!! $mainpage->sectiontitle !!}</h2>
                             </div>
                         </div>
-                        <div class="container" style="margin-top:-500px">
+                        <div class="container" style="margin-top:40px">
                             <div class="row reasons-partners">
                                 <div class="col-md-4">
                                     <p><img src="/assets/img/mainpages/items/{{ $mainpage->itemimage }}"
@@ -373,44 +373,6 @@
 
         @yield('partners')
 
-        <!-- ================ -->
-        <!-- TODO red-bg for parents blue-bg is for educators -->
-        <section class="main-container padding-ver-clear call-to-action {{$mainpage->slug}}">
-            <div class="container pv-40">
-                <div class="row">
-                    <h2 class="section-header text-center">Experience some of our amazing books for free!</h2>
-                </div>
-
-                <div class="row">
-                    <span class="text-center white cta-subtext">download our application</span>
-                </div>
-
-                <div class="col-xs-12 text-center">
-                    <ul class="store-links">
-                        <li>
-                            <a href="https://itunes.apple.com/us/app/pickatale-200+-interactive/id669433655?mt=8">
-                                <img src="/assets/images/1-apple-store.png">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://play.google.com/store/apps/details?id=com.WisdomEdition.Pickatale.Bookshelf&hl=en">
-                                <img src="/assets/images/2-google-store.png">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="http://www.wandoujia.com/apps/com.quduedu.pickatale">
-                                <img src="/assets/images/3-cn-store.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- section end -->
-
-
         <div style="z-index:1" class="container about-us">
             <div class="row">
                 <div class="col-xs-12 col-sm-offset-2 col-sm-8">
@@ -466,5 +428,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- ================ -->
+        <section class="main-container padding-ver-clear call-to-action {{$mainpage->slug}}">
+            <div class="container pv-40">
+                <div class="row">
+                    <h2 class="section-header text-center">Experience some of our amazing books for free!</h2>
+                </div>
+
+                <div class="row">
+                    <span class="text-center white cta-subtext">download our application</span>
+                </div>
+
+                <div class="col-xs-12 text-center">
+                    <ul class="store-links">
+                        <li>
+                            <a href="https://itunes.apple.com/us/app/pickatale-200+-interactive/id669433655?mt=8">
+                                <img src="/assets/images/1-apple-store.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.WisdomEdition.Pickatale.Bookshelf&hl=en">
+                                <img src="/assets/images/2-google-store.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.wandoujia.com/apps/com.quduedu.pickatale">
+                                <img src="/assets/images/3-cn-store.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- section end -->
     @endif
 @endsection
