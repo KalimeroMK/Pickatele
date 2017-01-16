@@ -38,12 +38,12 @@
 
 <section class="main-container main-page-container padding-ver-clear">
     <div class="pv-40">
-        <div class="container-small" style="margin:0 auto">
+        <div class="container-small center-block">
             <div class="row">
                 <h1 class="col-xs-12">
                     <h1 class="section-header text-center">Join our team, make a difference and grow with us</h1>
 
-                    <div class="text" style="color:#7ccaea;font-weight:600;margin: 50px 0">
+                    <div class="text blue-text pv-40">
                         <p>Pickatale is an ed-tech startup based out of China and Macedonia. Our core business is the
                             digital publishing of interactive children books for young ages. We currently have over 1000
                             books and a planned production in the years to come.</p>
@@ -71,12 +71,12 @@
                             <div class="accordion-heading">
                                 <div class="col-xs-12">
                                     <div class="col-xs-8">
-                                        <a class="accordion-link pull-left" href="#developer">
+                                        <a class="accordion-link pull-left" href="/jobs">
                                             Frontend developer
                                         </a>
                                     </div>
                                     <div class="col-xs-4">
-                                        <a class="accordion-link pull-right" href="#developer">
+                                        <a class="accordion-link pull-right" href="/jobs">
                                             Open
                                         </a>
                                     </div>
@@ -87,12 +87,12 @@
                             <div class="accordion-heading">
                                 <div class="col-xs-12">
                                     <div class="col-xs-8">
-                                        <a class="accordion-link pull-left" href="#designer">
+                                        <a class="accordion-link pull-left" href="/jobs">
                                             Designer
                                         </a>
                                     </div>
                                     <div class="col-xs-4">
-                                        <a class="accordion-link pull-right" href="#designer">
+                                        <a class="accordion-link pull-right" href="/jobs">
                                             Open
                                         </a>
                                     </div>

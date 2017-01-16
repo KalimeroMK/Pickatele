@@ -47,6 +47,11 @@ class MiniPageController extends Controller
         return view('main.careers')->with($this->getData());
     }
 
+    public function jobs()
+    {
+        return view('main.jobs')->with($this->getData());
+    }
+
     public function terms()
     {
         return view('main.terms')->with($this->getData());

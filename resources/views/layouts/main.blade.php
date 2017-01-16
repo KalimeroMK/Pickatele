@@ -45,6 +45,7 @@
     <link href="/assets/js/slider-input/dist/css/bootstrap-slider.min.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/css/select2.min.css" rel="stylesheet">
     <link href="/assets/plugins/lightbox-4.0.2/dist/ekko-lightbox.css" rel="stylesheet">
+    <link href="/assets/js/kartik-v-bootstrap-fileinput/css/fileinput.min.css" rel="stylesheet">
 
     <!-- The Project core CSS file -->
     <link href="/assets/css/style.css" rel="stylesheet">
@@ -296,6 +297,7 @@
 <script type="text/javascript" src="/assets/js/slider-input/dist/bootstrap-slider.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/lightbox-4.0.2/dist/ekko-lightbox.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+<script type="text/javascript" src="/assets/js/kartik-v-bootstrap-fileinput/js/fileinput.min.js"></script>
 
 
 <script type="text/javascript" src="/assets/js/pickatale.js"></script>

@@ -1403,6 +1403,11 @@ span.select2-selection.select2-selection--single {
     .container-small {
         width: 300px;
     }
+
+    .container-medium {
+        width: 500px;
+    }
+
     .container-large {
         width: 970px;
     }
@@ -1411,6 +1416,11 @@ span.select2-selection.select2-selection--single {
     .container-small {
         width: 500px;
     }
+
+    .container-medium {
+        width: 700px;
+    }
+
     .container-large {
         width: 1170px;
     }
@@ -1419,12 +1429,17 @@ span.select2-selection.select2-selection--single {
     .container-small {
         width: 700px;
     }
+
+    .container-medium {
+        width: 900px;
+    }
+
     .container-large {
         width: 1500px;
     }
 }
 
-.container-small, .container-large {
+.container-small, .container-large, .container-medium {
     max-width: 100%;
 }
 
@@ -1456,4 +1471,43 @@ span.select2-selection.select2-selection--single {
 
 .success-text {
     color: #2a5f2b;
+}
+
+.blue-text {
+    color: #74c6e7;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.file-input-group .btn {
+    height: 40px;
+    margin: 0;
+    background-color: #fa2557;
+    border-color: #eeeeee;
+    color: #fff;
+}
+
+.file-input-group .file-caption-name {
+    margin-top: 3px;
+}
+
+.file-input-group .file-caption {
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    box-shadow: none;
+    color: #a2a2a2;
+}
+
+.file-input-group .btn-file {
+    line-height: 1.7;
+}
+
+.jobs {
+    background-image: url('../assets/images/recruitment-bg1.png'), url('../assets/images/recruitment-bg2.png'),  url('../assets/images/recruitment-bg3.png');
+    background-repeat: no-repeat;
+    background-position: left top, right center, left bottom;
+}
+
+.jobs .contact-form {
+    background-image: none;
 }
