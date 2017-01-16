@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Contact extends Mailable
+class Inquiry extends Mailable
 {
     use Queueable, SerializesModels;
     protected $data;
@@ -28,9 +28,18 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->view('email.about')->with([
-                'data' => $this->data,
+        $mail = $this->view('email.inquiry')->with([
+            'data' => $this->data,
         ])->from($this->data['email'], $this->data['name'])
-          ->subject("New message from Contact us page");
+            ->subject($this->data['title']);
+
+        if (isset($this->data['cv'])) {
+            $mail->attach($this->data['cv'], [
+                'as' => $this->data['cv']->getClientOriginalName(),
+                'mime' => $this->data['cv']->getClientMimeType(),
+            ]);
+        }
+
+        return $mail;
     }
 }

@@ -69,7 +69,7 @@
 
             <div class="row contact-form">
                 <div class="col-xs-12 col-sm-offset-1 col-sm-9">
-                    <form action="/about/send" method="POST">
+                    <form action="/jobs/send" enctype="multipart/form-data" method="POST">
                         <div class="form-group col-xs-12 col-sm-12 col-md-6">
                             <label for="nameInput">Name</label>
                             <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name">

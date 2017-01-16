@@ -49,6 +49,7 @@ Route::post('/contact/send', 'EmailController@sendContact');
 Route::get('/copyright-policy', 'MiniPageController@copyright');
 Route::get('/careers', 'MiniPageController@careers');
 Route::get('/jobs', 'MiniPageController@jobs');
+Route::post('/jobs/send', 'EmailController@sendJob');
 Route::get('/help-center', 'HelpCenterController@index');
 Route::post('/help-center/search', 'HelpCenterController@search');
 Route::get('/terms', 'MiniPageController@terms');
