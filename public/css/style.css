@@ -1430,6 +1430,39 @@ span.select2-selection.select2-selection--single {
         width: 970px;
     }
 }
+@media (max-width: 768px) {
+    .blue-bg.custom-jumbotron {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin-top: 60px;
+    }
+    .why-will-you-love {
+        background-image: none;
+    }
+    .reasons {
+        margin-top: 50px;
+    }
+    .about-us-pattern-1 {
+        background-image: none;
+    }
+    .contact-form {
+        background-image: none;
+    }
+    .about-us-pattern-2 {
+        background-image: none;
+    }
+    .bundles {
+        background-image: none;
+    }
+    .help-center {
+        background-image: none;
+    }
+}
 @media (min-width: 992px) {
     .container-small {
         width: 500px;

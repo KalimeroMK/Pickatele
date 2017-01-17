@@ -84,7 +84,7 @@
 
                 <div class="row jumbotron-row">
                     <div class="container">
-                        <div class="col-md-12 blue-bg custom-jumbotron">
+                        <div class="col-md-12 col-xs-12 blue-bg custom-jumbotron">
                             <p>{!! $mainpage->seconddescription !!}</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-xs-12">
                             <h2 class="section-header text-center red">{!! $mainpage->secondheadertitle !!}</h2>
                         </div>
                     </div>
@@ -100,15 +100,15 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-12">
                             <p>
 
-                            <div class="embed-responsive embed-responsive-16by9">
+                            <div class="embed-responsive embed-responsive-16by9 col-xs-12">
                                 <iframe class="embed-responsive-item" src="{{ $mainpage->video }}"></iframe>
                             </div>
                             </p>
                         </div>
-                        <div class="col-md-6 how-it-works">
+                        <div class="col-md-6 col-xs-12 how-it-works">
                             <p>{!! $mainpage->thirddescription !!}</p>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="container" style="margin-top:-450px">
                     <div class="row reasons">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->itemimage }}"
                                     alt="{{ $mainpage->itemtitle }}"></p>
 
@@ -134,7 +134,7 @@
 
                             <p>{{ $mainpage->itemdescription }}</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->item2image }}"
                                     alt="{{ $mainpage->item2title }}"></p>
 
@@ -142,7 +142,7 @@
 
                             <p>{{ $mainpage->item2description }}</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->item3image }}"
                                     alt="{{ $mainpage->item3title }}"></p>
 
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                     <div class="row reasons">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->item4image }}"
                                     alt="{{ $mainpage->item4title }}"></p>
 
@@ -160,7 +160,7 @@
 
                             <p>{{ $mainpage->item4description }}</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->item5image }}"
                                     alt="{{ $mainpage->item5title }}"></p>
 
@@ -168,7 +168,7 @@
 
                             <p>{{ $mainpage->item5description }}</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p><img src="/assets/img/mainpages/items/{{ $mainpage->item6image }}"
                                     alt="{{ $mainpage->item6title }}"></p>
 
