@@ -38,32 +38,81 @@
 
 <div class="jobs">
     <div class="container-medium center-block">
+
         <div class="row">
-            <div class="col-xs-12 text-center">
-                <img src="/assets/images/hiring.png" class="center-block" alt="hiring"/>
+            <div class="col-xs-12">
+                @if ($position === 'front-end-developer')
+                    <h1 class="section-header red text-center pv-30" style="margin-top:0;">Front-end developer</h1>
+                @endif
+                @if ($position === 'full-stack-engineer')
+                        <p>&nbsp;</p>
+                        <h1 class="section-header red text-center pv-30" style="margin-top:0;">Full Stack Engineer</h1>
+                @endif
             </div>
         </div>
 
         <div class="row">
             <div class="col-xs-12 pv-40 blue-text">
-                <p>Pickatale is an ed-tech startup based out of China and Macedonia. Our core business is the digital
-                    publishing of interactive children books for young ages. We currently have over 1000 books and a
-                    planned
-                    production in the years to come.</p>
+                @if ($position === 'front-end-developer')
+                    <p><strong>Your role</strong></p>
+                    <p>In Pickatale we promote creativity and innovation. As part of the team you will share the obligation to continually coach and direct our junior colleagues, collaborate with all colleagues form the team and across the company. You will share the knowledge between the colleagues and make a commitment to promote and build Pickatales unique organizational culture.</p>
+                    <p>We value simple and clever UX based on advanced FE technologies in close cooperation with the UI team and backend development team. Self-initiative and pro activeness will produce significant advantage for the team and will add value to the work of the team. Regular communication and coordination with the team is expected from all team members. All seniors should be prepared for mentoring and consultations, code reviews, estimations, checks, pair programming and etc.</p>                        
+                    <p><strong>You also need most (if not all) of the following requirements:</strong></p>
 
-                <p>We are on a mission to create the best, most useful and most interesting digital library of
-                    storybooks
-                    for children. If you want to help transform the world of reading for children, you'll love it
-                    here.</p>
+                    <ul>
+                        <li>At least 5 years in-depth experience with web development and frontend technologies including JavaScript, CSS, HTML 5 and related frameworks including AngularJS, Angular2, AngularUI, Twitter Bootstrap, RequireJS/AMD;</li>
+                        <li>JavaScript OOP and prototypes</li>
+                        <li>Developed responsive web applications, expert in cross-browser compatibility;</li>
+                        <li>Strong knowledge/familiarity of RESTful APIs, backend technologies including PHP</li>
+                        <li>Experienced with Scrum and Agile practices, continuous integration builds;</li>
+                        <li>Excellent communication skills in English, self-organized and motivated;</li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p><strong>We offer:</strong></p>
+                    <p>As part of Pickatale team you will have a unique opportunity to engage all the experience and knowledge you have gathered, into projects that are motivating and challenging at the same time.  You will have our unceasing support and encouragement to ensure your growth and development in your career path. You will have an opportunity to explore different tools and technologies that will help you explore your true passion. You will work in a friendly and welcoming surroundings where new concepts and ides are welcomed to ensure our growth together.</p>                                                                                          
+                    <p><strong>Our competitive benefits package includes:</strong></p>
+                    <ul>
+                        <li>Competitive salary package</li>
+                        <li>Sporting package</li>
+                        <li>Opportunities for online training and certification</li>
+                        <li>Many different employee engagement activities</li>
+                    </ul>
+                @endif
+                @if ($position === 'full-stack-engineer')
+                        <p><strong>Your role</strong></p>
+                        <p>In Pickatale we promote creativity and innovation. As part of the team you will share the obligation to continually coach and direct our junior colleagues, collaborate with all colleagues form the team and across the company. You will share the knowledge between the colleagues and make a commitment to promote and build Pickatales unique organizational culture.</p>
+                        <p>We are looking for superstars who can work across the stack to help design, build and review existing and new products, and coach your colleagues by tapping into your cross-functional knowledge and experience.</p>                        
+                        <p><strong>You also need most (if not all) of the following requirements:</strong></p>
 
-                <p>Pickatale is pushing boundaries in technology and education, and is currently building an adaptive
-                    learning platform to accelerate children's learning.</p>
+                        <ul>
+                        <li>At least 5 years of professional experience in developing PHP applications and RESTful APIs</li>
+                        <li>Preferably professional experience in developing NodeJS applications</li>
+                        <li>At least 5 years of professional experience with databases, including PostgreSQL and NoSQL (MongoDB preferred)</li>
+                        <li>At least 5 years in-depth experience with web development and frontend technologies including JavaScript, CSS, HTML 5 and related frameworks including AngularJS, Angular2, AngularUI, Twitter Bootstrap, RequireJS/AMD;</li>
+                        <li>Strong capabilities in OOP, Unit Testing, Code Review, Continuous Integration</li>
+                        <li>Strong knowledge of server administration</li>
+                        <li>Developing responsive web applications, expert in cross-browser compatibility;</li>
+                        <li>Experienced with Scrum and Agile practices, continuous integration builds;</li>
+                        <li>Excellent communication skills in English, self-organized and motivated;</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p><strong>We offer:</strong></p>
+                        <p>As part of Pickatale team you will have a unique opportunity to engage all the experience and knowledge you have gathered, into projects that are motivating and challenging at the same time.  You will have our unceasing support and encouragement to ensure your growth and development in your career path. You will have an opportunity to explore different tools and technologies that will help you explore your true passion. You will work in friendly and welcoming surroundings where new concepts and ides are welcomed to ensure our growth together.</p>                                                                                          
+                        <p><strong>Our competitive benefits package includes:</strong></p>
+                        <ul>
+                        <li>Competitive salary package</li>
+                        <li>Sporting package</li>
+                        <li>Opportunities for online training and certification</li>
+                        <li>Many different employee engagement activities</li>
+                        </ul>
+                @endif
+
             </div>
         </div>
 
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="section-header red text-center pv-30" style="margin-top:0;">Send your portfolio</h1>
+                    <h1 class="section-header red text-center pv-30" style="margin-top:0;">Apply for this job</h1>
                 </div>
             </div>
 

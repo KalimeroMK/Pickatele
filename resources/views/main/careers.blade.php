@@ -71,12 +71,12 @@
                             <div class="accordion-heading">
                                 <div class="col-xs-12">
                                     <div class="col-xs-8">
-                                        <a class="accordion-link pull-left" href="/jobs">
-                                            Frontend developer
+                                        <a class="accordion-link pull-left" href="/jobs/full-stack-engineer">
+                                            Full Stack engineer
                                         </a>
                                     </div>
                                     <div class="col-xs-4">
-                                        <a class="accordion-link pull-right" href="/jobs">
+                                        <a class="accordion-link pull-right" href="/jobs/full-stack-engineer">
                                             Open
                                         </a>
                                     </div>
@@ -87,12 +87,12 @@
                             <div class="accordion-heading">
                                 <div class="col-xs-12">
                                     <div class="col-xs-8">
-                                        <a class="accordion-link pull-left" href="/jobs">
-                                            Designer
+                                        <a class="accordion-link pull-left" href="/jobs/front-end-developer">
+                                            Front-end developer
                                         </a>
                                     </div>
                                     <div class="col-xs-4">
-                                        <a class="accordion-link pull-right" href="/jobs">
+                                        <a class="accordion-link pull-right" href="/jobs/front-end-developer">
                                             Open
                                         </a>
                                     </div>
