@@ -233,7 +233,7 @@
                         </div>
 
 
-                        <div class="col-sm-4 col-xs-6 col-xs-offset-6">
+                        <div class="col-sm-4 col-xs-12">
                             <p>&copy; 2016 Pickatale. All rights reserved</p>
                         </div>
                     </div>
