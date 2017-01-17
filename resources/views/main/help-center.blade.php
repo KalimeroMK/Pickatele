@@ -58,24 +58,20 @@
                         <h2 class="section-subheader2 blue">Recent Activity</h2>
 
                         <div class="recent-activity">
-                            <p>Pickatale is a great way for kids ages 0 to 8 to read over two hundred stories right on
-                                your phone or tablet, including tons of memorable classics and dozens of original
-                                stories that are exclusive to Pickatale members.</p>
-
-                            <p>We currently have 200+ interactive stories in English! Oh, and we release a new book
-                                every week! Our books are also available in other languages, such as Chinese, Norwegian,
-                                Danish and Swedish, with even more coming soon!
+                            <p>
+                            <strong>15 December 2016:</strong><br>
+                            Pickatale team will be attending the Bett Show, 25-28 January 2017 in London.<br>
+                            We are super excited to show you our new and improved Pickatale app. Visitors will also
+                            have the chance to see where we heading next in 2017.<br>
+                            If you happen to be in town, drop by our stand D130 to meet our team.
                             </p>
 
-                            <p>Education doesn't have to be boring. It should be fun! Pickatale has an endless library
-                                of interactive storybooks for children which are great for read-along at bedtime. The
-                                storybooks have been developed to improve children's reading skills, to help them learn
-                                about animals, cultures, historical figures and more, and to have fun learning through
-                                reading.</p>
-
-                            <p>We make reading more exciting with great voices and interactive features, which include
-                                FREE sample books, fully interactive pages, and clickable text. Young learners can
-                                review troublesome words one at a time, use touch-to-hear pictures, and more.</p>
+                            <p>
+                            <strong>17 January 2017:</strong><br>
+                            Pickatale&#39;s got a new look. We’ve decided it's time for an upgrade.<br>
+                            Hope you like our new logo and colors. We can’t wait to hear your comments about our
+                            website too.
+                            </p>
                         </div>
 
                         <p>&nbsp;</p>
