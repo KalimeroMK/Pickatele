@@ -698,7 +698,7 @@ ul.store-links li a:hover, ul.store-links li a:focus {
     background-image: url('../assets/images/how-it-works-bg.png');
     background-repeat: no-repeat;
     background-position: center right;
-    margin-top: -70px;
+
     height: 648px;
 }
 
@@ -1445,7 +1445,7 @@ span.select2-selection.select2-selection--single {
         background-image: none;
     }
     .reasons {
-        margin-top: 50px;
+       /* margin-top: 50px; */
     }
     .about-us-pattern-1 {
         background-image: none;
@@ -1461,6 +1461,9 @@ span.select2-selection.select2-selection--single {
     }
     .help-center {
         background-image: none;
+    }
+    .push-50 {
+        margin-top: 50px;
     }
 }
 @media (min-width: 992px) {
@@ -1561,4 +1564,8 @@ span.select2-selection.select2-selection--single {
 
 .jobs .contact-form {
     background-image: none;
+}
+
+.push-50 {
+    margin-top: 50px;
 }

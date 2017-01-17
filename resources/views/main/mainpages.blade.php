@@ -118,8 +118,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2 class="section-header blue text-center"
-                                    style="margin-top:50px;">{!! $mainpage->sectiontitle !!}</h2>
+                                <h2 class="section-header blue text-center push-50">{!! $mainpage->sectiontitle !!}</h2>
                             </div>
                         </div>
                     </div>
