@@ -1465,6 +1465,9 @@ span.select2-selection.select2-selection--single {
     .push-50 {
         margin-top: 50px;
     }
+    .mobile-push {
+        margin-top: 50px;
+    }
 }
 @media (min-width: 992px) {
     .container-small {
