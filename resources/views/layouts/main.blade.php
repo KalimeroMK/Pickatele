@@ -301,6 +301,6 @@
 
 
 <script type="text/javascript" src="/assets/js/pickatale.js"></script>
-
+@yield('footer-scripts')
 </body>
 </html>

@@ -18,6 +18,10 @@
                 margin-top: 0;
             }
         }
+
+        #map {
+            height: 500px;
+        }
     </style>
 @endsection
 @include('layouts.mainmenu')
@@ -28,14 +32,14 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-offset-2 col-sm-8">
                         <div class="form-group col-xs-12">
-                        <h1 class="section-header red" style="margin-top:40px">Get in touch!</h1>
+                            <h1 class="section-header red" style="margin-top:40px">Get in touch!</h1>
 
-                        <div class="section-subheader2 blue" style="font-size: 16px">
-                            <p style="margin-bottom: 3px;">Pickatale team is here to provide you with more
-                                information.</p>
+                            <div class="section-subheader2 blue" style="font-size: 16px">
+                                <p style="margin-bottom: 3px;">Pickatale team is here to provide you with more
+                                    information.</p>
 
-                            <p style="" class="blue">Reach out to us anytime and we'll answer your questions.</p>
-                        </div>
+                                <p style="" class="blue">Reach out to us anytime and we'll answer your questions.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -48,11 +52,13 @@
                             </div>
                             <div class="form-group col-xs-12 col-sm-12 col-md-6">
                                 <label for="emailInput">Email</label>
-                                <input type="email" name="email" class="form-control" id="emailInput" placeholder="Email">
+                                <input type="email" name="email" class="form-control" id="emailInput"
+                                       placeholder="Email">
                             </div>
                             <div class="form-group col-xs-12">
                                 <label class="custom" for="typeInput1">Interested in</label>
-                                <select id="typeInput1" name="interest" class="select2 form-control" style="width: 100%">
+                                <select id="typeInput1" name="interest" class="select2 form-control"
+                                        style="width: 100%">
                                     <option value="Partnerships">Partnerships</option>
                                     <option value="Marketing opportunities">Marketing opportunities</option>
                                     <option value="Sales opportunities">Sales opportunities</option>
@@ -63,7 +69,8 @@
 
                             <div class="form-group col-xs-12">
                                 <label for="subjectInput">Subject</label>
-                                <input type="text" name="subject" class="form-control" id="subjectInput" placeholder="Subject">
+                                <input type="text" name="subject" class="form-control" id="subjectInput"
+                                       placeholder="Subject">
                             </div>
                             <div class="form-group col-xs-12">
                                 <label for="messageInput">Message</label>
@@ -91,7 +98,10 @@
                             </div>
 
                             <div class="form-group col-sm-12 col-md-6 button-container">
-                                <button type="submit" @if (count($errors) > 0 || Session::has('flash_message')) autofocus @endif class="btn custom-btn pink-btn pull-right-md pull-right-lg">Submit</button>
+                                <button type="submit"
+                                        @if (count($errors) > 0 || Session::has('flash_message')) autofocus
+                                        @endif class="btn custom-btn pink-btn pull-right-md pull-right-lg">Submit
+                                </button>
                             </div>
                             {!! csrf_field() !!}
                         </form>
@@ -104,7 +114,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <img src="/assets/images/google-map.png" style="width:90%;margin: 0 auto;"/>
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
@@ -114,51 +124,87 @@
                 <div class="col-xs-12">
                     <h1 class="section-header red" style="margin-top:20px">Where can you find us</h1>
                 </div>
-                <div class="col-xs-6 col-sm-3 office-info">
-                    <p class="office-header">Office 1</p>
+                <div class="col-xs-12">
+                    <div class="office-info">
+                        <p class="office-header">Macedonia</p>
 
-                    <div class="office-text">
-                        <p>Here goes one office</p>
-
-                        <p>Info for the office</p>
-
-                        <p>And again office</p>
+                        <div class="office-text">
+                            <p>Skopje City Tower</p>
+                            <p>Ljubljanska 6-1/1</p>
+                            <p>Skopje 1000, Macedonia</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3 office-info">
-                    <p class="office-header">Office 1</p>
+                {{--<div class="col-xs-6 col-sm-3 office-info">--}}
+                {{--<p class="office-header">Office 1</p>--}}
 
-                    <div class="office-text">
-                        <p>Here goes one office</p>
+                {{--<div class="office-text">--}}
+                {{--<p>Here goes one office</p>--}}
 
-                        <p>Info for the office</p>
+                {{--<p>Info for the office</p>--}}
 
-                        <p>And again office</p>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 office-info">
-                    <p class="office-header">Office 1</p>
+                {{--<p>And again office</p>--}}
+                {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-xs-6 col-sm-3 office-info">--}}
+                {{--<p class="office-header">Office 1</p>--}}
 
-                    <div class="office-text">
-                        <p>Here goes one office</p>
+                {{--<div class="office-text">--}}
+                {{--<p>Here goes one office</p>--}}
 
-                        <p>Info for the office</p>
+                {{--<p>Info for the office</p>--}}
 
-                        <p>And again office</p>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 office-info">
-                    <p class="office-header">Office 1</p>
+                {{--<p>And again office</p>--}}
+                {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-xs-6 col-sm-3 office-info">--}}
+                {{--<p class="office-header">Office 1</p>--}}
 
-                    <div class="office-text">
-                        <p>Here goes one office</p>
+                {{--<div class="office-text">--}}
+                {{--<p>Here goes one office</p>--}}
 
-                        <p>Info for the office</p>
+                {{--<p>Info for the office</p>--}}
 
-                        <p>And again office</p>
-                    </div>
-                </div>
+                {{--<p>And again office</p>--}}
+                {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
     </div>
+@endsection
+
+@section('footer-scripts')
+
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: new google.maps.LatLng(42.005942, 21.392650),
+                mapTypeId: 'roadmap'
+            });
+
+            function addMarker(feature) {
+                var marker = new google.maps.Marker({
+                    position: feature.position,
+                    icon: '{{asset('assets/images')}}/pickatale-pin.png',
+                    map: map
+                });
+            }
+
+            var features = [{
+                position: new google.maps.LatLng(42.005942, 21.392650),
+            }];
+
+
+            for (var i = 0, feature; feature = features[i]; i++) {
+                addMarker(feature);
+            }
+        }
+    </script>
+
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgxiR9ocqbLWkRupBBJXwVYNtcNCMs46s&callback=initMap">
+    </script>
 @endsection
