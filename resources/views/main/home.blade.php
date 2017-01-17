@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1 class="section-header">Great offers from Pickatale</h1>
+                <h1 class="section-header">Get unlimited access to all our storybooks</h1>
                 <img class="slider img-responsive center-block" src="/assets/img/bundle/{{ $bundles->image }}">
             </div>
         </div>
@@ -91,8 +91,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1 class="section-header">Join Our Program</h1>
-                <h6 class="section-subheader">Inform for our latest books and learning programs</h6>
+                <h1 class="section-header">Join Our Community</h1>
+                <h6 class="section-subheader">Get information on new storybooks and learning programs</h6>
 
 
                 <!--<div style="margin: 0 auto; width:50%">-->
