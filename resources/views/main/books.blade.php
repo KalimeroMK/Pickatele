@@ -99,34 +99,32 @@
                         </div>
                     </div>
                     <div class="form-group col-sm-4">
-                        <label class="custom">Partner</label>
-                        {{ Form::select('partner', $partners, 0, ['class' => 'select2 red form-control']) }}
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-sm-4">
-                        <label class="custom">Language</label>
-                        <select name="language" class="select2 red form-control">
-                            <option value="">Select Language</option>
-                            <option value="English">English</option>
-                            <option value="Spanish">Spanish</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group col-sm-4">
-                        <label class="custom">Bundle</label>
-                        {{ Form::select('bundle', $bundles, 0, ['class' => 'select2 red form-control']) }}
-                    </div>
-
-                    <div class="form-group col-sm-4">
                         <label class="custom">Level</label>
                         {{ Form::select('level', $levels, 0, ['class' => 'select2 red form-control']) }}
+                        {{--<label class="custom">Partner</label>--}}
+                        {{--{{ Form::select('partner', $partners, 0, ['class' => 'select2 red form-control']) }}--}}
                     </div>
                 </div>
+                {{--<div class="row">--}}
+                    {{--<div class="form-group col-sm-4">--}}
+                        {{--<label class="custom">Language</label>--}}
+                        {{--<select name="language" class="select2 red form-control">--}}
+                            {{--<option value="">Select Language</option>--}}
+                            {{--<option value="English">English</option>--}}
+                            {{--<option value="Spanish">Spanish</option>--}}
+                        {{--</select>--}}
+                    {{--</div>--}}
+                    {{--<div class="form-group col-sm-4">--}}
+                        {{--<label class="custom">Bundle</label>--}}
+                        {{--{{ Form::select('bundle', $bundles, 0, ['class' => 'select2 red form-control']) }}--}}
+                    {{--</div>--}}
+
+                    {{--<div class="form-group col-sm-4">--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
                 <div class="row">
-                    <div class="form-group letter-filter col-sm-12 col-md-7">
+                    <div class="form-group letter-filter col-xs-12">
                         <label class="custom">By name</label>
 
                         <div class="form-group">
@@ -158,24 +156,23 @@
                             <a href="#" data-filter-value="Z">Z</a>
                         </div>
                     </div>
+                    {{--<div class="form-group col-sm-6 col-md-2">--}}
+                        {{--<div class="custom-radio radio-primary">--}}
+                            {{--<input type="radio" id="radio-1" name="radio-filter" value="newest">--}}
+                            {{--<label for="radio-1">--}}
+                                {{--Newest--}}
+                            {{--</label>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
 
-                    <div class="form-group col-sm-6 col-md-2">
-                        <div class="custom-radio radio-primary">
-                            <input type="radio" id="radio-1" name="radio-filter" value="newest">
-                            <label for="radio-1">
-                                Newest
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group col-sm-6 col-md-2">
-                        <div class="custom-radio radio-primary">
-                            <input type="radio" id="radio-2" name="radio-filter" value="popular">
-                            <label for="radio-2">
-                                Popular
-                            </label>
-                        </div>
-                    </div>
+                    {{--<div class="form-group col-sm-6 col-md-2">--}}
+                        {{--<div class="custom-radio radio-primary">--}}
+                            {{--<input type="radio" id="radio-2" name="radio-filter" value="popular">--}}
+                            {{--<label for="radio-2">--}}
+                                {{--Popular--}}
+                            {{--</label>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </div>
                 {!! csrf_field() !!}
             </form>
