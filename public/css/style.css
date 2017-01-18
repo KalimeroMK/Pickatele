@@ -1467,6 +1467,18 @@ span.select2-selection.select2-selection--single {
     .help-center {
         background-image: none;
     }
+    .jobs {
+        background-image: none !important;
+    }
+    .contact-form {
+        background-image: none !important;
+    }
+    .newsletter form {
+        margin: 0;
+    }
+    .newsletter .section-header {
+        margin-top: 0 !important;
+    }
     .push-50 {
         margin-top: 50px;
     }
