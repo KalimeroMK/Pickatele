@@ -60,6 +60,23 @@
 
 <body class="no-trans front-page transparent-header gradient-background-header page-loader-3">
 
+<!-- Modal -->
+<div class="modal fade" id="getting-started-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header white-bg">
+                <h4 class="section-header red text-center">Download Pickatale App</h4>
+            </div>
+            <div class="modal-body text-center">
+                <p>Pickatale works on Apple and Android tablets or phones</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://itunes.apple.com/us/app/pickatale-200+-interactive/id669433655?mt=8"><img src="/assets/images/book-details/1-apple-store.png" /></a>
+                <a href="https://play.google.com/store/apps/details?id=com.WisdomEdition.Pickatale.Bookshelf&hl=en"><img src="/assets/images/book-details/2-google-store.png" /></a>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- scrollToTop -->
 <!-- ================ -->
 <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
@@ -91,14 +108,14 @@
                             <!-- top navigation -->
                             <ul class="nav top-nav navbar-right">
                                 <li>
-                                    <a class="top-nav-link" href="#">Sign in</a>
+                                    <a class="top-nav-link" href="http://club.pickatale.com/#!/user/login">Sign in</a>
                                 </li>
                                 <li>
-                                    <a class="top-nav-link" href="#">Get Started</a>
+                                    <a style="padding-right: 37px" class="top-nav-link" href="#" data-toggle="modal" data-target="#getting-started-modal">Get Started</a>
                                 </li>
-                                <li>
-                                    <a class="top-nav-link" href="#">EN <i style="color: #fff/*color: #a8a8a8*/" class="fa fa-chevron-down"></i></a>
-                                </li>
+                                {{--<li>--}}
+                                    {{--<a class="top-nav-link" href="#">EN <i style="color: #fff/*color: #a8a8a8*/" class="fa fa-chevron-down"></i></a>--}}
+                                {{--</li>--}}
                             </ul>
 
                         </div>

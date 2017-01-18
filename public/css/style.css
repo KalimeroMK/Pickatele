@@ -635,6 +635,11 @@ div.tparrows {
     background-color: #fec41f;
 }
 
+.white-bg {
+    background-color: #fff !important;
+}
+
+
 .white {
     color: #fff;
 }
@@ -1571,4 +1576,36 @@ span.select2-selection.select2-selection--single {
 
 .push-50 {
     margin-top: 50px;
+}
+
+#getting-started-modal .modal-dialog {
+    width: 350px;
+}
+
+#getting-started-modal .modal-header {
+    border-radius: 8px;
+    border-bottom: 0;
+}
+#getting-started-modal .modal-footer {
+    border: 0;
+}
+
+#getting-started-modal .modal-body {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+#getting-started-modal .modal-footer {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+#getting-started-modal .modal-footer img {
+    display: inline;
+    margin: 0 20px;
+    width: 120px;
+    /*margin: 0 auto;*/
 }
