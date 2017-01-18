@@ -1,6 +1,6 @@
-@if(!$faqs || count($faqs) === 0)
+{{--@if(!$faqs || count($faqs) === 0)--}}
     <!--<div class="error-msg">No results found...</div>-->
-@endif
+{{--@endif--}}
 
 @foreach($results as $faq)
     <div class="accordion-group">
