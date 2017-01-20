@@ -41,7 +41,7 @@ class EmailController extends Controller
 
         $data["title"] = "New message from Contact us page";
 
-        Mail::to("martin@myhost.mk")->send(new Inquiry($data));
+        Mail::to("contact@pickatale.com")->send(new Inquiry($data));
         Session::flash('flash_message', 'Email successfully sent!');
         return redirect('/contact');
     }
@@ -67,7 +67,7 @@ class EmailController extends Controller
 
         $data["title"] = "New message from Jobs page";
 
-        Mail::to("martin@myhost.mk")->send(new Inquiry($data));
+        Mail::to("jobs@pickatale.com")->send(new Inquiry($data));
         Session::flash('flash_message', 'Email successfully sent!');
         return redirect('/jobs');
     }
@@ -93,7 +93,7 @@ class EmailController extends Controller
 
         $data["title"] = "New message from About us page";
 
-        Mail::to("martin@myhost.mk")->send(new Inquiry($data));
+        Mail::to("contact@pickatale.com")->send(new Inquiry($data));
         Session::flash('flash_message', 'Email successfully sent!');
         return redirect('/about');
     }
@@ -119,7 +119,7 @@ class EmailController extends Controller
 
         $data["title"] = "New message from Partners page";
 
-        Mail::to("martin@myhost.mk")->send(new Inquiry($data));
+        Mail::to("contact@pickatale.com")->send(new Inquiry($data));
         Session::flash('flash_message', 'Email successfully sent!');
         return redirect('/partners');
     }
