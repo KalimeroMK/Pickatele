@@ -30,7 +30,7 @@ class Inquiry extends Mailable
     {
         $mail = $this->view('email.inquiry')->with([
             'data' => $this->data,
-        ])->from($this->data['email'], $this->data['name'])
+        ])->from($this->data['email'], 'Pickatale Website')
             ->subject($this->data['title']);
 
         if (isset($this->data['cv'])) {
