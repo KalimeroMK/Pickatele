@@ -1,27 +1,11 @@
 # Laravel PHP Framework
+<br>The Pickatale story
+Pickatale story started back in 2013. Knowing that children today grow up with digital devices, it's natural for parents and teachers to use apps for educational purposes. There are so many mobile apps intended for children, but we realized there's one important problem. These apps are addictive and without any real educational value to improve children's reading and language learning skills.
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+We wanted to help children develop a love of reading. In the course of the years, Pickatale now features 1000+ interactive childrens books in our app on English, Norwegian, Danish, Swedish and Chinese. We are paying special attention to each and every book released and we take pride in the knowing that both, the parents and children will enjoy the experience.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Always on the lookout for talented individuals, we bring together the work of authors, illustrators, narrators and translators from all over the globe, sewing them seamlessly together into unique pieces of our own and delivering them to children all around the world through the library apps. Our books are to a child what art galleries are to an adult: a collection of masterpieces, finely curated by our dedicated team of professionals.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+CMS is built with Laravel PHP Framework and Bootstrap 3.3.6
 
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Live Demo: http://pickatale.com
