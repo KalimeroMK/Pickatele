@@ -24,7 +24,7 @@ class HomeController extends Controller
         $bundles = Bundle::first();
         $partners = Partner::all();
         $sliders = Slider::all();
-        $staticpages = StaticPage::all();
+        $staticpages = Staticpage::all();
         $mainpages = Mainpages::all();
         $scripts = Script::where("status", "=", 1)->get();
         $faqs = Faq::take(3)->get();
@@ -35,8 +35,8 @@ class HomeController extends Controller
     public function staticpages($slug)
     {
         $partners = Partner::all();
-        $staticpage = StaticPage::where("slug", "=", $slug)->first();
-        $staticpages = StaticPage::all();
+        $staticpage = Staticpage::where("slug", "=", $slug)->first();
+        $staticpages = Staticpage::all();
         $scripts = Script::where("status", "=", 1)->get();
         $faqs = Faq::take(3)->get();
         $data = ["partners" => $partners,"faqs" => $faqs,"staticpage" => $staticpage, "staticpages" => $staticpages, "scripts" => $scripts];

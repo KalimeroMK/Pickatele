@@ -185,8 +185,7 @@
 
         @yield('partners')
 
-        <!-- ================ -->
-        <!-- TODO red-bg for parents blue-bg is for educators -->
+
         <section class="main-container padding-ver-clear call-to-action {{$mainpage->slug}}">
             <div class="container pv-40">
                 <div class="row">
@@ -433,7 +432,7 @@
                             </div>
 
                             <div class="form-group col-sm-12 col-md-6">
-                                <label>{!! Recaptcha::render() !!}</label>
+{{--                                <label>{!! Recaptcha::render() !!}</label>--}}
                             </div>
 
                             <div class="form-group col-sm-12 col-md-6 button-container">

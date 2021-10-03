@@ -25,7 +25,7 @@ class StaticpageController extends Controller
      */
     public function index()
     {
-        $staticpage = StaticPage::paginate(10);
+        $staticpage = Staticpage::paginate(10);
         $data = ["staticpages" => $staticpage];
         return view('admin.staticpage.index')->with($data);
     }
@@ -66,7 +66,7 @@ class StaticpageController extends Controller
         $request['title'] = strip_tags($request['title']);
         $request['slug'] = str_slug($request['title']);
 
-        $slug = StaticPage::where('title', $request['title'])->get();
+        $slug = Staticpage::where('title', $request['title'])->get();
 
         (int)$count = count($slug);
 
@@ -119,7 +119,7 @@ class StaticpageController extends Controller
         }
 
 
-        StaticPage::create($input);
+        Staticpage::create($input);
 
         Session::flash('flash_message', 'Static Page successfully created!');
 
@@ -134,7 +134,7 @@ class StaticpageController extends Controller
      */
     public function show($id)
     {
-        $staticpage = StaticPage::find($id);
+        $staticpage = Staticpage::find($id);
         $data = ['staticpage' => $staticpage];
         return view('admin.staticpage.show')->with($data);
     }
@@ -147,7 +147,7 @@ class StaticpageController extends Controller
      */
     public function edit($id)
     {
-        $staticpage = StaticPage::FindOrFail($id);
+        $staticpage = Staticpage::FindOrFail($id);
         $users = User::get();
         $workflows = Workflow::orderBy('id', 'desc')->get();
         $data = ['staticpage' => $staticpage, 'users' => $users, 'workflows' => $workflows];
@@ -183,7 +183,7 @@ class StaticpageController extends Controller
 
 
         $input = $request->all();
-        $staticpage = StaticPage::FindOrFail($id);
+        $staticpage = Staticpage::FindOrFail($id);
 
         $staticpage->fill($input)->save();
 
@@ -241,7 +241,7 @@ class StaticpageController extends Controller
      */
     public function destroy($id)
     {
-        $staticpage = StaticPage::FindOrFail($id);
+        $staticpage = Staticpage::FindOrFail($id);
 
         if ($staticpage->image) {
             // Delete staticpage images

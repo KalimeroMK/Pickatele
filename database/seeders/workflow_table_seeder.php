@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 class workflow_table_seeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      *
      * @return void
      */

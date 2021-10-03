@@ -5,6 +5,42 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
+/**
+ * App\Genre
+ *
+ * @property int $id
+ * @property string $slug
+ * @property string $name
+ * @property int|null $parent_id
+ * @property int|null $lft
+ * @property int|null $rgt
+ * @property int|null $depth
+ * @property string|null $created_at
+ * @property string|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|Genre[] $children
+ * @property-read int|null $children_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|Genre[] $immediateDescendants
+ * @property-read int|null $immediate_descendants_count
+ * @property-read Genre|null $parent
+ * @method static \Illuminate\Database\Eloquent\Builder|Node limitDepth($limit)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereDepth($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereLft($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereParentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereRgt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Genre whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Node withoutNode($node)
+ * @method static \Illuminate\Database\Eloquent\Builder|Node withoutRoot()
+ * @method static \Illuminate\Database\Eloquent\Builder|Node withoutSelf()
+ * @mixin \Eloquent
+ * @property-read \App\Books $book
+ */
 class Genre extends \Baum\Node
 {
 
@@ -14,7 +50,7 @@ class Genre extends \Baum\Node
 
     public function book()
     {
-        return $this->belongsTo('App\Book', 'category');
+        return $this->belongsTo(Books::class, 'category');
     }
 
     public static function getTree($categories)
